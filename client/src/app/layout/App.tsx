@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import type { Product } from "../models/product";
+import Catalog from "../../features/catalog/Catalog";
 
 
 function App() {
@@ -34,18 +35,12 @@ function App() {
     <>
       <h1 style={{ color: 'red' }}>Re-store</h1>
 
-      <ul>
-        {productListing.map((item, index) => 
-          (
-            <li key={`${item.name}-${index}`}>{item.name} - {item.price}</li>
-          ))}
-      </ul>
+      <Catalog 
+        productListing={productListing}
+        addProduct={addProduct}
+      />
 
-      <button
-        onClick={addProduct}
-      >
-        Add Product
-      </button>
+      
     </>
   )
 }
