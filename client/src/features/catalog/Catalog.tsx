@@ -1,30 +1,21 @@
 import type { Product } from "../../app/models/product"
+import ProductList from "./ProductList"
 
 interface Props {
   productListing: Product[],
-  addProduct: () => void,
 }
 
 
 const Catalog = ({
   productListing,
-  addProduct,
 }: Props) => {
 
   return (
     <>
-      <ul>
-        {productListing.map((item, index) => 
-          (
-            <li key={`${item.name}-${index}`}>{item.name} - {item.price}</li>
-          ))}
-      </ul>
+      <ProductList 
+        productListing={productListing}
+      />
 
-      <button
-        onClick={addProduct}
-      >
-        Add Product
-      </button>
     </>
   )
 }

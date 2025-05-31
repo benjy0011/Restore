@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import type { Product } from "../models/product";
 import Catalog from "../../features/catalog/Catalog";
+import { Box, Button, Container, Typography } from '@mui/material';
 
 
 function App() {
@@ -23,7 +24,7 @@ function App() {
           price: (prev.length + 1) * 100.00,
           quantityInStock: 100,
           description: 'test',
-          pictureUrl: 'https://picsum.photo/200',
+          pictureUrl: `https://picsum.photos/id/${prev.length + 1}/200/300`,
           type: 'test',
           brand: 'test',
         }
@@ -32,16 +33,24 @@ function App() {
   }
 
   return (
-    <>
-      <h1 style={{ color: 'red' }}>Re-store</h1>
+    <Container 
+      // maxWidth={false}
+      maxWidth={"xl"}
+    >
+      {/* Title */}
+      <Box display="flex" justifyContent="center" gap={3} marginY={3}>
+         <Typography variant="h4">Re-store</Typography>
+         <Button variant="contained" onClick={addProduct}>Add Product</Button>
+      </Box>
+     
 
+      {/* Catalog */}
       <Catalog 
         productListing={productListing}
-        addProduct={addProduct}
       />
 
       
-    </>
+    </Container>
   )
 }
 
