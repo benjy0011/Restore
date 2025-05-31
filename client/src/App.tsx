@@ -8,11 +8,12 @@ const products = [
 
 
 function App() {
-  const [productListing, setProductListing] = useState<{name: string, price: number}[]>([]);
+  const [productListing, setProductListing] = useState<{name: string, price: number}[]>([]); // only check for the type for 'name' and 'price', if contain other field, will be stored no matter what
 
   useEffect(() => {
     fetch('https://localhost:5001/api/products')
       .then(response => response.json())
+      .then(data => setProductListing(data))
       .catch(error => console.error(`Error fetching data: ${error}`))
   }, [])
 
@@ -27,6 +28,8 @@ function App() {
       ]
     ));
   }
+
+  console.log(productListing)
 
   return (
     <>
