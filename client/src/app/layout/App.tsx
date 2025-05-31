@@ -1,14 +1,9 @@
 import { useEffect, useState } from "react";
-
-const products = [
-  {name: 'product1', price: 100.00},
-  {name: 'product2', price: 200.00},
-  {name: 'product3', price: 300.00}
-];
+import type { Product } from "../models/product";
 
 
 function App() {
-  const [productListing, setProductListing] = useState<{name: string, price: number}[]>([]); // only check for the type for 'name' and 'price', if contain other field, will be stored no matter what
+  const [productListing, setProductListing] = useState<Product[]>([]); // only check for the type for 'name' and 'price', if contain other field, will be stored no matter what
 
   useEffect(() => {
     fetch('https://localhost:5001/api/products')
@@ -22,14 +17,18 @@ function App() {
       [
         ...prev, 
         {
+          id: prev.length + 1,
           name: 'product' + (prev.length + 1), 
-          price: (prev.length + 1) * 100.00
+          price: (prev.length + 1) * 100.00,
+          quantityInStock: 100,
+          description: 'test',
+          pictureUrl: 'https://picsum.photo/200',
+          type: 'test',
+          brand: 'test',
         }
       ]
     ));
   }
-
-  console.log(productListing)
 
   return (
     <>
