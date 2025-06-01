@@ -10,15 +10,27 @@ const ProductList = ({
   productListing,
 }: Props) => {
   return (
-    <Box sx={{display: 'flex', flexWrap: 'wrap', gap: 3, justifyContent: "center"}}>
-      {productListing.map(item => (
-        <ProductCard 
-          product={item}
-          key={item.id}
-        />
+    <Box
+      sx={{
+        display: "grid",
+        gridTemplateColumns: "repeat(auto-fit, 280px)", // card width
+        justifyContent: 'center',
+        padding: "0 auto",
+        rowGap: 3,
+        columnGap: 3,
+
+        // display: 'flex',
+        // flexWrap: 'wrap',
+        // gap: 3,
+        // justifyContent: 'center',
+
+      }}
+    >
+      {productListing.map((item) => (
+        <ProductCard product={item} key={item.id} />
       ))}
     </Box>
-  )
+  );
 }
 
 export default ProductList
