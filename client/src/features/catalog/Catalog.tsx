@@ -1,14 +1,17 @@
+import { useEffect, useState } from "react";
 import type { Product } from "../../app/models/product"
 import ProductList from "./ProductList"
 
-interface Props {
-  productListing: Product[],
-}
 
+const Catalog = () => {
+  const [productListing, setProductListing] = useState<Product[]>([]); // only check for the type for 'name' and 'price', if contain other field, will be stored no matter what
 
-const Catalog = ({
-  productListing,
-}: Props) => {
+  useEffect(() => {
+      fetch('https://localhost:5001/api/products')
+        .then(response => response.json())
+        .then(data => setProductListing(data))
+        .catch(error => console.error(`Error fetching data: ${error}`))
+    }, [])
 
   return (
     <>

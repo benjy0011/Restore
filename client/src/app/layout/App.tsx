@@ -1,16 +1,13 @@
-import { useEffect, useState } from "react";
-import type { Product } from "../models/product";
-import Catalog from "../../features/catalog/Catalog";
+import { useState } from "react";
 import NavBar from "./NavBar";
 import { Box, Container, CssBaseline, ThemeProvider } from "@mui/material";
 import getTheme from "../../theme/theme";
+import { Outlet } from "react-router-dom";
 
 function App() {
   const getSystemThemePreference = () => 
     window.matchMedia &&
     window.matchMedia("(prefers-color-scheme: dark)").matches;
-
-  const [productListing, setProductListing] = useState<Product[]>([]); // only check for the type for 'name' and 'price', if contain other field, will be stored no matter what
   
   const [darkMode, setDarkMode] = useState<boolean>(getSystemThemePreference);
 
@@ -19,13 +16,6 @@ function App() {
   const handleToggleDarkMode = (): void => {
     setDarkMode(prev => !prev);
   };
-
-  useEffect(() => {
-    fetch('https://localhost:5001/api/products')
-      .then(response => response.json())
-      .then(data => setProductListing(data))
-      .catch(error => console.error(`Error fetching data: ${error}`))
-  }, [])
 
   return (
     <ThemeProvider theme={theme} >
@@ -43,8 +33,8 @@ function App() {
             : '#eaeaea',
         }}
       >
-        <Container maxWidth={"xl"} sx={{pt: 14}}>     
-          <Catalog productListing={productListing}/>
+        <Container maxWidth={"xl"} sx={{pt: 2}}>     
+          <Outlet />
         </Container>
       </Box>
       
