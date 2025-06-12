@@ -1,10 +1,10 @@
 import { createTheme } from "@mui/material";
 
-const transition = {
+export const transition = {
   transition: 'background-color 0.3s ease-in-out, color 0.3s ease-in-out'
 };
 
-const getTheme = (darkMode: boolean) => {
+export const getTheme = (darkMode: boolean) => {
   const palleteType = darkMode ? "dark" : "light";
 
   return createTheme({
@@ -37,5 +37,3 @@ const getTheme = (darkMode: boolean) => {
     }
   })
 };
-
-export default getTheme;

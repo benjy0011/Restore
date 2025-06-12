@@ -1,8 +1,9 @@
 import { useState } from "react";
 import NavBar from "./NavBar";
 import { Box, Container, CssBaseline, ThemeProvider } from "@mui/material";
-import getTheme from "../../theme/theme";
+
 import { Outlet } from "react-router-dom";
+import { getTheme, transition } from "../../theme/theme";
 
 function App() {
   const getSystemThemePreference = () => 
@@ -31,6 +32,7 @@ function App() {
           backgroundColor: darkMode 
             ?  '#121212' 
             : '#eaeaea',
+          transition: transition.transition
         }}
       >
         <Container maxWidth={"xl"} sx={{pt: 2}}>     
