@@ -28,7 +28,8 @@ function App() {
 
       <Box 
         sx={{ 
-          minHeight: '100vh', 
+          // minHeight: '100vh',
+          height: "100%",
           backgroundColor: darkMode 
             ?  '#121212' 
             : '#eaeaea',
