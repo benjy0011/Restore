@@ -1,3 +1,5 @@
+import { createSlice } from "@reduxjs/toolkit"
+
 export type CounterState = {
   data: number
 }
@@ -6,14 +8,36 @@ const initialState: CounterState = {
   data: 42
 }
 
-export function increment(amount: number = 1) {
+// Redux toolkit (RTK)
+export const counterSlice = createSlice({
+  name: 'counter',
+  initialState,
+  reducers: {
+    increment: (state, action) => {
+      state.data += action.payload
+    },
+    decrement: (state, action) => {
+      state.data -= action.payload
+    }
+  }
+})
+
+export const {
+  increment,
+  decrement
+} = counterSlice.actions;
+
+
+// Legacy Redux Code
+
+export function incrementLegacy(amount: number = 1) {
   return {
     type: 'increment',
     payload: amount
   }
 }
 
-export function decrement(amount: number = 1) {
+export function decrementLegacy(amount: number = 1) {
   return {
     type: 'decrement',
     payload: amount

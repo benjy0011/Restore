@@ -1,10 +1,19 @@
-import { useDispatch, useSelector } from "react-redux"
-import { decrement, increment, type CounterState } from "./counterReducer";
+// import { useDispatch, useSelector } from "react-redux"
+import { 
+  decrement, 
+  // decrementLegacy, 
+  increment, 
+  // incrementLegacy, 
+  // type CounterState 
+} from "./counterReducer";
 import { Button, ButtonGroup, Typography } from "@mui/material";
+import { useAppDispatch, useAppSelector } from "../../app/store/store";
 
 const ContactPage = () => {
-  const data = useSelector((state: CounterState) => state.data);
-  const dispatch = useDispatch();
+  // const data = useSelector((state: CounterState) => state.data);
+  // const dispatch = useDispatch();
+  const data = useAppSelector(state => state.counter.data);
+  const dispatch = useAppDispatch();
 
   return (
     <>
@@ -19,7 +28,8 @@ const ContactPage = () => {
         <Button
           color='error'
           onClick={() => {
-            dispatch(decrement())
+            // dispatch(decrementLegacy(1))
+            dispatch(decrement(1))
           }}
         >
           Decrement
@@ -28,7 +38,8 @@ const ContactPage = () => {
         <Button 
           color='success'
           onClick={() => {
-            dispatch(increment())
+            // dispatch(incrementLegacy(1))
+            dispatch(increment(1))
           }}
         >
           Increment
@@ -37,6 +48,7 @@ const ContactPage = () => {
         <Button 
           color='primary'
           onClick={() => {
+            // dispatch(incrementLegacy(5))
             dispatch(increment(5))
           }}
         >
