@@ -1,37 +1,47 @@
-import { createTheme } from "@mui/material";
+import { createTheme, type PaletteMode } from "@mui/material";
+import { darkModeBgColor, getTransition, lightModeBgColor } from "../styling/getBackgroundColor";
 
-export const transition = {
-  transition: 'background-color 0.3s ease-in-out, color 0.3s ease-in-out'
-};
-
-export const getTheme = (darkMode: boolean) => {
-  const palleteType = darkMode ? "dark" : "light";
+export const getTheme = (
+  darkMode: boolean,
+  enableTransition: boolean = true,
+) => {
+  const palleteType: PaletteMode = darkMode ? "dark" : "light";
 
   return createTheme({
     palette: {
       mode: palleteType,
       background: {
-        default: (palleteType === "light") ? '#eaeaea' : '#121212'
+        default: (palleteType === "light") ? lightModeBgColor : darkModeBgColor
       }
     },
 
     components: {
       MuiCssBaseline: {
         styleOverrides: {
-          body: {...transition},
+          body: {...getTransition(enableTransition)},
           '@global': {
-            '*': {...transition},
+            '*': {...getTransition(enableTransition)},
           } 
         }
       },
       MuiAppBar: {
         styleOverrides: {
-          root: {...transition}
+          root: {...getTransition(enableTransition)}
         }
       },
       MuiCard: {
         styleOverrides: {
-          root: {...transition}
+          root: {...getTransition(enableTransition)}
+        }
+      },
+      MuiCircularProgress: {
+        styleOverrides: {
+          root: {...getTransition(enableTransition)}
+        }
+      },
+      MuiBadge: {
+        styleOverrides: {
+          root: {...getTransition(enableTransition)}
         }
       },
     }

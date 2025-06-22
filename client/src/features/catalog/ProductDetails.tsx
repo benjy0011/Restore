@@ -1,36 +1,31 @@
-import { useEffect, useState } from "react";
+import { 
+  useState 
+} from "react";
 import { useParams } from "react-router-dom"
-import type { Product } from "../../app/models/product";
-import { Button, CircularProgress, Divider, Grid, Table, TableBody, TableCell, TableContainer, TableRow, TextField, Typography } from "@mui/material";
+import { Button, Divider, Grid, Table, TableBody, TableCell, TableContainer, TableRow, TextField, Typography } from "@mui/material";
+import CircularProgressScreen from "../../components/CircularProgressScreen";
+import { useFetchProductDetailQuery } from "./catalogApi";
 
 const ProductDetails = () => {
   const {id} = useParams();
-  const [product, setProduct] = useState<Product | null>(null);
+  // const [product, setProduct] = useState<Product | null>(null);
   const [quantity, setQuantity] = useState<string>("0");
 
   const handleAddQuantity = (): void => {
     setQuantity(prev => String(Number(prev) + 1));
   }
 
-  useEffect(() => {
-    fetch(`https://localhost:5001/api/products/${id}`)
-      .then(response => response.json())
-      .then(data => setProduct(data))
-      .catch(error => console.error(error))
-  }, [id])
+  // useEffect(() => {
+  //   fetch(`https://localhost:5001/api/products/${id}`)
+  //     .then(response => response.json())
+  //     .then(data => setProduct(data))
+  //     .catch(error => console.error(error))
+  // }, [id])
 
-  if (!product) return (
-    <div 
-      style={{
-        display: "flex",
-        width: "100%",
-        height: "100%",
-        justifyContent: "center",
-        marginTop: "10px"
-      }}
-    >
-      <CircularProgress />
-    </div>
+  const { data: product, isLoading } = useFetchProductDetailQuery(id ? +id : 0);
+
+  if (!product || isLoading) return (
+    <CircularProgressScreen />
   )
 
   const productDetails = [
@@ -136,6 +131,7 @@ const ProductDetails = () => {
           </Grid>
         </Grid>
       </Grid>
+      
     </Grid>
   )
 }

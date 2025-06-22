@@ -1,14 +1,20 @@
 import { Box } from "@mui/material"
 import type { Product } from "../../app/models/product"
 import ProductCard from "./ProductCard"
+import CircularProgressScreen from "../../components/CircularProgressScreen"
 
 interface Props {
-  productListing: Product[],
+  productListing: Product[] | undefined,
+  isLoading: boolean,
 }
 
 const ProductList = ({
   productListing,
+  isLoading,
 }: Props) => {
+
+  if (isLoading) return <CircularProgressScreen />
+
   return (
     <Box
       sx={{
@@ -26,7 +32,7 @@ const ProductList = ({
 
       }}
     >
-      {productListing.map((item) => (
+      {productListing?.map((item) => (
         <ProductCard product={item} key={item.id} />
       ))}
     </Box>

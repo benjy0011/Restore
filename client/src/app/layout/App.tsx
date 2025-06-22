@@ -1,42 +1,56 @@
-import { useState } from "react";
+// import { useState } from "react";
 import NavBar from "./NavBar";
 import { Box, Container, CssBaseline, ThemeProvider } from "@mui/material";
 
 import { Outlet } from "react-router-dom";
-import { getTheme, transition } from "../../theme/theme";
+import { getTheme } from "../../theme/theme";
+import { useAppSelector } from "../store/store";
+import { getBackgroundColor } from "../../styling/getBackgroundColor";
+import { useEffect, useState } from "react";
 
 function App() {
-  const getSystemThemePreference = () => 
-    window.matchMedia &&
-    window.matchMedia("(prefers-color-scheme: dark)").matches;
-  
-  const [darkMode, setDarkMode] = useState<boolean>(getSystemThemePreference);
+  // track mount
+  const [mounted, setMounted] = useState(false);
 
-  const theme = getTheme(darkMode);
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setMounted(true);
+    }, 100)
 
-  const handleToggleDarkMode = (): void => {
-    setDarkMode(prev => !prev);
-  };
+    return () => clearTimeout(timer);
+  }, []);
+
+
+  // const [darkMode, setDarkMode] = useState<boolean>(getInitialDarkMode);
+  const darkMode = useAppSelector(state => state.ui.darkMode);
+
+  const theme = getTheme(darkMode, mounted);
+
+  // const handleToggleDarkMode = (): void => {
+  //   setDarkMode(prev => {
+  //     localStorage.setItem('darkMode', JSON.stringify(!prev));
+  //     return !prev;
+  //   });
+  // };
 
   return (
-    <ThemeProvider theme={theme} >
+    <ThemeProvider theme={theme}>
       <CssBaseline />
-      <NavBar 
-        darkMode={darkMode} 
-        handleToggleDarkMode={handleToggleDarkMode} 
-      />
+      <NavBar />
 
       <Box 
         sx={{ 
           // minHeight: '100vh',
           height: "100%",
-          backgroundColor: darkMode 
-            ?  '#121212' 
-            : '#eaeaea',
-          transition: transition.transition
+          ...(getBackgroundColor(darkMode, mounted))
         }}
       >
-        <Container maxWidth={"xl"} sx={{pt: 2}}>     
+        <Container 
+          maxWidth={"xl"} 
+          sx={{
+            pt: 2,
+          }}
+        >     
           <Outlet />
         </Container>
       </Box>

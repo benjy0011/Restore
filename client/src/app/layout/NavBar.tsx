@@ -6,6 +6,7 @@ import {
   Drawer,
   Grid,
   IconButton,
+  LinearProgress,
   List,
   ListItem,
   styled,
@@ -24,6 +25,8 @@ import {
 } from "@mui/icons-material";
 import { NavLink, type NavLinkProps } from "react-router-dom";
 import React, { useState } from "react";
+import { useAppDispatch, useAppSelector } from "../store/store";
+import { toggleDarkMode } from "./uiSlice";
 
 const midLinks = [
   { title: "catalog", path: "/catalog" },
@@ -68,15 +71,24 @@ const MobileNavLinkListItem = styled(StyledNavLinkListItem)(({ theme }) => ({
   },
 }));
 
-interface Props {
-  darkMode: boolean;
-  handleToggleDarkMode: () => void;
-}
+// interface Props {
+//   darkMode: boolean;
+//   handleToggleDarkMode: () => void;
+// }
 
-const NavBar = ({ darkMode, handleToggleDarkMode }: Props) => {
+const NavBar = () => {
+  const darkMode = useAppSelector(state => state.ui.darkMode);
+  const dispatch = useAppDispatch();
+
+  const handleToggleDarkMode = (): void => {
+    dispatch(toggleDarkMode())
+  }
+
   const [mobileOpen, setMobileOpen] = useState<boolean>(false);
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down("md"));
+
+  const { isLoading } = useAppSelector(state => state.ui);
 
   const handleDrawerToggle = (): void => {
     setMobileOpen(!mobileOpen);
@@ -191,7 +203,7 @@ const NavBar = ({ darkMode, handleToggleDarkMode }: Props) => {
                 alignItems: "center",
               }}
             >
-              <Grid size={2}>
+              <Grid size={2.2}>
                 <IconButton
                   color="inherit"
                   aria-label="open drawer"
@@ -202,22 +214,23 @@ const NavBar = ({ darkMode, handleToggleDarkMode }: Props) => {
                 </IconButton>
               </Grid>
               
-              <Grid size={8} sx={{ textAlign: 'center' }}>
+              <Grid size={7.6} sx={{ textAlign: 'center' }}>
                 {title}
               </Grid>
               
 
-              <Grid size={2}>
+              <Grid size={2.2}>
                 <Box
-                sx={{
-                  display: "flex",
-                  gap: 1,
-                  alignItems: "center",
-                }}
-              >
-                {modeButton}
-                {shoppingCart}
-              </Box>
+                  sx={{
+                    display: "flex",
+                    gap: 1,
+                    alignItems: "center",
+                    justifyContent: "flex-end"
+                  }}
+                >
+                  {modeButton}
+                  {shoppingCart}
+                </Box>
               </Grid>
               
             </Grid>
@@ -282,6 +295,11 @@ const NavBar = ({ darkMode, handleToggleDarkMode }: Props) => {
             </Grid>
           )}
         </Toolbar>
+        {isLoading && (
+          <Box sx={{ width: "100%" }} >
+            <LinearProgress color="primary" />
+          </Box>
+        )}
       </AppBar>
 
       <Drawer
