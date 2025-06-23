@@ -15,6 +15,13 @@ export const getTheme = (
       }
     },
 
+    typography: {
+      fontFamily: [
+        "Quicksand",
+        "Roboto"
+      ].join(", ")
+    },
+
     components: {
       MuiCssBaseline: {
         styleOverrides: {

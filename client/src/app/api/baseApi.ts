@@ -19,7 +19,7 @@ export const baseQueryWithErrorHandling = async (
   api.dispatch(stopLoading())
   if (result.error) {
     const { status, data } = result.error;
-    console.log({ status, data });
+    console.log("Error from Redux middleware: ", { status, data });
   }
 
   return result;

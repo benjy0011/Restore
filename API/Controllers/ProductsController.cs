@@ -6,9 +6,12 @@ using Microsoft.EntityFrameworkCore;
 
 namespace API.Controllers;
 
-[Route("api/[controller]")] // https://localhost:5001/api/products
-[ApiController]
-public class ProductsController(StoreContext _context) : ControllerBase
+// [Route("api/[controller]")] // https://localhost:5001/api/products
+// [ApiController]
+
+// public class ProductsController(StoreContext _context) : ControllerBase
+
+public class ProductsController(StoreContext _context) : BaseApiController
 {
 
   // vvvvvvvv Conventional Contructor vvvvvvvv
