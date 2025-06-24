@@ -9,10 +9,10 @@ export const errorApi = createApi({
       query: () => ({ url: 'buggy/bad-request' })
     }),
     get401Error: builder.query<void, void>({
-      query: () => ({ url: 'buggy/not-found' })
+      query: () => ({ url: 'buggy/unauthorized' })
     }),
     get404Error: builder.query<void, void>({
-      query: () => ({ url: 'buggy/unauthorized' })
+      query: () => ({ url: 'buggy/not-found' })
     }),
     get500Error: builder.query<void, void>({
       query: () => ({ url: 'buggy/server-error' })
