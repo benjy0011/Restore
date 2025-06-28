@@ -6,7 +6,7 @@ import type { Product } from "../../app/models/product";
 import { baseQueryWithErrorHandling } from "../../app/api/baseApi";
 
 export const catalogApi = createApi({
-  reducerPath: 'catalogApi',
+  reducerPath: 'catalogApi', // unique key for API
   // baseQuery: fetchBaseQuery({
   //   baseUrl: 'https://localhost:5001/api'
   // })
