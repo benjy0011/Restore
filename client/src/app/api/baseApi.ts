@@ -6,7 +6,8 @@ import { router } from "../routes/Routes";
 type ErrorResponse = string | { title: string } | { errors: string[] };
 
 const customBaseQuery = fetchBaseQuery({
-  baseUrl: 'https://localhost:5001/api'
+  baseUrl: 'https://localhost:5001/api',
+  credentials: 'include', // allow cookies
 });
 
 const sleep = () => new Promise(resolve => setTimeout(resolve, 1000));

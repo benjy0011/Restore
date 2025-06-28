@@ -33,7 +33,11 @@ var app = builder.Build();
 app.UseMiddleware<ExceptionMiddleware>(); // sequence is important, put at top most
 app.UseCors(opt =>
 {
-  opt.AllowAnyHeader().AllowAnyMethod().WithOrigins("https://localhost:3000"); // Permit localhost
+  opt
+    .AllowAnyHeader()
+    .AllowAnyMethod()
+    .AllowCredentials() // set up cookies
+    .WithOrigins("https://localhost:3000"); // Permit localhost
 });
 
 
