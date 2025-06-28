@@ -27,5 +27,6 @@ export const basketApi = createApi({
 })
 
 export const {
-  useFetchBasketQuery
+  useFetchBasketQuery,
+  useAddBasketItemMutation,
 } = basketApi;

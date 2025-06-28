@@ -23,7 +23,7 @@ import {
   Menu as MenuIcon,
   ShoppingCart,
 } from "@mui/icons-material";
-import { NavLink, type NavLinkProps } from "react-router-dom";
+import { Link, NavLink, type NavLinkProps } from "react-router-dom";
 import React, { useState } from "react";
 import { useAppDispatch, useAppSelector } from "../store/store";
 import { toggleDarkMode } from "./uiSlice";
@@ -38,6 +38,8 @@ const rightLinks = [
   { title: "login", path: "/login" },
   { title: "register", path: "/register" },
 ];
+
+const shoppingCartLink = "/basket";
 
 type NavLinkListItemProps = Omit<ListItemProps, "component"> & NavLinkProps;
 
@@ -122,7 +124,11 @@ const NavBar = () => {
 
   // Shopping Cart Button
   const shoppingCart = (
-    <IconButton sx={{ color: "inherit" }}>
+    <IconButton 
+      component={Link}
+      to={shoppingCartLink}
+      sx={{ color: "inherit" }}
+    >
       <Badge badgeContent={1} color="primary">
         <ShoppingCart />
       </Badge>
