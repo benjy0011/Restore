@@ -22,7 +22,7 @@ public class Basket
       Items.Add(new BasketItem
       {
         Product = product,
-        Quantity = quantity
+        Quantity = quantity,
       });
     }
     else
