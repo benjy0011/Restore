@@ -27,6 +27,7 @@ import { Link, NavLink, type NavLinkProps } from "react-router-dom";
 import React, { useState } from "react";
 import { useAppDispatch, useAppSelector } from "../store/store";
 import { toggleDarkMode } from "./uiSlice";
+import { useFetchBasketQuery } from "../../features/basket/basketApi";
 
 const midLinks = [
   { title: "catalog", path: "/catalog" },
@@ -79,8 +80,11 @@ const MobileNavLinkListItem = styled(StyledNavLinkListItem)(({ theme }) => ({
 // }
 
 const NavBar = () => {
-  const darkMode = useAppSelector(state => state.ui.darkMode);
+  const darkMode = useAppSelector(state => state.ui.darkMode);  
   const dispatch = useAppDispatch();
+
+  const {data: basket} = useFetchBasketQuery();
+  const itemCount = basket?.items.reduce((acc, curr) => acc + curr.quantity, 0) || 0;
 
   const handleToggleDarkMode = (): void => {
     dispatch(toggleDarkMode())
@@ -129,7 +133,7 @@ const NavBar = () => {
       to={shoppingCartLink}
       sx={{ color: "inherit" }}
     >
-      <Badge badgeContent={1} color="primary">
+      <Badge badgeContent={itemCount} color="primary">
         <ShoppingCart />
       </Badge>
     </IconButton>
