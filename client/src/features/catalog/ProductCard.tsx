@@ -58,7 +58,7 @@ const ProductCard = ({
       >
         <Button
           loading={isLoading}
-          onClick={() => addBasketItem({productId: product.id, quantity: 1})}
+          onClick={() => addBasketItem({product: product, quantity: 1})}
         >
           Add to cart
         </Button>

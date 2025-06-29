@@ -35,7 +35,7 @@ const BasketPage = () => {
 
   return (
     <Grid container spacing={2}>
-      <Grid size={8}>
+      <Grid size={{xs: 12, md: 8}}>
         {data.items.map(item => (
           <BasketItem
             item={item}
@@ -44,7 +44,7 @@ const BasketPage = () => {
         ))}
       </Grid>
 
-      <Grid size={4}>
+      <Grid size={{xs: 12, md: 4}}>
 
       </Grid>
 
