@@ -7,7 +7,7 @@ export const basketApi = createApi({
   ,
   baseQuery: baseQueryWithErrorHandling
   ,
-  tagTypes: ['Basket']
+  tagTypes: ['Basket'] // add a cache tag to this BasketApi
   ,
   endpoints: (builder) => ({
     fetchBasket: builder.query<Basket, void>({
@@ -19,7 +19,7 @@ export const basketApi = createApi({
         url: `basket?productId=${productId}&quantity=${quantity}`,
         method: 'POST'
       }),
-      onQueryStarted: async (_, {dispatch, queryFulfilled}) => {
+      onQueryStarted: async (_, {dispatch, queryFulfilled}) => { // invalidate 'Basket' cache upon this action
         try {
           await queryFulfilled;
           dispatch(basketApi.util.invalidateTags(['Basket']))
