@@ -1,4 +1,4 @@
-import { createSlice } from "@reduxjs/toolkit";
+import { createSlice, type PayloadAction } from "@reduxjs/toolkit";
 
 const getSystemThemePreference = (): boolean => 
     window.matchMedia &&
@@ -16,6 +16,7 @@ export const uiSlice = createSlice({
   initialState: {
     isLoading: false,
     darkMode: getInitialDarkMode(),
+    isMobile: false,
   },
   reducers: {
     startLoading: (state) => {
@@ -27,7 +28,10 @@ export const uiSlice = createSlice({
     toggleDarkMode: (state) => {
       localStorage.setItem('darkMode', JSON.stringify(!state.darkMode));
       state.darkMode = !state.darkMode;
-    }
+    },
+    setIsMobile: (state, action: PayloadAction<boolean>) => {
+      state.isMobile = action.payload;
+    },
   }
 });
 
@@ -35,4 +39,5 @@ export const {
   startLoading,
   stopLoading,
   toggleDarkMode,
+  setIsMobile,
 } = uiSlice.actions

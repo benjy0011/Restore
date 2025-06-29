@@ -24,9 +24,9 @@ import {
   ShoppingCart,
 } from "@mui/icons-material";
 import { Link, NavLink, type NavLinkProps } from "react-router-dom";
-import React, { useState } from "react";
+import React, { useCallback, useEffect, useState } from "react";
 import { useAppDispatch, useAppSelector } from "../store/store";
-import { toggleDarkMode } from "./uiSlice";
+import { setIsMobile, toggleDarkMode } from "./uiSlice";
 import { useFetchBasketQuery } from "../../features/basket/basketApi";
 
 const midLinks = [
@@ -90,11 +90,16 @@ const NavBar = () => {
     dispatch(toggleDarkMode())
   }
 
+
   const [mobileOpen, setMobileOpen] = useState<boolean>(false);
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down("md"));
 
   const { isLoading } = useAppSelector(state => state.ui);
+
+  const handleSetIsMobile = useCallback((isMobile: boolean): void => {
+    dispatch(setIsMobile(isMobile))
+  }, [dispatch])
 
   const handleDrawerToggle = (): void => {
     setMobileOpen(!mobileOpen);
@@ -103,6 +108,10 @@ const NavBar = () => {
   const handleMobileNavClick = (): void => {
     setMobileOpen(false);
   };
+
+  useEffect(() => {
+    handleSetIsMobile(isMobile)
+  }, [isMobile, handleSetIsMobile])
 
   // Title
   const title = (
