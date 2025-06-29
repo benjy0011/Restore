@@ -1,6 +1,7 @@
 import { Box, Grid, IconButton, Paper, styled, Typography } from "@mui/material"
 import type { BasketItem as IBasketItem } from "../../app/models/basket"
 import { Add, Close, Remove } from "@mui/icons-material"
+import { useAppSelector } from "../../app/store/store"
 
 interface Props {
   item: IBasketItem
@@ -16,11 +17,12 @@ const BasketItem = ({
   item
 }: Props) => {
 
+  const isMobile = useAppSelector(state => state.ui.isMobile);
 
   return (
     <Paper
       sx={{
-        height: 140,
+        height: !isMobile ? 140 : null,
         borderRadius: 3,
         display: 'flex',
         justifyContent: 'space-between',
@@ -29,6 +31,7 @@ const BasketItem = ({
       }}
     >
       <Box
+        pb={ !isMobile ? 0 : 2 }
         display='flex'
         alignItems='center'
       >
