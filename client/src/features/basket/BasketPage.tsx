@@ -1,8 +1,9 @@
-import { Button, Paper, Typography } from "@mui/material";
+import { Button, Grid, Paper, Typography } from "@mui/material";
 import CircularProgressScreen from "../../components/CircularProgressScreen";
 import { useFetchBasketQuery } from "./basketApi"
 import { Link } from "react-router-dom";
 import { ProductionQuantityLimits } from "@mui/icons-material";
+import BasketItem from "./BasketItem";
 
 const BasketPage = () => {
   const { data, isLoading } = useFetchBasketQuery();
@@ -33,7 +34,21 @@ const BasketPage = () => {
   )
 
   return (
-    <div>BasketPage</div>
+    <Grid container spacing={2}>
+      <Grid size={8}>
+        {data.items.map(item => (
+          <BasketItem
+            item={item}
+            key={item.productId}
+          />
+        ))}
+      </Grid>
+
+      <Grid size={4}>
+
+      </Grid>
+
+    </Grid>
   )
 }
 export default BasketPage
