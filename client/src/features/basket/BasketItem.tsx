@@ -2,6 +2,7 @@ import { Box, Grid, IconButton, Paper, styled, Typography } from "@mui/material"
 import type { BasketItem as IBasketItem } from "../../app/models/basket"
 import { Add, Close, Remove } from "@mui/icons-material"
 import { useAppSelector } from "../../app/store/store"
+import { useAddBasketItemMutation, useRemoveBasketItemMutation } from "./basketApi"
 
 interface Props {
   item: IBasketItem
@@ -18,6 +19,9 @@ const BasketItem = ({
 }: Props) => {
 
   const isMobile = useAppSelector(state => state.ui.isMobile);
+
+  const [removeBasketItem] = useRemoveBasketItemMutation();
+  const [addBasketItem] = useAddBasketItemMutation();
 
   return (
     <Paper
@@ -84,6 +88,7 @@ const BasketItem = ({
             alignItems='center'
           >
             <StyledBasketItemButton
+              onClick={() => removeBasketItem({productId: item.productId, quantity: 1})}
               color='error'
               size='small'
             >
@@ -93,6 +98,7 @@ const BasketItem = ({
             <Typography variant="h6">{item.quantity}</Typography>
 
             <StyledBasketItemButton
+              onClick={() => addBasketItem({product: item, quantity: 1})}
               color='success'
               size='small'
             >
@@ -105,6 +111,7 @@ const BasketItem = ({
       </Box>
 
       <StyledBasketItemButton
+        onClick={() => removeBasketItem({productId: item.productId, quantity: item.quantity})}
         size="small"
         color="error"
         sx={{
