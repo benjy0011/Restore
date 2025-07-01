@@ -2,6 +2,7 @@ import { Button, Card, CardActions, CardContent, CardMedia, Typography } from "@
 import type { Product } from "../../app/models/product"
 import { Link } from "react-router-dom"
 import { useAddBasketItemMutation } from "../basket/basketApi"
+import { currencyFormat } from "../../lib/util"
 
 interface Props {
   product: Product
@@ -47,7 +48,7 @@ const ProductCard = ({
           variant="h6"
           color="secondary"
         >
-          ${(product.price / 100).toFixed(2)}
+          {currencyFormat(product.price)}
         </Typography>
       </CardContent>
 
