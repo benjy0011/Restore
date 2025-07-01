@@ -48,7 +48,7 @@ function App() {
         <Container 
           maxWidth={"xl"} 
           sx={{
-            pt: 2,
+            pt: 3,
           }}
         >     
           <Outlet />

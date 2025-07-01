@@ -1,9 +1,10 @@
-import { Button, Grid, Paper, Typography } from "@mui/material";
+import { Box, Button, Grid, Paper, Typography } from "@mui/material";
 import CircularProgressScreen from "../../app/shared/components/CircularProgressScreen";
 import { useFetchBasketQuery } from "./basketApi";
 import { Link } from "react-router-dom";
 import { ProductionQuantityLimits } from "@mui/icons-material";
 import BasketItem from "./BasketItem";
+import OrderSummary from "../../app/shared/components/OrderSummary";
 
 const BasketPage = () => {
   const { data, isLoading } = useFetchBasketQuery();
@@ -42,7 +43,17 @@ const BasketPage = () => {
         ))}
       </Grid>
 
-      <Grid size={{ xs: 12, md: 4 }}></Grid>
+      <Grid size={{ xs: 12, md: 4 }}>
+        <Box 
+          sx={{
+            position: 'sticky',
+            top: { xs: 0, md: 70 },  // adjust to toolbar height
+            alignSelf: 'flex-start',
+          }}
+        >
+          <OrderSummary />
+        </Box>
+      </Grid>
     </Grid>
   );
 };
