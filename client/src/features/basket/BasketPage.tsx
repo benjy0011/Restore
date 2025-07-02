@@ -11,7 +11,7 @@ const BasketPage = () => {
 
   if (isLoading) return <CircularProgressScreen />;
 
-  if (!data)
+  if (!data || data.items.length === 0)
     return (
       <Paper
         sx={{
