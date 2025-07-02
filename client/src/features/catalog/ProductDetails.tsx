@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState, type ChangeEvent } from "react";
 import { useParams } from "react-router-dom";
 import {
   Button,
@@ -14,15 +14,23 @@ import {
 } from "@mui/material";
 import CircularProgressScreen from "../../app/shared/components/CircularProgressScreen";
 import { useFetchProductDetailQuery } from "./catalogApi";
+import { useAddBasketItemMutation, useFetchBasketQuery, useRemoveBasketItemMutation } from "../basket/basketApi";
+import type { BasketItem } from "../../app/models/basket";
+import { currencyFormat } from "../../lib/util";
 
 const ProductDetails = () => {
   const { id } = useParams();
-  // const [product, setProduct] = useState<Product | null>(null);
-  const [quantity, setQuantity] = useState<string>("0");
+  const [removeBasketItem] = useRemoveBasketItemMutation();
+  const [addBasketItem] = useAddBasketItemMutation();
+  const {data: basket} = useFetchBasketQuery();
+  const item: BasketItem | undefined = basket?.items.find(x => x.productId === +id!);
 
-  const handleAddQuantity = (): void => {
-    setQuantity((prev) => String(Number(prev) + 1));
-  };
+  // const [product, setProduct] = useState<Product | null>(null);
+  const [quantity, setQuantity] = useState(0);
+
+  useEffect(() => {
+    if (item) setQuantity(item.quantity)
+  }, [item])
 
   // useEffect(() => {
   //   fetch(`https://localhost:5001/api/products/${id}`)
@@ -34,6 +42,24 @@ const ProductDetails = () => {
   const { data: product, isLoading } = useFetchProductDetailQuery(id ? +id : 0);
 
   if (!product || isLoading) return <CircularProgressScreen />;
+
+
+  const handleUpdateBasket = (): void => {
+    const updatedQuantity = item ? Math.abs(quantity - item.quantity) : quantity;
+
+    if (!item || quantity > item.quantity) {
+      addBasketItem({product: product, quantity: updatedQuantity})
+    } else {
+      removeBasketItem({productId: product.id, quantity: updatedQuantity})
+    }
+  }
+
+  const handleInputChange = (event: ChangeEvent<HTMLInputElement>) => {
+    const value = +event.currentTarget.value;
+
+    if (value >= 0) setQuantity(value);
+
+  }
 
   const productDetails = [
     { label: "Name", value: product.name },
@@ -68,7 +94,7 @@ const ProductDetails = () => {
         <Typography variant="h3">{product?.name}</Typography>
         <Divider sx={{ mb: 2 }} />
         <Typography variant="h4" color="secondary">
-          ${(product?.price ?? 0 / 100).toFixed(2)}
+          {currencyFormat(product.price)}
         </Typography>
 
         <TableContainer>
@@ -104,16 +130,19 @@ const ProductDetails = () => {
               label="Quantity in cart"
               fullWidth
               value={quantity}
-              onChange={(e) => setQuantity(e.target.value)}
+              onChange={handleInputChange}
+              onWheel={
+                (e) => e.target instanceof HTMLElement && e.target.blur() // prevent scroller
+              }
               sx={{
-                "& input::-webkit-outer-spin-button, & input::-webkit-inner-spin-button":
-                  {
-                    "-webkit-appearance": "none",
-                    margin: 0,
-                  },
-                "& input[type=number]": {
-                  "-moz-appearance": "textfield",
-                },
+                // "& input::-webkit-outer-spin-button, & input::-webkit-inner-spin-button":
+                //   {
+                //     "-webkit-appearance": "none",
+                //     margin: 0,
+                //   },
+                // "& input[type=number]": {
+                //   "-moz-appearance": "textfield",
+                // },
               }}
             />
           </Grid>
@@ -127,9 +156,10 @@ const ProductDetails = () => {
               sx={{
                 height: "100%",
               }}
-              onClick={handleAddQuantity}
+              onClick={handleUpdateBasket}
+              disabled={quantity === item?.quantity || !item && quantity === 0}
             >
-              Add to Basket
+              {item ? 'Update quantity' : 'Add to basket'}
             </Button>
           </Grid>
         </Grid>
