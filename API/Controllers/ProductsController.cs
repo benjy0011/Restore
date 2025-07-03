@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Http;
 using API.Entities;
 using API.Data;
 using Microsoft.EntityFrameworkCore;
+using API.Extensions;
 
 namespace API.Controllers;
 
@@ -23,9 +24,15 @@ public class ProductsController(StoreContext _context) : BaseApiController
   // }
 
   [HttpGet]
-  public async Task<ActionResult<List<Product>>> GetProducts()
+  public async Task<ActionResult<List<Product>>> GetProducts(string orderBy) // orderBy is urlParam, exp: orderBy=price
   {
-    return await _context.Products.ToListAsync();
+    // the 'query' do nothing until we call it with '.toList'
+    var query = _context.Products
+      .Sort(orderBy)
+      .AsQueryable();
+
+    // return await _context.Products.ToListAsync();
+    return await query.ToListAsync();
   }
 
   [HttpGet("{id}")]
@@ -37,6 +44,6 @@ public class ProductsController(StoreContext _context) : BaseApiController
 
     return product;
   }
-  
-  
+
+
 }
