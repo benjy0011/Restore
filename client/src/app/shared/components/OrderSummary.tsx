@@ -10,14 +10,27 @@ import { currencyFormat } from "../../../lib/util";
 import { useFetchBasketQuery } from "../../../features/basket/basketApi";
 import { useMemo } from "react";
 import type { BasketItem } from "../../models/basket";
+import { Link } from "react-router-dom";
 
 export default function OrderSummary() {
   const { data: basket } = useFetchBasketQuery();
 
-  const subtotal = useMemo((): number => basket?.items.reduce((sum: number, item: BasketItem) => sum += item.price * item.quantity, 0) ?? 0
-  , [basket]);
-  const deliveryFee = useMemo((): number => subtotal > 10000 ? 0 : 5000, [subtotal]);
-  const total = useMemo((): number => subtotal + deliveryFee, [subtotal, deliveryFee])
+  const subtotal = useMemo(
+    (): number =>
+      basket?.items.reduce(
+        (sum: number, item: BasketItem) => (sum += item.price * item.quantity),
+        0
+      ) ?? 0,
+    [basket]
+  );
+  const deliveryFee = useMemo(
+    (): number => (subtotal > 10000 ? 0 : 5000),
+    [subtotal]
+  );
+  const total = useMemo(
+    (): number => subtotal + deliveryFee,
+    [subtotal, deliveryFee]
+  );
 
   return (
     <Box
@@ -58,10 +71,23 @@ export default function OrderSummary() {
         </Box>
 
         <Box mt={2}>
-          <Button variant="contained" color="primary" fullWidth sx={{ mb: 1 }}>
+          <Button
+            component={Link}
+            to='/checkout'
+            variant="contained" 
+            color="primary" 
+            fullWidth 
+            sx={{ mb: 1 }}
+          >
             Checkout
           </Button>
-          <Button fullWidth>Continue Shopping</Button>
+          <Button
+            component={Link}
+            to='/catalog' 
+            fullWidth
+          >
+            Continue Shopping
+        </Button>
         </Box>
       </Paper>
 

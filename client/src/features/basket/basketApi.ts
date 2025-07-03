@@ -30,23 +30,35 @@ export const basketApi = createApi({
         }
       },
       onQueryStarted: async ({product, quantity}, {dispatch, queryFulfilled}) => { // invalidate 'Basket' cache upon this action
+        let isNewBasket = false;
         const patchResult = dispatch(
           basketApi.util.updateQueryData('fetchBasket', undefined, (draft) => {
             const productId = isBasketItem(product) ? product.productId : product.id;
-            const existingItem = draft.items.find(item => item.productId === productId);
+            
+            if (!draft?.basketId) isNewBasket = true;
+            
+            if (!isNewBasket) {
+              // update the cache directly
+              const existingItem = draft.items.find(item => item.productId === productId);
 
-            if (existingItem) existingItem.quantity += quantity;
-            else draft.items.push(
-              isBasketItem(product) 
-              ? product
-              : new BasketItem(product, quantity)
-            );
+              if (existingItem) existingItem.quantity += quantity;
+              else draft.items.push(
+                isBasketItem(product) 
+                ? product
+                : {...product, productId: product.id, quantity}
+              );
+            }
+            
           })
         )
         
         try {
           await queryFulfilled;
           // dispatch(basketApi.util.invalidateTags(['Basket']))  // removed as we directly update the existing/cached data
+
+          
+          // Use invalidateTags → refetch when the data doesn't exist yet
+          if (isNewBasket) dispatch(basketApi.util.invalidateTags(['Basket'])) // fetch from api if basket in cookie is empty instead of directly update the cache
         } catch (error) {
           console.log(error);
           patchResult.undo();
