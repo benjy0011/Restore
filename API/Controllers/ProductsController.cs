@@ -4,6 +4,7 @@ using API.Entities;
 using API.Data;
 using Microsoft.EntityFrameworkCore;
 using API.Extensions;
+using API.RequestHelpers;
 
 namespace API.Controllers;
 
@@ -24,15 +25,27 @@ public class ProductsController(StoreContext _context) : BaseApiController
   // }
 
   [HttpGet]
-  public async Task<ActionResult<List<Product>>> GetProducts(string orderBy) // orderBy is urlParam, exp: orderBy=price
+  public async Task<ActionResult<List<Product>>> GetProducts(
+    // string? orderBy, string? searchTerm, string? brands, string? types // orderBy is urlParam, exp: ?orderBy=price
+    [FromQuery] ProductParams productParams
+    )
   {
-    // the 'query' do nothing until we call it with '.toList'
+    // the 'query' do nothing until we call it with '.toList' because of ".AsQueryable();"
     var query = _context.Products
-      .Sort(orderBy)
+      .Sort(productParams.OrderBy)
+      .Search(productParams.SearchTerm)
+      .Filter(productParams.Brands, productParams.Types)
       .AsQueryable();
 
+    var products = await PagedList<Product>.ToPagedList(query, productParams.PageNumber, productParams.PageSize);
+
+    Response.AddPaginationHeader(products.Metadata);
+
     // return await _context.Products.ToListAsync();
-    return await query.ToListAsync();
+    // return await query.ToListAsync();
+
+    // return Ok(new { Items = products, products.Metadata });
+    return products;
   }
 
   [HttpGet("{id}")]
@@ -45,5 +58,12 @@ public class ProductsController(StoreContext _context) : BaseApiController
     return product;
   }
 
+  [HttpGet("filters")]
+  public async Task<IActionResult> GetFilters()
+  {
+    var brands = await _context.Products.Select(x => x.Brand).Distinct().ToListAsync();
+    var types = await _context.Products.Select(x => x.Type).Distinct().ToListAsync();
 
+    return Ok(new { brands, types });
+  }
 }
