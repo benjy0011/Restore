@@ -1,36 +1,39 @@
-import { Box } from "@mui/material";
+import { Grid } from "@mui/material";
 import type { Product } from "../../app/models/product";
 import ProductCard from "./ProductCard";
-import CircularProgressScreen from "../../app/shared/components/CircularProgressScreen";
 
 interface Props {
   productListing: Product[] | undefined;
-  isLoading: boolean;
 }
 
-const ProductList = ({ productListing, isLoading }: Props) => {
-  if (isLoading) return <CircularProgressScreen />;
-
+const ProductList = ({ productListing }: Props) => {
   return (
-    <Box
-      sx={{
-        display: "grid",
-        gridTemplateColumns: "repeat(auto-fit, 280px)", // card width
-        justifyContent: "center",
-        padding: "0 auto",
-        rowGap: 3,
-        columnGap: 3,
+    // <Box
+    //   sx={{
+    //     display: "grid",
+    //     gridTemplateColumns: "repeat(auto-fit, 280px)", // card width
+    //     justifyContent: "center",
+    //     padding: "0 auto",
+    //     rowGap: 3,
+    //     columnGap: 3,
+    //   }}
+    // >
+    //   {productListing?.map((item) => (
+    //     <ProductCard product={item} key={item.id} />
+    //   ))}
+    // </Box>
 
-        // display: 'flex',
-        // flexWrap: 'wrap',
-        // gap: 3,
-        // justifyContent: 'center',
-      }}
-    >
-      {productListing?.map((item) => (
-        <ProductCard product={item} key={item.id} />
+    <Grid container spacing={{}}>
+      {productListing?.map((product) => (
+        <Grid 
+          key={product.id} 
+          size={{ xs: 12, sm: 6, md: 4, lg: 3 }} 
+          display="flex"
+        >
+          <ProductCard key={product.id} product={product} />
+        </Grid>
       ))}
-    </Box>
+    </Grid>
   );
 };
 

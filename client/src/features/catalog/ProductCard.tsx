@@ -1,18 +1,22 @@
-import { Button, Card, CardActions, CardContent, CardMedia, Typography } from "@mui/material"
-import type { Product } from "../../app/models/product"
-import { Link } from "react-router-dom"
-import { useAddBasketItemMutation } from "../basket/basketApi"
-import { currencyFormat } from "../../lib/util"
+import {
+  Button,
+  Card,
+  CardActions,
+  CardContent,
+  CardMedia,
+  Typography,
+} from "@mui/material";
+import type { Product } from "../../app/models/product";
+import { Link } from "react-router-dom";
+import { useAddBasketItemMutation } from "../basket/basketApi";
+import { currencyFormat } from "../../lib/util";
 
 interface Props {
-  product: Product
+  product: Product;
 }
 
-const ProductCard = ({
-  product,
-}: Props) => {
-
-  const [addBasketItem, {isLoading}] = useAddBasketItemMutation();
+const ProductCard = ({ product }: Props) => {
+  const [addBasketItem, { isLoading }] = useAddBasketItemMutation();
 
   return (
     <Card
@@ -20,22 +24,22 @@ const ProductCard = ({
       sx={{
         width: 280,
         borderRadius: 2,
-        display: 'flex',
-        flexDirection: 'column',
-        justifyContent: 'space-between'
+        display: "flex",
+        flexDirection: "column",
+        justifyContent: "space-between",
       }}
     >
       <CardMedia
         sx={{
-          height: 240,  // 240 px
-          backgroundSize: 'cover'
+          height: 240, // 240 px
+          backgroundSize: "cover",
         }}
         image={product.pictureUrl}
         title={product.name}
       />
 
       <CardContent>
-        <Typography 
+        <Typography
           gutterBottom
           variant="subtitle2"
           color="secondary"
@@ -44,29 +48,28 @@ const ProductCard = ({
           {product.name}
         </Typography>
 
-        <Typography
-          variant="h6"
-          color="secondary"
-        >
+        <Typography variant="h6" color="secondary">
           {currencyFormat(product.price)}
         </Typography>
       </CardContent>
 
       <CardActions
         sx={{
-          justifyContent: "space-between"
+          justifyContent: "space-between",
         }}
       >
         <Button
           loading={isLoading}
-          onClick={() => addBasketItem({product: product, quantity: 1})}
+          onClick={() => addBasketItem({ product: product, quantity: 1 })}
         >
           Add to cart
         </Button>
-        <Button component={Link} to={`/catalog/${product.id}`}>View</Button>
+        <Button component={Link} to={`/catalog/${product.id}`}>
+          View
+        </Button>
       </CardActions>
     </Card>
-  )
-}
+  );
+};
 
-export default ProductCard
+export default ProductCard;

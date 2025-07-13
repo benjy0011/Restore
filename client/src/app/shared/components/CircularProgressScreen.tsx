@@ -1,9 +1,12 @@
-import { CircularProgress } from "@mui/material"
+import { CircularProgress } from "@mui/material";
 
-const CircularProgressScreen = () => {
+interface Props {
+  size?: string | undefined;
+}
 
+const CircularProgressScreen = ({ size }: Props) => {
   return (
-    <div 
+    <div
       style={{
         display: "flex",
         width: "100%",
@@ -12,8 +15,8 @@ const CircularProgressScreen = () => {
         paddingTop: "10px",
       }}
     >
-      <CircularProgress />
+      <CircularProgress size={size} />
     </div>
-  )
-}
-export default CircularProgressScreen
+  );
+};
+export default CircularProgressScreen;
