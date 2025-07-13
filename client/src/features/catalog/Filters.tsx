@@ -6,10 +6,10 @@ import {
   FormGroup,
   Paper,
   Radio,
-  TextField,
 } from "@mui/material";
 import { useFetchFiltersQuery } from "./catalogApi";
 import CircularProgressScreen from "../../app/shared/components/CircularProgressScreen";
+import Search from "./Search";
 
 // value need to match API
 const sortOptions = [
@@ -24,7 +24,7 @@ const Filters = () => {
   return (
     <Box display="flex" flexDirection="column" gap={3}>
       <Paper>
-        <TextField label="Search products" variant="outlined" fullWidth />
+        <Search />
       </Paper>
 
       <Paper sx={{ p: 3 }}>
