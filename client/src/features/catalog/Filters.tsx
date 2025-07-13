@@ -1,15 +1,16 @@
 import {
   Box,
   Checkbox,
-  FormControl,
   FormControlLabel,
   FormGroup,
   Paper,
-  Radio,
 } from "@mui/material";
 import { useFetchFiltersQuery } from "./catalogApi";
 import CircularProgressScreen from "../../app/shared/components/CircularProgressScreen";
 import Search from "./Search";
+import RadioButtonGroup from "../../app/shared/components/RadioButtonGroup";
+import { useAppDispatch, useAppSelector } from "../../app/store/store";
+import { setOrderBy } from "./catalogSlice";
 
 // value need to match API
 const sortOptions = [
@@ -20,6 +21,8 @@ const sortOptions = [
 
 const Filters = () => {
   const { data, isLoading } = useFetchFiltersQuery();
+  const { orderBy } = useAppSelector(state => state.catalog);
+  const dispatch = useAppDispatch();
 
   return (
     <Box display="flex" flexDirection="column" gap={3}>
@@ -28,16 +31,11 @@ const Filters = () => {
       </Paper>
 
       <Paper sx={{ p: 3 }}>
-        <FormControl>
-          {sortOptions.map(({ value, label }) => (
-            <FormControlLabel
-              key={label}
-              control={<Radio sx={{ py: 0.7 }} />}
-              label={label}
-              value={value}
-            />
-          ))}
-        </FormControl>
+        <RadioButtonGroup
+          selectedValue={orderBy}
+          options={sortOptions}
+          onChange={e => dispatch(setOrderBy(e.target.value))}
+        />
       </Paper>
 
       <Paper sx={{ p: 3 }}>
