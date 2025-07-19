@@ -34,7 +34,7 @@ const Catalog = () => {
         <Filters data={filterData} isLoading={isFilterLoading} />
       </Grid>
 
-      <Grid size={{ xs: 12, md: 9}}>
+      <Grid size={{ xs: 12, md: 9}} mb={2}>
         {productData.items && productData.items.length > 0 ? (
           <>
             <ProductList productListing={productData?.items} />
