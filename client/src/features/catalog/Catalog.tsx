@@ -1,11 +1,13 @@
 // import { useEffect, useState } from "react";
 // import type { Product } from "../../app/models/product"
-import { Grid } from "@mui/material";
+import { Grid, Typography } from "@mui/material";
 import { useFetchProductsQuery } from "./catalogApi";
 import ProductList from "./ProductList";
 import Filters from "./Filters";
 import CircularProgressScreen from "../../app/shared/components/CircularProgressScreen";
-import { useAppSelector } from "../../app/store/store";
+import { useAppDispatch, useAppSelector } from "../../app/store/store";
+import AppPagination from "../../app/shared/components/AppPagination";
+import { setPageNumber } from "./catalogSlice";
 
 const Catalog = () => {
   // const [productListing, setProductListing] = useState<Product[]>([]); // only check for the type for 'name' and 'price', if contain other field, will be stored no matter what
@@ -18,9 +20,10 @@ const Catalog = () => {
   //   }, [])
 
   const productParams = useAppSelector((state) => state.catalog);
-  const { data: productListing, isLoading } = useFetchProductsQuery(productParams);
+  const { data, isLoading } = useFetchProductsQuery(productParams);
+  const dispatch = useAppDispatch();
 
-  if (isLoading) return <CircularProgressScreen />;
+  if (isLoading || !data) return <CircularProgressScreen />;
 
   return (
     <Grid container spacing={4}>
@@ -29,7 +32,20 @@ const Catalog = () => {
       </Grid>
 
       <Grid size={9}>
-        <ProductList productListing={productListing} />
+        {data.items && data.items.length > 0 ? (
+          <>
+            <ProductList productListing={data?.items} />
+
+            <AppPagination
+              metadata={data.pagination}
+              onPageChange={(page: number) => dispatch(setPageNumber(page))}
+            />
+          </>
+        ) : (
+          <Typography variant="h5">
+            There are no results for this filter.
+          </Typography>
+        )}
       </Grid>
     </Grid>
   );

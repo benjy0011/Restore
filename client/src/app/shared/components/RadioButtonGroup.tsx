@@ -23,7 +23,7 @@ const RadioButtonGroup = ({ options, onChange, selectedValue }: Props) => {
         {options.map(({ value, label }) => (
           <FormControlLabel
             key={label}
-            control={<Radio color="secondary" sx={{ py: 0.7 }} />}
+            control={<Radio color="primary" sx={{ py: 0.7 }} />}
             label={label}
             value={value}
           />

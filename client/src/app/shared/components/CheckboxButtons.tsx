@@ -36,7 +36,7 @@ const CheckboxButtons = ({
               <Checkbox
                 checked={checkedItems.includes(item)}
                 onClick={() => handleToggle(item)}
-                color="secondary"
+                color="primary"
                 sx={{ py: 0.7, fontSize: 40 }} 
               />
             }
