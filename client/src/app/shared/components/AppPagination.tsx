@@ -26,7 +26,7 @@ const AppPagination = ({
       }}
     >
       <Typography>
-        Displaying {startItem}-{endItem} of {totalCount} items
+        Displaying {startItem + 1}-{endItem} of {totalCount} items
       </Typography>
       <Pagination
         color='primary'
