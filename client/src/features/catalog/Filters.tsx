@@ -1,14 +1,23 @@
 import {
   Box,
+  Button,
   Paper,
 } from "@mui/material";
-import { useFetchFiltersQuery } from "./catalogApi";
+
 import CircularProgressScreen from "../../app/shared/components/CircularProgressScreen";
 import Search from "./Search";
 import RadioButtonGroup from "../../app/shared/components/RadioButtonGroup";
 import { useAppDispatch, useAppSelector } from "../../app/store/store";
-import { setBrands, setOrderBy, setTypes } from "./catalogSlice";
+import { resetParams, setBrands, setOrderBy, setTypes } from "./catalogSlice";
 import CheckboxButtons from "../../app/shared/components/CheckboxButtons";
+import { Clear } from "@mui/icons-material";
+import type { Filter } from "../../app/models/filter";
+
+type Props = {
+  data: Filter;
+  isLoading : boolean;
+}
+
 
 // value need to match API
 const sortOptions = [
@@ -17,8 +26,11 @@ const sortOptions = [
   { value: "price", label: "Price: Low to high" },
 ];
 
-const Filters = () => {
-  const { data, isLoading } = useFetchFiltersQuery();
+const Filters = ({
+  data,
+  isLoading
+}: Props) => {
+  
   const { orderBy, types, brands } = useAppSelector(state => state.catalog);
   const dispatch = useAppDispatch();
 
@@ -59,6 +71,14 @@ const Filters = () => {
           />
         )}
       </Paper>
+
+      <Button
+        onClick={() => dispatch(resetParams())}
+        endIcon={<Clear />}
+        variant="outlined"
+      >
+        Reset
+      </Button>
     </Box>
   );
 };

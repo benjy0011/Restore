@@ -29,6 +29,7 @@ const ProductList = ({ productListing }: Props) => {
           key={product.id} 
           size={{ xs: 12, sm: 6, md: 4, lg: 3 }} 
           display="flex"
+          justifyContent="center"
         >
           <ProductCard key={product.id} product={product} />
         </Grid>

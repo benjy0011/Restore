@@ -2,7 +2,7 @@
 import NavBar from "./NavBar";
 import { Box, Container, CssBaseline, ThemeProvider } from "@mui/material";
 
-import { Outlet } from "react-router-dom";
+import { Outlet, ScrollRestoration } from "react-router-dom";
 import { getTheme } from "../../theme/theme";
 import { useAppSelector } from "../store/store";
 import { getBackgroundColor } from "../../styling/getBackgroundColor";
@@ -35,6 +35,7 @@ function App() {
 
   return (
     <ThemeProvider theme={theme}>
+      <ScrollRestoration />
       <CssBaseline />
       <NavBar />
 

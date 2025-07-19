@@ -7,6 +7,7 @@ import { baseQueryWithErrorHandling } from "../../app/api/baseApi";
 import type { ProductParams } from "../../app/models/productParams";
 import { filterEmptyValues } from "../../lib/util";
 import type { Pagination } from "../../app/models/pagination";
+import type { Filter } from "../../app/models/filter";
 
 export const catalogApi = createApi({
   reducerPath: 'catalogApi', // unique key for API
@@ -34,7 +35,7 @@ export const catalogApi = createApi({
     fetchProductDetail: builder.query<Product, number>({
       query: (productId) => ({ url: `products/${productId}` })
     }),
-    fetchFilters: builder.query<{brands: string[], types: string[]}, void>({
+    fetchFilters: builder.query<Filter, void>({
       query: () => 'products/filters'
     })
   })

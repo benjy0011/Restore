@@ -18,7 +18,10 @@ const RadioButtonGroup = ({ options, onChange, selectedValue }: Props) => {
       <RadioGroup
         onChange={onChange}
         value={selectedValue}
-        sx={{my: 0}}
+        sx={{
+          my: 0,
+          wordBreak: "break-word"
+        }}
       >
         {options.map(({ value, label }) => (
           <FormControlLabel

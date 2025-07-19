@@ -1,7 +1,7 @@
 // import { useEffect, useState } from "react";
 // import type { Product } from "../../app/models/product"
 import { Grid, Typography } from "@mui/material";
-import { useFetchProductsQuery } from "./catalogApi";
+import { useFetchFiltersQuery, useFetchProductsQuery } from "./catalogApi";
 import ProductList from "./ProductList";
 import Filters from "./Filters";
 import CircularProgressScreen from "../../app/shared/components/CircularProgressScreen";
@@ -20,25 +20,31 @@ const Catalog = () => {
   //   }, [])
 
   const productParams = useAppSelector((state) => state.catalog);
-  const { data, isLoading } = useFetchProductsQuery(productParams);
+  const { data: productData, isLoading: isProductLoading } = useFetchProductsQuery(productParams);
+  const { data: filterData, isLoading: isFilterLoading } = useFetchFiltersQuery();
   const dispatch = useAppDispatch();
 
-  if (isLoading || !data) return <CircularProgressScreen />;
+  const isLoading = isProductLoading || isFilterLoading;
+
+  if (isLoading || !productData || !filterData) return <CircularProgressScreen />;
 
   return (
     <Grid container spacing={4}>
-      <Grid size={3}>
-        <Filters />
+      <Grid size={{ xs: 12, md: 3}}>
+        <Filters data={filterData} isLoading={isFilterLoading} />
       </Grid>
 
-      <Grid size={9}>
-        {data.items && data.items.length > 0 ? (
+      <Grid size={{ xs: 12, md: 9}}>
+        {productData.items && productData.items.length > 0 ? (
           <>
-            <ProductList productListing={data?.items} />
+            <ProductList productListing={productData?.items} />
 
             <AppPagination
-              metadata={data.pagination}
-              onPageChange={(page: number) => dispatch(setPageNumber(page))}
+              metadata={productData.pagination}
+              onPageChange={(page: number) => {
+                dispatch(setPageNumber(page));
+                window.scrollTo({ top: 0, behavior: "smooth" })
+              }}
             />
           </>
         ) : (

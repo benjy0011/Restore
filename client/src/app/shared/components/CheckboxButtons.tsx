@@ -28,7 +28,11 @@ const CheckboxButtons = ({
   }
 
   return (
-    <FormGroup>
+    <FormGroup
+      sx={{
+        wordBreak: "break-word"
+      }}
+    >
       {items.map((item) => (
           <FormControlLabel
             key={item}
