@@ -17,16 +17,16 @@ export const router = createBrowserRouter([
     element: <App />,
     children: [
       {path: '', element: <HomePage />},
-      {path: '/catalog', element: <Catalog />},
-      {path: '/catalog/:id', element: <ProductDetails />},
-      {path: '/about', element: <AboutPage />},
-      {path: '/contact', element: <ContactPage />},
-      {path: '/basket', element: <BasketPage />},
-      {path: '/checkout', element: <CheckoutPage />},
-      {path: '/login', element: <LoginForm />},
+      {path: 'catalog', element: <Catalog />},
+      {path: 'catalog/:id', element: <ProductDetails />},
+      {path: 'about', element: <AboutPage />},
+      {path: 'contact', element: <ContactPage />},
+      {path: 'basket', element: <BasketPage />},
+      {path: 'checkout', element: <CheckoutPage />},
+      {path: 'login', element: <LoginForm />},
 
-      {path: '/server-error', element: <ServerError />},
-      {path: '/not-found', element: <NotFound />},
+      {path: 'server-error', element: <ServerError />},
+      {path: 'not-found', element: <NotFound />},
       {path: '*', element: <Navigate replace to='/not-found' />}
     ]
   }
