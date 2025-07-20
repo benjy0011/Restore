@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "sPBqVO4vldk=",
+  "dgSpecHash": "GYG3DjI5hoQ=",
   "success": true,
   "projectFilePath": "C:\\Users\\24090\\OneDrive - PCGroup\\Desktop\\Work\\self learn full stack\\Restore\\API\\API.csproj",
   "expectedPackageFiles": [
@@ -21,7 +21,7 @@
     "C:\\Users\\24090\\.nuget\\packages\\microsoft.entityframeworkcore\\9.0.7\\microsoft.entityframeworkcore.9.0.7.nupkg.sha512",
     "C:\\Users\\24090\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\9.0.7\\microsoft.entityframeworkcore.abstractions.9.0.7.nupkg.sha512",
     "C:\\Users\\24090\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\9.0.7\\microsoft.entityframeworkcore.analyzers.9.0.7.nupkg.sha512",
-    "C:\\Users\\24090\\.nuget\\packages\\microsoft.entityframeworkcore.design\\9.0.5\\microsoft.entityframeworkcore.design.9.0.5.nupkg.sha512",
+    "C:\\Users\\24090\\.nuget\\packages\\microsoft.entityframeworkcore.design\\9.0.7\\microsoft.entityframeworkcore.design.9.0.7.nupkg.sha512",
     "C:\\Users\\24090\\.nuget\\packages\\microsoft.entityframeworkcore.relational\\9.0.7\\microsoft.entityframeworkcore.relational.9.0.7.nupkg.sha512",
     "C:\\Users\\24090\\.nuget\\packages\\microsoft.entityframeworkcore.sqlite\\9.0.5\\microsoft.entityframeworkcore.sqlite.9.0.5.nupkg.sha512",
     "C:\\Users\\24090\\.nuget\\packages\\microsoft.entityframeworkcore.sqlite.core\\9.0.5\\microsoft.entityframeworkcore.sqlite.core.9.0.5.nupkg.sha512",
@@ -30,7 +30,7 @@
     "C:\\Users\\24090\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\9.0.7\\microsoft.extensions.configuration.abstractions.9.0.7.nupkg.sha512",
     "C:\\Users\\24090\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\9.0.7\\microsoft.extensions.dependencyinjection.9.0.7.nupkg.sha512",
     "C:\\Users\\24090\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\9.0.7\\microsoft.extensions.dependencyinjection.abstractions.9.0.7.nupkg.sha512",
-    "C:\\Users\\24090\\.nuget\\packages\\microsoft.extensions.dependencymodel\\9.0.5\\microsoft.extensions.dependencymodel.9.0.5.nupkg.sha512",
+    "C:\\Users\\24090\\.nuget\\packages\\microsoft.extensions.dependencymodel\\9.0.7\\microsoft.extensions.dependencymodel.9.0.7.nupkg.sha512",
     "C:\\Users\\24090\\.nuget\\packages\\microsoft.extensions.identity.core\\9.0.7\\microsoft.extensions.identity.core.9.0.7.nupkg.sha512",
     "C:\\Users\\24090\\.nuget\\packages\\microsoft.extensions.identity.stores\\9.0.7\\microsoft.extensions.identity.stores.9.0.7.nupkg.sha512",
     "C:\\Users\\24090\\.nuget\\packages\\microsoft.extensions.logging\\9.0.7\\microsoft.extensions.logging.9.0.7.nupkg.sha512",
@@ -54,7 +54,7 @@
     "C:\\Users\\24090\\.nuget\\packages\\system.memory\\4.5.3\\system.memory.4.5.3.nupkg.sha512",
     "C:\\Users\\24090\\.nuget\\packages\\system.reflection.metadata\\7.0.0\\system.reflection.metadata.7.0.0.nupkg.sha512",
     "C:\\Users\\24090\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512",
-    "C:\\Users\\24090\\.nuget\\packages\\system.text.json\\9.0.5\\system.text.json.9.0.5.nupkg.sha512",
+    "C:\\Users\\24090\\.nuget\\packages\\system.text.json\\9.0.7\\system.text.json.9.0.7.nupkg.sha512",
     "C:\\Users\\24090\\.nuget\\packages\\system.threading.channels\\7.0.0\\system.threading.channels.7.0.0.nupkg.sha512"
   ],
   "logs": []
