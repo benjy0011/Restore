@@ -17,6 +17,7 @@ export const getTheme = (
 
     typography: {
       fontFamily: [
+        "Avenir",
         "Quicksand",
         "Roboto"
       ].join(", ")
