@@ -5,15 +5,17 @@ import { Link } from "react-router-dom"
 import { useForm } from "react-hook-form"
 import { loginSchema, type LoginSchema } from "../../lib/schemas/loginSchema"
 import { zodResolver } from "@hookform/resolvers/zod";
+import { useLoginMutation } from "./accountApi"
 
 const LoginForm = () => {
+  const [ login, { isLoading } ] = useLoginMutation();
   const { register, handleSubmit, formState: {errors} } = useForm<LoginSchema>({
     mode: 'onTouched', // validation will kick in once lost focus
     resolver: zodResolver(loginSchema)
   });
 
-  const onSubmit = (data: LoginSchema) => {
-    console.log(data);
+  const onSubmit = async (data: LoginSchema) => {
+    await login(data);
   }
 
   const [ showPassword, setShowPassword ] = useState<boolean>(false);
@@ -83,7 +85,7 @@ const LoginForm = () => {
             }}
           />
 
-          <Button type="submit">
+          <Button type="submit" loading={isLoading}>
             Sign In
           </Button>
 
