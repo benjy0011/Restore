@@ -1,6 +1,8 @@
 using API.Data;
 using API.Middleware;
+using API.Entities;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.AspNetCore.Identity;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -20,6 +22,14 @@ builder.Services.AddCors();
 // Singleton - reuse everytime when app starts [reused everywhere when app starts]
 builder.Services.AddTransient<ExceptionMiddleware>();
 
+// User Identity
+builder.Services
+  .AddIdentityApiEndpoints<User>(opt =>
+  {
+    opt.User.RequireUniqueEmail = true;
+  })
+  .AddRoles<IdentityRole>()
+  .AddEntityFrameworkStores<StoreContext>();
 
 // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
 // builder.Services.AddOpenApi(); // not cover in this course
@@ -49,9 +59,12 @@ app.UseCors(opt =>
 
 // app.UseHttpsRedirection(); // not using 
 
-// app.UseAuthorization(); // not using
+// Auth middleware
+app.UseAuthentication();
+app.UseAuthorization();
 
 app.MapControllers();
+app.MapGroup("api").MapIdentityApi<User>(); // api/login, configuring this will allow us to have access to builtin auth api
 
 DbInitializer.InitDb(app);
 
