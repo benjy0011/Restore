@@ -3,10 +3,14 @@ import { Box, Button, Container, IconButton, Paper, TextField, Typography } from
 import { useState } from "react"
 import { Link } from "react-router-dom"
 import { useForm } from "react-hook-form"
-import type { LoginSchema } from "../../lib/schemas/loginSchema"
+import { loginSchema, type LoginSchema } from "../../lib/schemas/loginSchema"
+import { zodResolver } from "@hookform/resolvers/zod";
 
 const LoginForm = () => {
-  const { register, handleSubmit, formState: {errors} } = useForm<LoginSchema>();
+  const { register, handleSubmit, formState: {errors} } = useForm<LoginSchema>({
+    mode: 'onTouched', // validation will kick in once lost focus
+    resolver: zodResolver(loginSchema)
+  });
 
   const onSubmit = (data: LoginSchema) => {
     console.log(data);
@@ -51,7 +55,8 @@ const LoginForm = () => {
             fullWidth
             label="Email"
             autoFocus
-            {...register('email', {required: 'Email is required'})}
+            // {...register('email', {required: 'Email is required'})} // no longer need if import zod resolver
+            {...register('email')}
             error={!!errors.email}
             helperText={errors.email?.message}
           />
@@ -59,7 +64,8 @@ const LoginForm = () => {
           <TextField 
             fullWidth
             label="Password"
-            {...register('password', {required: 'Password is required'})}
+            // {...register('password', {required: 'Password is required'})}
+            {...register('password')}
             error={!!errors.password}
             helperText={errors.password?.message}
             type={showPassword ? "text" : "password"}
