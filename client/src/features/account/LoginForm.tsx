@@ -2,8 +2,16 @@ import { LockOutline, VisibilityOffOutlined, VisibilityOutlined } from "@mui/ico
 import { Box, Button, Container, IconButton, Paper, TextField, Typography } from "@mui/material"
 import { useState } from "react"
 import { Link } from "react-router-dom"
+import { useForm } from "react-hook-form"
+import type { LoginSchema } from "../../lib/schemas/loginSchema"
 
 const LoginForm = () => {
+  const { register, handleSubmit, formState: {errors} } = useForm<LoginSchema>();
+
+  const onSubmit = (data: LoginSchema) => {
+    console.log(data);
+  }
+
   const [ showPassword, setShowPassword ] = useState<boolean>(false);
 
   return (
@@ -30,6 +38,7 @@ const LoginForm = () => {
 
         <Box
           component="form"
+          onSubmit={handleSubmit(onSubmit)}
           sx={{
             width: '100%',
             display: 'flex',
@@ -42,11 +51,17 @@ const LoginForm = () => {
             fullWidth
             label="Email"
             autoFocus
+            {...register('email', {required: 'Email is required'})}
+            error={!!errors.email}
+            helperText={errors.email?.message}
           />
 
           <TextField 
             fullWidth
             label="Password"
+            {...register('password', {required: 'Password is required'})}
+            error={!!errors.password}
+            helperText={errors.password?.message}
             type={showPassword ? "text" : "password"}
             slotProps={{
               input: {
@@ -62,7 +77,7 @@ const LoginForm = () => {
             }}
           />
 
-          <Button>
+          <Button type="submit">
             Sign In
           </Button>
 
