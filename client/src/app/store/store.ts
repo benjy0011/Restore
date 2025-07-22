@@ -24,7 +24,8 @@ export const store = configureStore({
       .concat(
         catalogApi.middleware,
         errorApi.middleware,
-        basketApi.middleware
+        basketApi.middleware,
+        accountApi.middleware,
       )
 })
 
