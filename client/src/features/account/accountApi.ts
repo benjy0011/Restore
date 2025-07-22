@@ -28,7 +28,7 @@ export const accountApi = createApi({
     userInfo: builder.query<User, void>({
       query: () => 'account/user-info'
     }),
-    logout: builder.mutation({
+    logout: builder.mutation<void, void>({
       query: () => ({
         url: 'account/logout',
         method: 'POST'
