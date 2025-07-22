@@ -57,6 +57,7 @@ const LoginForm = () => {
             fullWidth
             label="Email"
             autoFocus
+            autoComplete="email"
             // {...register('email', {required: 'Email is required'})} // no longer need if import zod resolver
             {...register('email')}
             error={!!errors.email}
@@ -66,6 +67,7 @@ const LoginForm = () => {
           <TextField 
             fullWidth
             label="Password"
+            autoComplete="current-password"
             // {...register('password', {required: 'Password is required'})}
             {...register('password')}
             error={!!errors.password}
