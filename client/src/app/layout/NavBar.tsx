@@ -28,6 +28,9 @@ import React, { useCallback, useEffect, useState } from "react";
 import { useAppDispatch, useAppSelector } from "../store/store";
 import { setIsMobile, toggleDarkMode } from "./uiSlice";
 import { useFetchBasketQuery } from "../../features/basket/basketApi";
+import UserMenu from "./UserMenu";
+import { useUserInfoQuery } from "../../features/account/accountApi";
+
 
 const midLinks = [
   { title: "catalog", path: "/catalog" },
@@ -80,6 +83,8 @@ const MobileNavLinkListItem = styled(StyledNavLinkListItem)(({ theme }) => ({
 // }
 
 const NavBar = () => {
+  const {data: user} = useUserInfoQuery();
+
   const darkMode = useAppSelector(state => state.ui.darkMode);  
   const dispatch = useAppDispatch();
 
@@ -188,17 +193,37 @@ const NavBar = () => {
 
       <Divider />
 
-      <List>
-        {rightLinks.map(({ title, path }) => (
-          <MobileNavLinkListItem
-            to={path}
-            key={path}
-            onClick={handleMobileNavClick}
-          >
-            {title.toUpperCase()}
-          </MobileNavLinkListItem>
-        ))}
-      </List>
+
+      {user ? (
+        <Box
+          sx={{
+            display: 'flex',
+            width: '100%',
+            justifyContent: 'center',
+            my: 2
+          }}
+        >
+          <UserMenu 
+            user={user} 
+            size="large" 
+            fontSize="large" 
+            color="default"
+          />
+        </Box>
+      )
+      : (
+        <List>
+          {rightLinks.map(({ title, path }) => (
+            <MobileNavLinkListItem
+              to={path}
+              key={path}
+              onClick={handleMobileNavClick}
+            >
+              {title.toUpperCase()}
+            </MobileNavLinkListItem>
+          ))}
+        </List>
+      )}
     </Box>
   );
 
@@ -227,16 +252,15 @@ const NavBar = () => {
                   color="inherit"
                   aria-label="open drawer"
                   onClick={handleDrawerToggle}
-                  edge='start'
+                  edge="start"
                 >
                   <MenuIcon />
                 </IconButton>
               </Grid>
-              
-              <Grid size={7.6} sx={{ textAlign: 'center' }}>
+
+              <Grid size={7.6} sx={{ textAlign: "center" }}>
                 {title}
               </Grid>
-              
 
               <Grid size={2.2}>
                 <Box
@@ -244,14 +268,13 @@ const NavBar = () => {
                     display: "flex",
                     gap: 1,
                     alignItems: "center",
-                    justifyContent: "flex-end"
+                    justifyContent: "flex-end",
                   }}
                 >
                   {modeButton}
                   {shoppingCart}
                 </Box>
               </Grid>
-              
             </Grid>
           ) : (
             // Desktop Layout
@@ -297,25 +320,29 @@ const NavBar = () => {
                 }}
               >
                 {shoppingCart}
-                <List
-                  sx={{
-                    display: "flex",
-                    direction: "row",
-                    alignItems: "center",
-                  }}
-                >
-                  {rightLinks.map(({ title, path }) => (
-                    <StyledNavLinkListItem to={path} key={path}>
-                      {title.toUpperCase()}
-                    </StyledNavLinkListItem>
-                  ))}
-                </List>
+                {user ? (
+                  <UserMenu user={user} />
+                ) : (
+                  <List
+                    sx={{
+                      display: "flex",
+                      direction: "row",
+                      alignItems: "center",
+                    }}
+                  >
+                    {rightLinks.map(({ title, path }) => (
+                      <StyledNavLinkListItem to={path} key={path}>
+                        {title.toUpperCase()}
+                      </StyledNavLinkListItem>
+                    ))}
+                  </List>
+                )}
               </Grid>
             </Grid>
           )}
         </Toolbar>
         {isLoading && (
-          <Box sx={{ width: "100%" }} >
+          <Box sx={{ width: "100%" }}>
             <LinearProgress color="primary" />
           </Box>
         )}
