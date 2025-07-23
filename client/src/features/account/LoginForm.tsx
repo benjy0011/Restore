@@ -1,7 +1,7 @@
 import { LockOutline, VisibilityOffOutlined, VisibilityOutlined } from "@mui/icons-material"
 import { Box, Button, Container, IconButton, Paper, TextField, Typography } from "@mui/material"
 import { useState } from "react"
-import { Link } from "react-router-dom"
+import { Link, useNavigate } from "react-router-dom"
 import { useForm } from "react-hook-form"
 import { loginSchema, type LoginSchema } from "../../lib/schemas/loginSchema"
 import { zodResolver } from "@hookform/resolvers/zod";
@@ -14,8 +14,11 @@ const LoginForm = () => {
     resolver: zodResolver(loginSchema)
   });
 
+  const navigate = useNavigate();
+
   const onSubmit = async (data: LoginSchema) => {
     await login(data);
+    navigate('/catalog');
   }
 
   const [ showPassword, setShowPassword ] = useState<boolean>(false);
