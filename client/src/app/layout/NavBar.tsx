@@ -85,7 +85,7 @@ const MobileNavLinkListItem = styled(StyledNavLinkListItem)(({ theme }) => ({
 const NavBar = () => {
   const {data: user} = useUserInfoQuery();
 
-  const darkMode = useAppSelector(state => state.ui.darkMode);  
+  const { darkMode, isLoading } = useAppSelector(state => state.ui);  
   const dispatch = useAppDispatch();
 
   const {data: basket} = useFetchBasketQuery();
@@ -100,7 +100,6 @@ const NavBar = () => {
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down("md"));
 
-  const { isLoading } = useAppSelector(state => state.ui);
 
   const handleSetIsMobile = useCallback((isMobile: boolean): void => {
     dispatch(setIsMobile(isMobile))
