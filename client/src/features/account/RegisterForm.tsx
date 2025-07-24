@@ -9,13 +9,29 @@ import { Link } from "react-router-dom";
 
 export const RegisterForm = () => {
   const [ registerUser, { isLoading } ] = useRegisterMutation();
-  const { register, handleSubmit, formState: {errors, isValid} } = useForm<RegisterSchema>({
+  const { register, handleSubmit, setError, formState: {errors, isValid} } = useForm<RegisterSchema>({
     mode: 'onTouched',
     resolver: zodResolver(registerSchema)
   })
 
   const onSubmit = async (data: RegisterSchema) => {
-    await registerUser(data);
+    try {
+      await registerUser(data).unwrap();
+    } catch (error) {
+      const apiError = error as { message: string };
+      if (apiError.message && typeof apiError.message === 'string') {
+        const errorArray = apiError.message.split(',');
+
+        // can only set one error each time
+        errorArray.forEach(e => {
+          if (e.toLowerCase().includes('password')) {
+            setError('password', {message: e})
+          } else if (e.toLowerCase().includes('email')) {
+            setError('email', {message: e})
+          }
+        })
+      }
+    }
   }
 
   const [ showPassword, setShowPassword ] = useState<boolean>(false);
