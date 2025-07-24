@@ -1,24 +1,27 @@
 import { LockOutline, VisibilityOffOutlined, VisibilityOutlined } from "@mui/icons-material"
 import { Box, Button, Container, IconButton, Paper, TextField, Typography } from "@mui/material"
 import { useState } from "react"
-import { Link, useNavigate } from "react-router-dom"
+import { Link, useLocation, useNavigate } from "react-router-dom"
 import { useForm } from "react-hook-form"
 import { loginSchema, type LoginSchema } from "../../lib/schemas/loginSchema"
 import { zodResolver } from "@hookform/resolvers/zod";
-import { useLoginMutation } from "./accountApi"
+import { useLazyUserInfoQuery, useLoginMutation } from "./accountApi"
 
 const LoginForm = () => {
   const [ login, { isLoading } ] = useLoginMutation();
+  const [ fetchUserInfo ] = useLazyUserInfoQuery();
   const { register, handleSubmit, formState: {errors} } = useForm<LoginSchema>({
     mode: 'onTouched', // validation will kick in once lost focus
     resolver: zodResolver(loginSchema)
   });
 
+  const location = useLocation();
   const navigate = useNavigate();
 
   const onSubmit = async (data: LoginSchema) => {
     await login(data);
-    navigate('/catalog');
+    await fetchUserInfo();
+    navigate(location.state?.from || '/catalog');
   }
 
   const [ showPassword, setShowPassword ] = useState<boolean>(false);
