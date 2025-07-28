@@ -313,3 +313,7 @@ C:\Users\benjy\Desktop\Learn Online Store\Restore\API\bin\Debug\net9.0\Microsoft
 C:\Users\benjy\Desktop\Learn Online Store\Restore\API\bin\Debug\net9.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
 C:\Users\benjy\Desktop\Learn Online Store\Restore\API\bin\Debug\net9.0\Microsoft.Extensions.Identity.Core.dll
 C:\Users\benjy\Desktop\Learn Online Store\Restore\API\bin\Debug\net9.0\Microsoft.Extensions.Identity.Stores.dll
+C:\Users\24090\OneDrive - PCGroup\Desktop\Work\self learn full stack\Restore\API\bin\Debug\net9.0\Newtonsoft.Json.dll
+C:\Users\24090\OneDrive - PCGroup\Desktop\Work\self learn full stack\Restore\API\bin\Debug\net9.0\Stripe.net.dll
+C:\Users\24090\OneDrive - PCGroup\Desktop\Work\self learn full stack\Restore\API\bin\Debug\net9.0\System.Configuration.ConfigurationManager.dll
+C:\Users\24090\OneDrive - PCGroup\Desktop\Work\self learn full stack\Restore\API\bin\Debug\net9.0\System.Security.Cryptography.ProtectedData.dll
