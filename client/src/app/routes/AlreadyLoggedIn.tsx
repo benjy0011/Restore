@@ -9,7 +9,7 @@ export default function AlreadyLoggedIn() {
   if (isLoading) return (<CircularProgressScreen />);
 
   if (user) {
-    return <Navigate to='/catalog' state={{ from: location }} />
+    return <Navigate to={location.state?.from || '/catalog'} state={{ from: location }} />
   }
 
   return (
