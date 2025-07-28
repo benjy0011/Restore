@@ -8,6 +8,8 @@ public class Basket
 
   public List<BasketItem> Items { get; set; } = [];
 
+  public string? ClientSecret { get; set; } // payment purpose
+  public string? PaymentIntentId { get; set; } // update according to basket update or not (before confirming payment)
 
   public void AddItem(Product product, int quantity)
   {

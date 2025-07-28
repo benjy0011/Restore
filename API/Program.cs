@@ -3,6 +3,7 @@ using API.Middleware;
 using API.Entities;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Identity;
+using API.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -21,6 +22,11 @@ builder.Services.AddCors();
 // Transient - when not needed everytime, new per request [a new instance every time it's needed, even within the same request]
 // Singleton - reuse everytime when app starts [reused everywhere when app starts]
 builder.Services.AddTransient<ExceptionMiddleware>();
+
+
+// Payment
+builder.Services.AddScoped<PaymentService>();
+
 
 // User Identity
 builder.Services
