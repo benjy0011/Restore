@@ -1,13 +1,18 @@
+:root {
+  --slide-duration: 200ms;
+  --slide-distance: 30px;
+}
+
 /* Forward navigation - content slides in from right, exits to left */
 .slide-left-enter {
   opacity: 0;
-  transform: translateX(30px);
+  transform: translateX(var(--slide-distance));
 }
 
 .slide-left-enter-active {
   opacity: 1;
   transform: translateX(0);
-  transition: opacity 200ms ease-in-out, transform 200ms ease-in-out;
+  transition: opacity var(--slide-duration) ease-in-out, transform var(--slide-duration) ease-in-out;
 }
 
 .slide-left-exit {
@@ -17,20 +22,20 @@
 
 .slide-left-exit-active {
   opacity: 0;
-  transform: translateX(-30px);
-  transition: opacity 200ms ease-in-out, transform 200ms ease-in-out;
+  transform: translateX(calc(-1 * var(--slide-distance)));
+  transition: opacity var(--slide-duration) ease-in-out, transform var(--slide-duration) ease-in-out;
 }
 
 /* Backward navigation - content slides in from left, exits to right */
 .slide-right-enter {
   opacity: 0;
-  transform: translateX(-30px);
+  transform: translateX(calc(-1 * var(--slide-distance)));
 }
 
 .slide-right-enter-active {
   opacity: 1;
   transform: translateX(0);
-  transition: opacity 200ms ease-in-out, transform 200ms ease-in-out;
+  transition: opacity var(--slide-duration) ease-in-out, transform var(--slide-duration) ease-in-out;
 }
 
 .slide-right-exit {
@@ -40,6 +45,6 @@
 
 .slide-right-exit-active {
   opacity: 0;
-  transform: translateX(30px);
-  transition: opacity 200ms ease-in-out, transform 200ms ease-in-out;
+  transform: translateX(var(--slide-distance));
+  transition: opacity var(--slide-duration) ease-in-out, transform var(--slide-duration) ease-in-out;
 }
