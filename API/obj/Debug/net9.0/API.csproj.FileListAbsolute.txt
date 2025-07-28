@@ -317,3 +317,7 @@ C:\Users\24090\OneDrive - PCGroup\Desktop\Work\self learn full stack\Restore\API
 C:\Users\24090\OneDrive - PCGroup\Desktop\Work\self learn full stack\Restore\API\bin\Debug\net9.0\Stripe.net.dll
 C:\Users\24090\OneDrive - PCGroup\Desktop\Work\self learn full stack\Restore\API\bin\Debug\net9.0\System.Configuration.ConfigurationManager.dll
 C:\Users\24090\OneDrive - PCGroup\Desktop\Work\self learn full stack\Restore\API\bin\Debug\net9.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\benjy\Desktop\Learn Online Store\Restore\API\bin\Debug\net9.0\Newtonsoft.Json.dll
+C:\Users\benjy\Desktop\Learn Online Store\Restore\API\bin\Debug\net9.0\Stripe.net.dll
+C:\Users\benjy\Desktop\Learn Online Store\Restore\API\bin\Debug\net9.0\System.Configuration.ConfigurationManager.dll
+C:\Users\benjy\Desktop\Learn Online Store\Restore\API\bin\Debug\net9.0\System.Security.Cryptography.ProtectedData.dll
