@@ -52,6 +52,13 @@ export const getTheme = (
           root: {...getTransition(enableTransition)}
         }
       },
+      MuiStepIcon: {
+        styleOverrides: {
+          text: {
+            fontFamily: ["Roboto", "Avenir", "Quicksand"].join(", ")
+          }
+        }
+      }
     }
   })
 };
