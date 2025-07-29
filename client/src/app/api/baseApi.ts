@@ -6,7 +6,7 @@ import { router } from "../routes/Routes";
 type ErrorResponse = string | { title: string } | { errors: string[] };
 
 const customBaseQuery = fetchBaseQuery({
-  baseUrl: 'https://localhost:5001/api',
+  baseUrl: import.meta.env.VITE_API_URL,
   credentials: 'include', // allow cookies
 });
 
