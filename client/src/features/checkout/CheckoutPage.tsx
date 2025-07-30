@@ -7,10 +7,12 @@ import { useFetchBasketQuery } from "../basket/basketApi";
 import { useEffect, useMemo, useRef } from "react";
 import CircularProgressScreen from "../../app/shared/components/CircularProgressScreen";
 import { useCreatePaymentIntentMutation } from "./checkoutApi";
+import { useAppSelector } from "../../app/store/store";
 
 const stripePromise = loadStripe(import.meta.env.VITE_STRIPE_PK);
 
 const CheckoutPage = () => {
+  const { darkMode } = useAppSelector(state => state.ui);
   const { data: basket } = useFetchBasketQuery();
   const [ createPaymentIntent, {isLoading} ] = useCreatePaymentIntentMutation();
   const created = useRef(false); // development trick as useEffect will be exected twice in dev mode
@@ -23,9 +25,13 @@ const CheckoutPage = () => {
   const options: StripeElementsOptions | undefined = useMemo(() => {
     if (!basket?.clientSecret) return undefined;
     return {
-      clientSecret: basket.clientSecret
+      clientSecret: basket.clientSecret,
+      appearance: {
+        labels: 'floating',
+        theme: darkMode ? 'night' : 'stripe'
+      }
     }
-  }, [basket?.clientSecret]);
+  }, [basket?.clientSecret, darkMode]);
 
   return (
     <Grid container spacing={2}>

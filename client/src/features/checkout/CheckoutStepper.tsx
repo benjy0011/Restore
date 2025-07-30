@@ -1,8 +1,9 @@
-import { Box, Button, Paper, Step, StepLabel, Stepper } from "@mui/material";
+import { Box, Button, Checkbox, FormControlLabel, Paper, Step, StepLabel, Stepper } from "@mui/material";
 import { useRef, useState } from "react"
 import { CSSTransition, SwitchTransition } from "react-transition-group";
 
 import './CheckoutStepper.css'
+import { AddressElement } from "@stripe/react-stripe-js";
 
 const steps = ['Address', 'Payment', 'Review'];
 
@@ -78,7 +79,20 @@ const CheckoutStepper = () => {
           unmountOnExit
         >
           <Box ref={nodeRef} sx={{ mt: 2 }}>
-            {activeStep === 0 && <Box>Address Step</Box>}
+            {activeStep === 0 && 
+              <Box>
+                <AddressElement 
+                  options={{
+                    mode: 'shipping'
+                  }}
+                />
+                <FormControlLabel 
+                  sx={{ display: 'flex', justifyContent: 'end', mt: 1 }}
+                  control={<Checkbox />}
+                  label="Save as default address"
+                />
+              </Box>
+            }
             {activeStep === 1 && <Box>Payment Step</Box>}
             {activeStep === 2 && <Box>Review Step</Box>}
           </Box>
@@ -86,7 +100,7 @@ const CheckoutStepper = () => {
       </SwitchTransition>
       
 
-      <Box>
+      <Box sx={{ mt: 2, display: 'flex', justifyContent: 'space-between' }}>
         <Button onClick={handleBack}>Back</Button>
         <Button onClick={handleNext}>Next</Button>
       </Box>
