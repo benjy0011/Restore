@@ -28,8 +28,13 @@ const CheckoutPage = () => {
       clientSecret: basket.clientSecret,
       appearance: {
         labels: 'floating',
-        theme: darkMode ? 'night' : 'stripe'
-      }
+        theme: darkMode ? 'night' : 'stripe',
+        rules: {
+          '.Input': {
+            lineHeight: "1rem",
+          }
+        }
+      },
     }
   }, [basket?.clientSecret, darkMode]);
 
