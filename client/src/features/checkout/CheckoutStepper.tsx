@@ -7,6 +7,9 @@ import { Review } from "./Review";
 import { useFetchAddressQuery, useUpdateUserAddressMutation } from "../account/accountApi";
 import type { Address } from "../../app/models/user";
 import CircularProgressScreen from "../../app/shared/components/CircularProgressScreen";
+import type { StripeAddressElementChangeEvent, StripePaymentElementChangeEvent } from "@stripe/stripe-js";
+import { useBasket } from "../../lib/hooks/useBasket";
+import { currencyFormat } from "../../lib/util";
 
 const steps = ['Address', 'Payment', 'Review'];
 const animationTime = '0.3s';
@@ -115,6 +118,11 @@ const CheckoutStepper = () => {
   const [ updateAddress ] = useUpdateUserAddressMutation();
   const [ saveAddressChecked, setSaveAddressChecked ] = useState<boolean>(false);
   const elements = useElements();
+  const [ addressComplete, setAddressComplete ] = useState<boolean>(false);
+  const [ paymentComplete, setPaymentComplete ] = useState<boolean>(false);
+  const unableToProcced = (activeStep === 0 && !addressComplete) || (activeStep === 1 && !paymentComplete);
+
+  const { total } = useBasket();
 
   const handleNext = async () => {
     if (activeStep === 0 && saveAddressChecked && elements) {
@@ -144,10 +152,26 @@ const CheckoutStepper = () => {
     });
   }
 
-  const handleStep = (step: number) => {
+  const handleStep = async (step: number) => {
+    if (unableToProcced) return;
+
+    if (activeStep === 0 && saveAddressChecked && elements) {
+      const address = await getStripeAddress();
+
+      if (address) await updateAddress(address);
+    }
+
     setDirection(step > activeStep ? 'forward' : 'backward');
     setIsTransitioning(true);
     setActiveStep(step);
+  }
+
+  const handleAddressChange = (event: StripeAddressElementChangeEvent) => {
+    setAddressComplete(event.complete)
+  }
+
+  const handlePaymentChange = (event: StripePaymentElementChangeEvent) => {
+    setPaymentComplete(event.complete)
   }
 
   const handleHeightChange = (height: number) => {
@@ -165,6 +189,16 @@ const CheckoutStepper = () => {
 
     return null;
   }
+
+
+  // Show incomplete message for stripe's address element
+  const triggerAddressValidation = async () => {
+    const addressElem = elements?.getElement('address');
+
+    if (!addressElem) return;
+
+    await addressElem.getValue();
+  };
 
   useEffect(() => {
     if (isTransitioning) {
@@ -226,6 +260,10 @@ const CheckoutStepper = () => {
                   address: restAddress,
                 }
               }}
+              onChange={handleAddressChange}
+              onBlur={() => {
+                triggerAddressValidation();
+              }}
             />
             <FormControlLabel 
               sx={{ display: 'flex', justifyContent: 'end', mt: 1 }}
@@ -245,7 +283,9 @@ const CheckoutStepper = () => {
             isTransitioning={isTransitioning}
             onHeightChange={handleHeightChange}
           >
-            <PaymentElement />
+            <PaymentElement 
+              onChange={handlePaymentChange}
+            />
           </SlidingStepContent>
           
           {/* Review Step */}
@@ -264,8 +304,21 @@ const CheckoutStepper = () => {
       
 
       <Box sx={{ mt: 2, display: 'flex', justifyContent: 'space-between' }}>
-        <Button onClick={handleBack} disabled={activeStep === 0}>Back</Button>
-        <Button onClick={handleNext} disabled={activeStep === steps.length - 1}>Next</Button>
+        <Button 
+          onClick={handleBack} 
+          disabled={activeStep === 0}
+        >
+          Back
+        </Button>
+        
+        <Button 
+          onClick={handleNext} 
+          disabled={
+            unableToProcced
+          }
+        >
+          {activeStep === steps.length - 1 ? `Pay ${currencyFormat(total)}` : 'Next'}
+        </Button>
       </Box>
     </Paper>
   )
