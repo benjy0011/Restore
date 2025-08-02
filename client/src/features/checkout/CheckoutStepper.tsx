@@ -1,11 +1,12 @@
 import { Box, Button, Checkbox, FormControlLabel, Paper, Step, StepLabel, Stepper } from "@mui/material";
 
 import './CheckoutStepper.css'
-import { AddressElement, PaymentElement } from "@stripe/react-stripe-js";
+import { AddressElement, PaymentElement, useElements } from "@stripe/react-stripe-js";
 import { useEffect, useLayoutEffect, useRef, useState, type ReactNode } from "react";
 import { Review } from "./Review";
-import { useFetchAddressQuery } from "../account/accountApi";
+import { useFetchAddressQuery, useUpdateUserAddressMutation } from "../account/accountApi";
 import type { Address } from "../../app/models/user";
+import CircularProgressScreen from "../../app/shared/components/CircularProgressScreen";
 
 const steps = ['Address', 'Payment', 'Review'];
 const animationTime = '0.3s';
@@ -110,9 +111,18 @@ const CheckoutStepper = () => {
   const [containerHeight, setContainerHeight] = useState<number>(0);
   const containerRef = useRef<HTMLDivElement>(null);
 
-  const { data: {name, ...restAddress} = {} as Address } = useFetchAddressQuery();
+  const { data: {name, ...restAddress} = {} as Address, isLoading } = useFetchAddressQuery();
+  const [ updateAddress ] = useUpdateUserAddressMutation();
+  const [ saveAddressChecked, setSaveAddressChecked ] = useState<boolean>(false);
+  const elements = useElements();
 
-  const handleNext = () => {
+  const handleNext = async () => {
+    if (activeStep === 0 && saveAddressChecked && elements) {
+      const address = await getStripeAddress();
+
+      if (address) await updateAddress(address);
+    }
+
     setActiveStep(step => {
       if (step < steps.length - 1) {
         setDirection('forward');
@@ -144,6 +154,18 @@ const CheckoutStepper = () => {
     setContainerHeight(height);
   }
 
+  const getStripeAddress = async (): Promise<null | Address> => {
+    const addressElement = elements?.getElement('address');
+
+    if (!addressElement) return null;
+
+    const { value: {name, address} } = await addressElement.getValue();
+
+    if (name && address) return ({...address, name} as Address);
+
+    return null;
+  }
+
   useEffect(() => {
     if (isTransitioning) {
       const timer = setTimeout(() => {
@@ -153,6 +175,8 @@ const CheckoutStepper = () => {
       return () => clearTimeout(timer);
     }
   }, [isTransitioning])
+
+  if (isLoading) return (<CircularProgressScreen />)
 
   return (
     <Paper
@@ -205,7 +229,10 @@ const CheckoutStepper = () => {
             />
             <FormControlLabel 
               sx={{ display: 'flex', justifyContent: 'end', mt: 1 }}
-              control={<Checkbox />}
+              control={<Checkbox 
+                checked={saveAddressChecked}
+                onChange={e => setSaveAddressChecked(e.target.checked)}
+              />}
               label="Save as default address"
             />
           </SlidingStepContent>
