@@ -1,9 +1,87 @@
 :root {
+  --slide-duration: 0.3s;
+}
+
+.step-content {
+  transition: all var(--slide-duration) cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+  .step-content.inactive {
+    pointer-events: none;
+  }
+
+.slide-in-from-right {
+  animation: slideInFromRight var(--slide-duration) ease-in-out forwards;
+}
+
+.slide-in-from-left {
+  animation: slideInFromLeft var(--slide-duration) ease-in-out forwards;
+}
+
+
+.slide-out-left {
+  animation: slideOutLeft var(--slide-duration) ease-in-out forwards;
+}
+
+.slide-out-right {
+  animation: slideOutRight var(--slide-duration) ease-in-out forwards;
+}
+
+
+@keyframes slideOutLeft {
+  from {
+    transform: translateX(0);
+    opacity: 1;
+  }
+
+  to {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+}
+
+@keyframes slideOutRight {
+  from {
+    transform: translateX(0);
+    opacity: 1;
+  }
+
+  to {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+}
+
+@keyframes slideInFromRight {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInFromLeft {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+
+/* :root {
   --slide-duration: 200ms;
   --slide-distance: 30px;
 }
 
-/* Forward navigation - content slides in from right, exits to left */
 .slide-left-enter {
   opacity: 0;
   transform: translateX(var(--slide-distance));
@@ -26,7 +104,6 @@
   transition: opacity var(--slide-duration) ease-in-out, transform var(--slide-duration) ease-in-out;
 }
 
-/* Backward navigation - content slides in from left, exits to right */
 .slide-right-enter {
   opacity: 0;
   transform: translateX(calc(-1 * var(--slide-distance)));
@@ -47,4 +124,4 @@
   opacity: 0;
   transform: translateX(var(--slide-distance));
   transition: opacity var(--slide-duration) ease-in-out, transform var(--slide-duration) ease-in-out;
-}
+} */
