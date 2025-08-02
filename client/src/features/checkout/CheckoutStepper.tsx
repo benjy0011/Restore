@@ -3,6 +3,7 @@ import { Box, Button, Checkbox, FormControlLabel, Paper, Step, StepLabel, Steppe
 import './CheckoutStepper.css'
 import { AddressElement, PaymentElement } from "@stripe/react-stripe-js";
 import { useEffect, useLayoutEffect, useRef, useState, type ReactNode } from "react";
+import { Review } from "./Review";
 
 const steps = ['Address', 'Payment', 'Review'];
 const animationTime = '0.3s';
@@ -220,7 +221,7 @@ const CheckoutStepper = () => {
             isTransitioning={isTransitioning}
             onHeightChange={handleHeightChange}
           >
-            Review Step
+            <Review />
           </SlidingStepContent>
 
         </Box>
