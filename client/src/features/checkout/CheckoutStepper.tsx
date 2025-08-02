@@ -4,6 +4,8 @@ import './CheckoutStepper.css'
 import { AddressElement, PaymentElement } from "@stripe/react-stripe-js";
 import { useEffect, useLayoutEffect, useRef, useState, type ReactNode } from "react";
 import { Review } from "./Review";
+import { useFetchAddressQuery } from "../account/accountApi";
+import type { Address } from "../../app/models/user";
 
 const steps = ['Address', 'Payment', 'Review'];
 const animationTime = '0.3s';
@@ -108,6 +110,8 @@ const CheckoutStepper = () => {
   const [containerHeight, setContainerHeight] = useState<number>(0);
   const containerRef = useRef<HTMLDivElement>(null);
 
+  const { data: {name, ...restAddress} = {} as Address } = useFetchAddressQuery();
+
   const handleNext = () => {
     setActiveStep(step => {
       if (step < steps.length - 1) {
@@ -192,7 +196,11 @@ const CheckoutStepper = () => {
           >
             <AddressElement 
               options={{
-                mode: 'shipping'
+                mode: 'shipping',
+                defaultValues: {
+                  name: name,
+                  address: restAddress,
+                }
               }}
             />
             <FormControlLabel 
