@@ -139,7 +139,7 @@ const CheckoutStepper = () => {
     return true;
   }
 
-  const { total } = useBasket();
+  const { total, clearBasket } = useBasket();
 
   const [ confirmationToken, setConfirmationToken ] = useState<ConfirmationToken | null>(null);
 
@@ -271,6 +271,7 @@ const CheckoutStepper = () => {
 
       if (paymentResult?.paymentIntent?.status === 'succeeded') {
         navigate('/checkout/success');
+        clearBasket();
       } else if (paymentResult?.error) {
         throw new Error(paymentResult.error.message)
       } else {

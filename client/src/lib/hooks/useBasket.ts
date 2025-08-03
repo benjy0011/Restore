@@ -1,9 +1,11 @@
 import { useMemo } from "react";
-import { useFetchBasketQuery } from "../../features/basket/basketApi";
+import { useClearBasketMutation, useFetchBasketQuery } from "../../features/basket/basketApi";
 import type { BasketItem } from "../../app/models/basket";
 
 export const useBasket = () => {
   const { data: basket } = useFetchBasketQuery();
+  const [ clearBasket ] = useClearBasketMutation();
+
   const subtotal = useMemo(
     (): number =>
       basket?.items.reduce(
@@ -25,6 +27,7 @@ export const useBasket = () => {
     basket,
     subtotal,
     deliveryFee,
-    total
+    total,
+    clearBasket,
   }
 }
