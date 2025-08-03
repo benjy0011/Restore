@@ -1,15 +1,16 @@
 import { Box, Button, Checkbox, FormControlLabel, Paper, Step, StepLabel, Stepper } from "@mui/material";
 
 import './CheckoutStepper.css'
-import { AddressElement, PaymentElement, useElements } from "@stripe/react-stripe-js";
+import { AddressElement, PaymentElement, useElements, useStripe } from "@stripe/react-stripe-js";
 import { useEffect, useLayoutEffect, useRef, useState, type ReactNode } from "react";
 import { Review } from "./Review";
 import { useFetchAddressQuery, useUpdateUserAddressMutation } from "../account/accountApi";
 import type { Address } from "../../app/models/user";
 import CircularProgressScreen from "../../app/shared/components/CircularProgressScreen";
-import type { StripeAddressElementChangeEvent, StripePaymentElementChangeEvent } from "@stripe/stripe-js";
+import type { ConfirmationToken, StripeAddressElementChangeEvent, StripePaymentElementChangeEvent } from "@stripe/stripe-js";
 import { useBasket } from "../../lib/hooks/useBasket";
 import { currencyFormat } from "../../lib/util";
+import { toast } from "react-toastify";
 
 const steps = ['Address', 'Payment', 'Review'];
 const animationTime = '0.3s';
@@ -118,17 +119,59 @@ const CheckoutStepper = () => {
   const [ updateAddress ] = useUpdateUserAddressMutation();
   const [ saveAddressChecked, setSaveAddressChecked ] = useState<boolean>(false);
   const elements = useElements();
+  const stripe = useStripe();
   const [ addressComplete, setAddressComplete ] = useState<boolean>(false);
   const [ paymentComplete, setPaymentComplete ] = useState<boolean>(false);
   const unableToProcced = (activeStep === 0 && !addressComplete) || (activeStep === 1 && !paymentComplete);
+  const validSkipStep = (currentStep: number, nextStep: number): boolean => {
+    if (currentStep === 0) {
+      if (nextStep === 1) return addressComplete;
+      return (addressComplete && paymentComplete);
+    } 
+    if (currentStep === 1) {
+      if (nextStep === 0) return true;
+      return paymentComplete;
+    }
+    return true;
+  }
 
   const { total } = useBasket();
 
+  const [ confirmationToken, setConfirmationToken ] = useState<ConfirmationToken | null>(null);
+
+  const handleUpdateAddress = async (): Promise<void> => {
+    const address = await getStripeAddress();
+
+    if (address) await updateAddress(address);
+  }
+
+  const handleGetConfirmationToken = async (): Promise<void> => {
+    if (!elements || !stripe) return;
+    const result = await elements.submit();
+
+    if (result.error) {
+      toast.error(result.error.message);
+      return;
+    }
+
+    const stripeResult = await stripe.createConfirmationToken({elements});
+
+    if (stripeResult.error) {
+      toast.error(stripeResult.error.message);
+      return;
+    }
+
+    setConfirmationToken(stripeResult.confirmationToken);
+    return;
+  }
+
   const handleNext = async () => {
     if (activeStep === 0 && saveAddressChecked && elements) {
-      const address = await getStripeAddress();
+      handleUpdateAddress();
+    }
 
-      if (address) await updateAddress(address);
+    if (activeStep === 1) {
+      handleGetConfirmationToken();
     }
 
     setActiveStep(step => {
@@ -153,12 +196,14 @@ const CheckoutStepper = () => {
   }
 
   const handleStep = async (step: number) => {
-    if (unableToProcced) return;
+    if (!validSkipStep(activeStep, step)) return;
 
     if (activeStep === 0 && saveAddressChecked && elements) {
-      const address = await getStripeAddress();
+      handleUpdateAddress();
+    }
 
-      if (address) await updateAddress(address);
+    if (step === 2) {
+      handleGetConfirmationToken();
     }
 
     setDirection(step > activeStep ? 'forward' : 'backward');
@@ -296,7 +341,9 @@ const CheckoutStepper = () => {
             isTransitioning={isTransitioning}
             onHeightChange={handleHeightChange}
           >
-            <Review />
+            <Review 
+              confirmationToken={confirmationToken}
+            />
           </SlidingStepContent>
 
         </Box>
