@@ -11,6 +11,7 @@ import type { ConfirmationToken, StripeAddressElementChangeEvent, StripePaymentE
 import { useBasket } from "../../lib/hooks/useBasket";
 import { currencyFormat } from "../../lib/util";
 import { toast } from "react-toastify";
+import { useNavigate } from "react-router-dom";
 
 const steps = ['Address', 'Payment', 'Review'];
 const animationTime = '0.3s';
@@ -109,6 +110,9 @@ const SlidingStepContent = (
 )}
 
 const CheckoutStepper = () => {
+  const { basket } = useBasket();
+  const navigate = useNavigate();
+
   const [activeStep, setActiveStep] = useState(0);
   const [isTransitioning, setIsTransitioning] = useState<boolean>(false);
   const [direction, setDirection] = useState<'forward' | 'backward'>('forward');
@@ -138,6 +142,8 @@ const CheckoutStepper = () => {
   const { total } = useBasket();
 
   const [ confirmationToken, setConfirmationToken ] = useState<ConfirmationToken | null>(null);
+
+  const [submiting, setSubmitting] = useState<boolean>(false);
 
   const handleUpdateAddress = async (): Promise<void> => {
     const address = await getStripeAddress();
@@ -172,6 +178,10 @@ const CheckoutStepper = () => {
 
     if (activeStep === 1) {
       handleGetConfirmationToken();
+    }
+
+    if (activeStep === 2) {
+      await confirmPayment();
     }
 
     setActiveStep(step => {
@@ -244,6 +254,37 @@ const CheckoutStepper = () => {
 
     await addressElem.getValue();
   };
+
+
+  const confirmPayment = async () => {
+    setSubmitting(true);
+    try {
+      if (!confirmationToken || !basket?.clientSecret) throw new Error('Unable to process payment.');
+
+      const paymentResult = await stripe?.confirmPayment({
+        clientSecret: basket.clientSecret,
+        redirect: 'if_required',
+        confirmParams: {
+          confirmation_token: confirmationToken.id
+        }
+      });
+
+      if (paymentResult?.paymentIntent?.status === 'succeeded') {
+        navigate('/checkout/success');
+      } else if (paymentResult?.error) {
+        throw new Error(paymentResult.error.message)
+      } else {
+        throw new Error('Something went wrong')
+      }
+    } catch (error) {
+      if (error instanceof Error) {
+        toast.error(error.message)
+      }
+      setActiveStep(step => step - 1);
+    } finally {
+      setSubmitting(false);
+    }
+  }
 
   useEffect(() => {
     if (isTransitioning) {
@@ -363,6 +404,7 @@ const CheckoutStepper = () => {
           disabled={
             unableToProcced
           }
+          loading={submiting}
         >
           {activeStep === steps.length - 1 ? `Pay ${currencyFormat(total)}` : 'Next'}
         </Button>
