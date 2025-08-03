@@ -182,6 +182,7 @@ const CheckoutStepper = () => {
 
     if (activeStep === 2) {
       await confirmPayment();
+      return;
     }
 
     setActiveStep(step => {
@@ -281,7 +282,7 @@ const CheckoutStepper = () => {
       if (error instanceof Error) {
         toast.error(error.message)
       }
-      setActiveStep(step => step - 1);
+      handleBack();
     } finally {
       setSubmitting(false);
     }
