@@ -13,10 +13,10 @@ namespace API.Controllers;
 public class OrdersController(StoreContext context) : BaseApiController
 {
     [HttpGet]
-    public async Task<ActionResult<List<Order>>> GetOrders()
+    public async Task<ActionResult<List<OrderDto>>> GetOrders()
     {
         var orders = await context.Orders
-            .Include(x => x.OrderItems)
+            .ProjectToDto()
             .Where(x => x.BuyerEmail == User.GetUsername())
             .ToListAsync();
 
@@ -24,9 +24,10 @@ public class OrdersController(StoreContext context) : BaseApiController
     }
 
     [HttpGet("{id:int}")]
-    public async Task<ActionResult<Order>> GetOrdersDetails(int id)
+    public async Task<ActionResult<OrderDto>> GetOrdersDetails(int id)
     {
         var order = await context.Orders
+            .ProjectToDto()
             .Where(x => x.BuyerEmail == User.GetUsername() && x.Id == id)
             .FirstOrDefaultAsync();
 
@@ -69,7 +70,7 @@ public class OrdersController(StoreContext context) : BaseApiController
 
         if (!result) return BadRequest("Problem creating order");
 
-        return CreatedAtAction(nameof(GetOrdersDetails), new { id = order.Id }, order);
+        return CreatedAtAction(nameof(GetOrdersDetails), new { id = order.Id }, order.ToDto());
     }
 
     private static long CalculateDeliveryFee(long subtotal)
