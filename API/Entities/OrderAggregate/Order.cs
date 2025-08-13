@@ -18,7 +18,7 @@ public class Order
 
     public long Discount { get; set; }
 
-    public string? PaymentIntentId { get; set; }
+    public required string PaymentIntentId { get; set; }
 
     public OrderStatus OrderStatus { get; set; } = OrderStatus.Pending;
 
