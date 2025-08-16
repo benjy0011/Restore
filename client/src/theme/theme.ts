@@ -66,6 +66,13 @@ export const getTheme = (
           }
         }
       },
+      MuiChip: {
+        styleOverrides: {
+          root: {
+            fontFamily: ["Quicksand", "Roboto", "Avenir"].join(", ")
+          }
+        }
+      },
     }
   })
 };

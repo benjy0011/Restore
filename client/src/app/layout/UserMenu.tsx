@@ -3,6 +3,7 @@ import { CompositeMenu, CompositeMenuItem, CompositeMenuList, CompositeMenuTrigg
 import { AccountCircleOutlined, History, Logout, Person } from "@mui/icons-material";
 import type { User } from "../models/user";
 import { useLogoutMutation } from "../../features/account/accountApi";
+import { useNavigate } from "react-router-dom";
 
 
 interface Props {
@@ -27,6 +28,7 @@ const UserMenuContent = ({
   color = "inherit",
 }: Props) => {
   const [ logout ] = useLogoutMutation();
+  const navigate = useNavigate();
 
   const { open } = useCompositeMenu();
 
@@ -57,7 +59,9 @@ const UserMenuContent = ({
         </CompositeMenuItem>
 
         {/* My Orders */}
-        <CompositeMenuItem>
+        <CompositeMenuItem 
+          onClick={() => navigate("/orders")}
+        >
           <ListItemIcon>
             <History />
           </ListItemIcon>
