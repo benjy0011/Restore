@@ -13,3 +13,18 @@ export function filterEmptyValues(values: object) {
     )
   );
 }
+
+
+export function formatDateString(dateString: string) {
+  const parsed = new Date(dateString);
+
+  if (parsed instanceof Date && !isNaN(parsed.getTime())) {
+    return parsed.toLocaleDateString('en-US', {
+      year: 'numeric',
+      month: 'short',
+      day: 'numeric'
+    });
+  }
+
+  return dateString;
+}

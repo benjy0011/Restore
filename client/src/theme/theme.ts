@@ -58,7 +58,14 @@ export const getTheme = (
             fontFamily: ["Roboto", "Avenir", "Quicksand"].join(", ")
           }
         }
-      }
+      },
+      MuiButton: {
+        styleOverrides: {
+          root: {
+            fontFamily: ["Quicksand", "Roboto", "Avenir"].join(", ")
+          }
+        }
+      },
     }
   })
 };
