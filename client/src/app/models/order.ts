@@ -8,9 +8,12 @@ export interface Order {
   deliveryFee: number
   discount: number
   total: number
-  orderStatus: string
+  orderStatus: OrderStatus
   paymentSummary: PaymentSummary
 }
+
+export type OrderStatus = 'Pending' | 'PaymentReceived' | 'PaymentFailed';
+
 
 export interface ShippingAddress {
   name: string
