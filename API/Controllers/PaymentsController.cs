@@ -73,13 +73,16 @@ public class PaymentsController(PaymentService paymentService, StoreContext cont
     {
         try
         {
-            return EventUtility.ConstructEvent(
+            var stripeEvent = EventUtility.ConstructEvent(
                 json,
                 Request.Headers["Stripe-Signature"],
-                config["StripeSettings:WhSecret"]
+                config["StripeSettings:WhSecret"],
+                throwOnApiVersionMismatch: false
             );
+
+            return stripeEvent;
         }
-        catch (System.Exception ex)
+        catch (Exception ex)
         {
             logger.LogError(ex, "Failed to construct stripe event");
             throw new StripeException("Invalid signature");
