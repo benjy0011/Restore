@@ -1,7 +1,8 @@
 import { Box, Divider, Table, TableBody, TableCell, TableContainer, TableRow, Typography } from "@mui/material";
-import { currencyFormat } from "../../lib/util";
+import { currencyFormat, formatAddressString, formatPaymentString } from "../../lib/util";
 import type { ConfirmationToken } from "@stripe/stripe-js";
 import { useBasket } from "../../lib/hooks/useBasket";
+import type { PaymentSummary, ShippingAddress } from "../../app/models/order";
 
 type Props = {
   confirmationToken: ConfirmationToken | null;
@@ -17,7 +18,19 @@ export const Review = ({
 
     const {name, address} = confirmationToken.shipping;
 
-    return `${name}, ${address?.line1}, ${address?.line2 ? `${address.line2}, ` : ''}${address?.city}, ${address?.state}, ${address?.postal_code}, ${address?.country}`
+    if (!name || !address) return "";
+
+    const paymentAddress: ShippingAddress = {
+      name: name,
+      line1: address.line1 ?? "",
+      line2: address?.line2,
+      city: address.city ?? "",
+      country: address.country ?? "",
+      postal_code: address.postal_code ?? "",
+      state: address.state ?? ""
+    }
+
+    return formatAddressString(paymentAddress);
   }
 
   const paymentString = (): string => {
@@ -25,7 +38,14 @@ export const Review = ({
 
     const { card } = confirmationToken.payment_method_preview;
 
-    return `${card.brand.toUpperCase()}, **** **** **** ${card.last4}, Exp: ${card.exp_month}/${card.exp_year}`;
+    const paymentSummary: PaymentSummary = {
+      brand: card.brand,
+      last4: card.last4,
+      exp_month: card.exp_month,
+      exp_year: card.exp_year,
+    } 
+
+    return formatPaymentString(paymentSummary);
   }
 
   return (
