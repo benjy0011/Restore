@@ -12,7 +12,7 @@ export interface Order {
   paymentSummary: PaymentSummary
 }
 
-export type OrderStatus = 'Pending' | 'PaymentReceived' | 'PaymentFailed';
+export type OrderStatus = 'Pending' | 'PaymentReceived' | 'PaymentFailed' | 'PaymentMismatch';
 
 
 export interface ShippingAddress {

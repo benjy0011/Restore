@@ -17,6 +17,8 @@ export const OrdersPage = () => {
         return "Payment Received";
       case "PaymentFailed":
         return "Payment Failed";
+      case "PaymentMismatch":
+        return "Payment Mismatch";
       default:
         return status;
     }
