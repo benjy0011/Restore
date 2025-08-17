@@ -1,8 +1,8 @@
 import { Link, useParams } from "react-router-dom"
 import { useFetchOrderDetailedQuery } from "./orderApi";
-import { Box, Button, Card, Divider, Table, TableBody, TableCell, TableContainer, TableRow, Typography } from "@mui/material";
+import { Box, Button, Card, Chip, Divider, Table, TableBody, TableCell, TableContainer, TableRow, Typography } from "@mui/material";
 import CircularProgressScreen from "../../app/shared/components/CircularProgressScreen";
-import { currencyFormat, formatAddressString, formatDateString, formatPaymentString } from "../../lib/util";
+import { currencyFormat, formatAddressString, formatDateString, formatPaymentString, parseOrderStatus } from "../../lib/util";
 
 export const OrderDetailedPage = () => {
   const { id } = useParams();
@@ -83,9 +83,19 @@ export const OrderDetailedPage = () => {
           <Typography component="dt" variant="subtitle1" fontWeight="500">
             Order status
           </Typography>
-          <Typography component="dd" variant="body2" fontWeight="300">
-            {order.orderStatus}
-          </Typography>
+          <Chip
+            color={
+              order.orderStatus === "Pending" 
+              ? "warning"
+              : order.orderStatus === "PaymentFailed" || order.orderStatus === "PaymentMismatch"
+              ? "error"
+              : order.orderStatus === "PaymentReceived"
+              ? "success"
+              : "default"
+            }
+            label={parseOrderStatus(order.orderStatus)}
+          />
+
         </Box>
 
         <Box component="dl">

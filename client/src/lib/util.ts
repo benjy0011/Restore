@@ -1,4 +1,4 @@
-import type { PaymentSummary, ShippingAddress } from "../app/models/order";
+import type { OrderStatus, PaymentSummary, ShippingAddress } from "../app/models/order";
 
 export function currencyFormat(amount: number): string {
   return `$ ${(amount / 100).toFixed(2)}`
@@ -38,4 +38,19 @@ export const formatAddressString = (address: ShippingAddress) => {
 
 export const formatPaymentString = (card: PaymentSummary) => {
   return `${card?.brand.toUpperCase()}, **** **** **** ${card?.last4}, Exp: ${card?.exp_month}/${card?.exp_year}`;
+}
+
+export const parseOrderStatus = (status: OrderStatus): string => {
+  switch (status) {
+    case "Pending":
+      return "Pending";
+    case "PaymentReceived":
+      return "Payment Received";
+    case "PaymentFailed":
+      return "Payment Failed";
+    case "PaymentMismatch":
+      return "Payment Mismatch";
+    default:
+      return status;
+  }
 }

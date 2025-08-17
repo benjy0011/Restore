@@ -1,90 +1,85 @@
 import { useNavigate } from "react-router-dom";
 import { useFetchOrdersQuery } from "./orderApi"
-import { Chip, Container, Paper, Table, TableBody, TableCell, TableHead, TableRow, Typography } from "@mui/material";
-import { currencyFormat, formatDateString } from "../../lib/util";
+import { Chip, Container, Paper, Typography } from "@mui/material";
+import { currencyFormat, formatDateString, parseOrderStatus } from "../../lib/util";
 import CircularProgressScreen from "../../app/shared/components/CircularProgressScreen";
-import type { OrderStatus } from "../../app/models/order";
+import { DataGrid } from '@mui/x-data-grid';
+import type { GridColDef } from "@mui/x-data-grid";
+
 
 export const OrdersPage = () => {
-  const { data: orders, isLoading } = useFetchOrdersQuery();
+  const { data: orders, isLoading } = useFetchOrdersQuery(undefined, {
+    refetchOnMountOrArgChange: true,
+  });
   const navigate = useNavigate();
-
-  const parseOrderStatus = (status: OrderStatus): string => {
-    switch (status) {
-      case "Pending":
-        return "Pending";
-      case "PaymentReceived":
-        return "Payment Received";
-      case "PaymentFailed":
-        return "Payment Failed";
-      case "PaymentMismatch":
-        return "Payment Mismatch";
-      default:
-        return status;
-    }
-  }
 
   if (isLoading) return <CircularProgressScreen />
 
   if (!orders) return <Typography variant="h5">No orders available</Typography>
 
+  const columns: GridColDef<(typeof orders)[number]>[] = [
+    { 
+      field: 'id', 
+      headerName: 'Order', 
+      flex: 0.5,
+      headerAlign: 'center',
+      align: 'center',
+      renderCell: (params) => `# ${params.value}`,
+    },
+    {
+      field: 'orderDate',
+      headerName: 'Order Date',
+      flex: 1,
+      valueGetter: (value) => formatDateString(value),
+    },
+    {
+      field: 'total',
+      headerName: 'Total',
+      flex: 1,
+      valueGetter: (value) => currencyFormat(value),
+    },
+
+    {
+      field: 'orderStatus',
+      headerName: 'Status',
+      flex: 1,
+      renderCell: (params) => (
+        <Chip
+          color={
+            params.value === "Pending" 
+            ? "warning"
+            : params.value === "PaymentFailed" || params.value === "PaymentMismatch"
+            ? "error"
+            : params.value === "PaymentReceived"
+            ? "success"
+            : "default"
+          }
+          label={parseOrderStatus(params.value)}
+        />),
+    }
+  ];
+
+
   return (
-    <Container maxWidth="md">
+    <Container maxWidth="md" sx={{ mb: 2 }}>
       <Typography variant="h5" align="center" gutterBottom>
         My Orders
       </Typography>
 
-      <Paper sx={{ borderRadius: 3 }}>
-        <Table>
-          <TableHead>
-            <TableRow>
-              <TableCell align="center">Order</TableCell>
-              <TableCell>Date</TableCell>
-              <TableCell>Total</TableCell>
-              <TableCell>Status</TableCell>
-            </TableRow>
-          </TableHead>
-
-          <TableBody>
-            {orders.map(order => (
-              <TableRow
-                key={order.id}
-                hover
-                onClick={() => navigate(`/orders/${order.id}`)}
-                sx={{
-                  cursor: 'pointer'
-                }}
-              >
-                <TableCell align="center">
-                  # {order.id}
-                </TableCell>
-
-                <TableCell>
-                  {formatDateString(order.orderDate)}
-                </TableCell>
-
-                <TableCell>
-                  {currencyFormat(order.total)}
-                </TableCell>
-
-                <TableCell>
-                  <Chip
-                    color={
-                      order.orderStatus === "Pending" 
-                      ? "warning"
-                      : order.orderStatus === "PaymentFailed"
-                      ? "error"
-                      : order.orderStatus === "PaymentReceived"
-                      ? "success"
-                      : "default"
-                    }
-                    label={parseOrderStatus(order.orderStatus)}
-                  />
-                </TableCell>
-              </TableRow>
-            ))}
-          </TableBody>
-        </Table>
+      <Paper sx={{ borderRadius: 3, p: 2, mt: 2 }}>
+        <DataGrid 
+          rows={orders}
+          columns={columns}
+          initialState={{
+            pagination: {
+              paginationModel: {
+                pageSize: 5,
+              },
+            },
+          }}
+          pageSizeOptions={[5,10,15]}
+          onRowClick={(r) => navigate(`/orders/${r.row.id}`)}
+        />
       </Paper>
 
     </Container>
