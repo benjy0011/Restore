@@ -129,7 +129,7 @@ const CheckoutStepper = () => {
   const stripe = useStripe();
   const [ addressComplete, setAddressComplete ] = useState<boolean>(false);
   const [ paymentComplete, setPaymentComplete ] = useState<boolean>(false);
-  const unableToProcced = (activeStep === 0 && !addressComplete) || (activeStep === 1 && !paymentComplete);
+  
   const validSkipStep = (currentStep: number, nextStep: number): boolean => {
     if (currentStep === 0) {
       if (nextStep === 1) return addressComplete;
@@ -147,6 +147,8 @@ const CheckoutStepper = () => {
   const [ confirmationToken, setConfirmationToken ] = useState<ConfirmationToken | null>(null);
 
   const [submiting, setSubmitting] = useState<boolean>(false);
+
+  const unableToProcced = (activeStep === 0 && !addressComplete) || (activeStep === 1 && !paymentComplete) || (activeStep === 2 && !confirmationToken);
 
   const handleUpdateAddress = async (): Promise<void> => {
     const address = await getStripeAddress();
