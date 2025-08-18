@@ -232,7 +232,7 @@ const NavBar = () => {
         position="sticky"
         color="inherit"
         sx={{
-          opacity: 0.9,
+          opacity: 0.75,
         }}
       >
         <Toolbar>
