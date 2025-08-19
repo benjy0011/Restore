@@ -321,3 +321,8 @@ C:\Users\benjy\Desktop\Learn Online Store\Restore\API\bin\Debug\net9.0\Newtonsof
 C:\Users\benjy\Desktop\Learn Online Store\Restore\API\bin\Debug\net9.0\Stripe.net.dll
 C:\Users\benjy\Desktop\Learn Online Store\Restore\API\bin\Debug\net9.0\System.Configuration.ConfigurationManager.dll
 C:\Users\benjy\Desktop\Learn Online Store\Restore\API\bin\Debug\net9.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\benjy\Desktop\Learn Online Store\Restore\API\bin\Debug\net9.0\API.staticwebassets.runtime.json
+C:\Users\benjy\Desktop\Learn Online Store\Restore\API\obj\Debug\net9.0\compressed\3gjg5i0tla-h60m3tmd6f.gz
+C:\Users\benjy\Desktop\Learn Online Store\Restore\API\obj\Debug\net9.0\compressed\gsu29eyczd-1nfxndpb7v.gz
+C:\Users\benjy\Desktop\Learn Online Store\Restore\API\obj\Debug\net9.0\compressed\1dpm1p8bmc-w0url653m1.gz
+C:\Users\benjy\Desktop\Learn Online Store\Restore\API\obj\Debug\net9.0\compressed\4pit3vs01m-69kjnsiwqx.gz
