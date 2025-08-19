@@ -12,7 +12,8 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllers();
 builder.Services.AddDbContext<StoreContext>(opt =>
 {
-  opt.UseSqlite(builder.Configuration.GetConnectionString("DefaultConnection"));
+  // opt.UseSqlite(builder.Configuration.GetConnectionString("DefaultConnection"));
+  opt.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));
 });
 
 // Add cors
@@ -82,6 +83,6 @@ app.MapControllers();
 app.MapGroup("api").MapIdentityApi<User>(); // api/login, configuring this will allow us to have access to builtin auth api
 app.MapFallbackToController("Index", "Fallback"); // fallback to "Fallback" controller, "Index" action
 
-DbInitializer.InitDb(app);
+await DbInitializer.InitDb(app);
 
 app.Run();
