@@ -122,7 +122,7 @@ const CheckoutStepper = () => {
   const [containerHeight, setContainerHeight] = useState<number>(0);
   const containerRef = useRef<HTMLDivElement>(null);
 
-  const { data: {name, ...restAddress} = {} as Address, isLoading } = useFetchAddressQuery();
+  const { data, isLoading } = useFetchAddressQuery();
   const [ updateAddress ] = useUpdateUserAddressMutation();
   const [ saveAddressChecked, setSaveAddressChecked ] = useState<boolean>(false);
   const elements = useElements();
@@ -149,6 +149,12 @@ const CheckoutStepper = () => {
   const [submiting, setSubmitting] = useState<boolean>(false);
 
   const unableToProcced = (activeStep === 0 && !addressComplete) || (activeStep === 1 && !paymentComplete) || (activeStep === 2 && !confirmationToken);
+
+
+  let name, restAddress;
+  if (data) {
+    ({name, ...restAddress} = data);
+  }
 
   const handleUpdateAddress = async (): Promise<void> => {
     const address = await getStripeAddress();
