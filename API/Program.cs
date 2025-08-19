@@ -47,6 +47,15 @@ var app = builder.Build();
 // Middleware
 // Configure the HTTP request pipeline (sequence of this block of code is important)
 app.UseMiddleware<ExceptionMiddleware>(); // sequence is important, put at top most
+
+
+// Sequence is important
+// return static file (wwwroot) when api get visited
+app.UseDefaultFiles();
+app.UseStaticFiles();
+
+
+
 app.UseCors(opt =>
 {
   opt
@@ -71,6 +80,7 @@ app.UseAuthorization();
 
 app.MapControllers();
 app.MapGroup("api").MapIdentityApi<User>(); // api/login, configuring this will allow us to have access to builtin auth api
+app.MapFallbackToController("Index", "Fallback"); // fallback to "Fallback" controller, "Index" action
 
 DbInitializer.InitDb(app);
 
