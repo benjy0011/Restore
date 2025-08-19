@@ -67,7 +67,7 @@ const HomePage = () => {
             // zIndex: -2,
           }}
         >
-          <source src="/public/videos/skiing_video.mp4" type="video/mp4" />
+          <source src="/videos/skiing_video.mp4" type="video/mp4" />
         </video>
 
         <Container
@@ -149,7 +149,10 @@ const HomePage = () => {
             mb: 4,
           }}
         >
-          <Typography variant="h3">Why <Typography variant="h3" fontWeight="bold" color="primary.main" display="inline">Re-store</Typography>?</Typography>
+          <Typography variant="h3">Why </Typography>
+          &nbsp; &nbsp;
+          <Typography variant="h3" fontWeight="bold" color="primary.main" display="inline">Re-store</Typography>
+          <Typography variant="h3" display="inline">?</Typography>
         </Box>
       </ScrollFadeIn>
       
