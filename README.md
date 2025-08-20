@@ -1,26 +1,30 @@
-This is a repo for self-learning purpose. I am learning full-stack development with C# and ReactTS.
+Full-Stack Learning Repo
 
+This repo is for self-learning full-stack development with C# (ASP.NET Core) and React (TypeScript).
 
 API
-~ cd .\API\
-~ dotnet watch
 
+cd ./API
+dotnet watch
 Client
-~ cd .\client\
-~ npm run dev
 
-Stripe listener
-~ stripe listen -f https://localhost:5001/api/payments/webhook -e payment_intent.succeeded,payment_intent.payment_failed
+cd ./client
+npm run dev
+Stripe Listener
 
-Db
-~ docker compose up -d  
-~ dotnet ef migrations add SqlServerInitial -o Data/Migrations
+stripe listen -f https://localhost:5001/api/payments/webhook
+ \
+-e payment_intent.succeeded,payment_intent.payment_failed
+Database
 
-Build client
-~ cd .\client\
-~ npm run build
+docker compose up -d
+dotnet ef migrations add SqlServerInitial -o Data/Migrations
+Build Client
 
-Publish
-~ cd .\API\
-~ dotnet publish -c Release -o ./bin/Publish
-~ (left click 'Publish' folder and click deploy to azure)
+cd ./client
+npm run build
+Publish API
+
+cd ./API
+dotnet publish -c Release -o ./bin/Publish
+👉 Then, right-click the Publish folder and select Deploy to Azure.
