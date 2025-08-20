@@ -98,6 +98,7 @@ const SlidingStepContent = (
         width: '100%',
         top: 0,
         left: 0,
+        p: 1,
         opacity: isActive ? 1 : 0,
         visibility: isActive ? 'visible' : 'hidden',
         transform: isActive ? 'translateX(0)' : 
