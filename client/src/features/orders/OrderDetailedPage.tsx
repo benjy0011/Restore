@@ -155,7 +155,7 @@ export const OrderDetailedPage = () => {
                     p: 4,
                   }}
                 >
-                  {currencyFormat(item.price)}
+                  {currencyFormat(item.price * item.quantity)}
                 </TableCell>
               </TableRow>
             ))}
