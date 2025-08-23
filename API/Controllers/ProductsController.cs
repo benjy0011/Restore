@@ -5,6 +5,8 @@ using API.Data;
 using Microsoft.EntityFrameworkCore;
 using API.Extensions;
 using API.RequestHelpers;
+using Microsoft.AspNetCore.Authorization;
+using API.DTOs;
 
 namespace API.Controllers;
 
@@ -65,5 +67,24 @@ public class ProductsController(StoreContext _context) : BaseApiController
     var types = await _context.Products.Select(x => x.Type).Distinct().ToListAsync();
 
     return Ok(new { brands, types });
+  }
+
+  [Authorize(Roles = "Admin")]
+  [HttpPost]
+  public async Task<ActionResult<Product>> CreateProduct(CreateProductDto productDto)
+  {
+    var product = new Product { Name = productDto.Name };
+
+    _context.Products.Add(product);
+
+    var result = await _context.SaveChangesAsync() > 0;
+
+    if (result) return CreatedAtAction(
+      nameof(GetProduct),
+      new { Id = product.Id },
+      product
+    );
+
+    return BadRequest("Problem creating new product.");
   }
 }
