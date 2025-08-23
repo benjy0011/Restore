@@ -7,6 +7,7 @@ using API.Extensions;
 using API.RequestHelpers;
 using Microsoft.AspNetCore.Authorization;
 using API.DTOs;
+using AutoMapper;
 
 namespace API.Controllers;
 
@@ -15,7 +16,7 @@ namespace API.Controllers;
 
 // public class ProductsController(StoreContext _context) : ControllerBase
 
-public class ProductsController(StoreContext _context) : BaseApiController
+public class ProductsController(StoreContext _context, IMapper _mapper) : BaseApiController
 {
 
   // vvvvvvvv Conventional Contructor vvvvvvvv
@@ -73,7 +74,7 @@ public class ProductsController(StoreContext _context) : BaseApiController
   [HttpPost]
   public async Task<ActionResult<Product>> CreateProduct(CreateProductDto productDto)
   {
-    var product = new Product { Name = productDto.Name };
+    var product = _mapper.Map<Product>(productDto);
 
     _context.Products.Add(product);
 

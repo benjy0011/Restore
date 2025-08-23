@@ -19,6 +19,9 @@ builder.Services.AddDbContext<StoreContext>(opt =>
 // Add cors
 builder.Services.AddCors();
 
+// Auto mapper
+builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies()); // scan for class inherit from `Profile` class ('MapingProfiles.cs' in our case)
+
 // Scoped is the most common (hierachy architecture) - ready anytime, get new per visit, reuse per request [one instance per HTTP request, reused within that request only]
 // Transient - when not needed everytime, new per request [a new instance every time it's needed, even within the same request]
 // Singleton - reuse everytime when app starts [reused everywhere when app starts]
