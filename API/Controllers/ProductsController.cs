@@ -103,6 +103,23 @@ public class ProductsController(StoreContext _context, IMapper _mapper) : BaseAp
 
     if (result) return NoContent();
 
-    return BadRequest("Problem updating new product.");
+    return BadRequest("Problem updating the product.");
+  }
+
+  [Authorize(Roles = "Admin")]
+  [HttpDelete("{id}")]
+  public async Task<ActionResult> DeleteProduct(int id)
+  {
+    var product = await _context.Products.FindAsync(id);
+
+    if (product == null) return NotFound();
+
+    _context.Products.Remove(product);
+
+    var result = await _context.SaveChangesAsync() > 0;
+
+    if (result) return Ok();
+
+    return BadRequest("Problem deleting the product.");
   }
 }
