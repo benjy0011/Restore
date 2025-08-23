@@ -9,6 +9,8 @@ public class MappingProfiles : Profile
   public MappingProfiles()
   {
     // CreateMap<From, Into>
-    CreateMap<CreateProductDto, Product>();    
+    CreateMap<CreateProductDto, Product>();
+
+    CreateMap<UpdateProductDto, Product>(); 
   }
 }

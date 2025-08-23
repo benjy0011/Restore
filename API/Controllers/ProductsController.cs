@@ -88,4 +88,21 @@ public class ProductsController(StoreContext _context, IMapper _mapper) : BaseAp
 
     return BadRequest("Problem creating new product.");
   }
+
+  [Authorize(Roles = "Admin")]
+  [HttpPut]
+  public async Task<ActionResult> UpdateProduct(UpdateProductDto updateProductDto)
+  {
+    var product = await _context.Products.FindAsync(updateProductDto.Id);
+
+    if (product == null) return NotFound();
+
+    _mapper.Map(updateProductDto, product);
+
+    var result = await _context.SaveChangesAsync() > 0;
+
+    if (result) return NoContent();
+
+    return BadRequest("Problem updating new product.");
+  }
 }
