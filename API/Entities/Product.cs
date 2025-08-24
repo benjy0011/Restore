@@ -2,7 +2,7 @@ namespace API.Entities; // Location, matches the actual file path name
 
 public class Product
 {
-  public int Id { get; set;} // convention of Entity Framework, auto use Id and Primary Key
+  public int Id { get; set; } // convention of Entity Framework, auto use Id and Primary Key
 
   public required string Name { get; set; }
 
@@ -19,4 +19,6 @@ public class Product
   public required string Type { get; set; }
 
   public int QuantityInStock { get; set; }
+  
+  public string? PublicId { get; set; }
 }

@@ -8,6 +8,7 @@ using API.RequestHelpers;
 using Microsoft.AspNetCore.Authorization;
 using API.DTOs;
 using AutoMapper;
+using API.Services;
 
 namespace API.Controllers;
 
@@ -16,7 +17,7 @@ namespace API.Controllers;
 
 // public class ProductsController(StoreContext _context) : ControllerBase
 
-public class ProductsController(StoreContext _context, IMapper _mapper) : BaseApiController
+public class ProductsController(StoreContext _context, IMapper _mapper, ImageService imageService) : BaseApiController
 {
 
   // vvvvvvvv Conventional Contructor vvvvvvvv
@@ -75,6 +76,19 @@ public class ProductsController(StoreContext _context, IMapper _mapper) : BaseAp
   public async Task<ActionResult<Product>> CreateProduct(CreateProductDto productDto)
   {
     var product = _mapper.Map<Product>(productDto);
+
+    if (productDto.File != null)
+    {
+      var imageResult = await imageService.AddImageAsync(productDto.File);
+
+      if (imageResult.Error != null)
+      {
+        return BadRequest(imageResult.Error.Message);
+      }
+
+      product.PictureUrl = imageResult.SecureUrl.AbsoluteUri;
+      product.PublicId = imageResult.PublicId;
+    }
 
     _context.Products.Add(product);
 
