@@ -3,6 +3,9 @@ import { createProductSchema, type CreateProductSchema } from "../../lib/schemas
 import { zodResolver } from "@hookform/resolvers/zod"
 import { Box, Button, Grid, Paper, Typography } from "@mui/material"
 import { AppTextInput } from "../../app/shared/components/AppTextInput"
+import { useFetchFiltersQuery } from "../catalog/catalogApi"
+import { AppSelectInput } from "../../app/shared/components/AppSelectInput"
+import CircularProgressScreen from "../../app/shared/components/CircularProgressScreen"
 
 interface Props {
   setEditMode: (editMode: boolean) => void
@@ -16,9 +19,13 @@ export const ProductForm = ({
     resolver: zodResolver(createProductSchema),
   })
 
+  const { data, isLoading } = useFetchFiltersQuery();
+
   const onSubmit = (data: CreateProductSchema) => {
     console.log(data);
   }
+
+  if (isLoading) return (<CircularProgressScreen />)
 
   return (
     <Box component={Paper} sx={{ p: 4, maxWidth: 'lg', mx: 'auto' }}>
@@ -45,15 +52,31 @@ export const ProductForm = ({
           </Grid>
 
           <Grid size={6}>
-            <AppTextInput control={control} name="brand" label="Brand" />
+            {data?.brands &&
+              <AppSelectInput
+                control={control}
+                name="brand"
+                label="Brand"
+                items={data.brands}
+              />
+            }
+            
           </Grid>
 
           <Grid size={6}>
-            <AppTextInput control={control} name="type" label="Type" />
+            {data?.types &&
+              <AppSelectInput
+                control={control}
+                name="type"
+                label="Type"
+                items={data.types}
+              />
+            }
+            
           </Grid>
 
           <Grid size={6}>
-            <AppTextInput type="number" control={control} name="price" label="Price" />
+            <AppTextInput type="number" control={control} name="price" label="Price (in cents)" />
           </Grid>
 
           <Grid size={6}>
