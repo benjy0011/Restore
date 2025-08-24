@@ -15,10 +15,12 @@ interface Props {
 export const ProductForm = ({
   setEditMode,
 }: Props) => {
-  const { control, handleSubmit } = useForm({
+  const { control, handleSubmit, watch } = useForm({
     mode: 'onTouched',
     resolver: zodResolver(createProductSchema),
   })
+
+  const watchFile = watch('file');
 
   const { data, isLoading } = useFetchFiltersQuery();
 
@@ -88,8 +90,11 @@ export const ProductForm = ({
             <AppTextInput multiline rows={4} control={control} name="description" label="Description" />
           </Grid>
 
-          <Grid size={12}>
+          <Grid size={12} display='flex' justifyContent='space-between' alignItems='center' gap={2}>
             <AppDropZone control={control} name="file" />
+            {watchFile && (
+              <img src={watchFile.preview} alt='Preview of image' style={{ maxHeight: 200, flex: 1, maxWidth: '40%' }} />
+            )}
           </Grid>
         </Grid>
 

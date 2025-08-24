@@ -7,8 +7,8 @@ import { useController, type FieldValues, type UseControllerProps } from "react-
 
 const dropZoneStyles: CSSProperties = {
     display: 'flex',
-    border: 'dashed 3px #eee',
-    borderColor: '#eee',
+    border: 'dashed 3px #767676',
+    borderColor: '#767676',
     borderRadius: '10px',
     alignItems: 'center',
     justifyContent: 'center',
@@ -20,6 +20,10 @@ const dropZoneStyles: CSSProperties = {
     borderColor: 'green'
   }
 
+  const dropZoneError: CSSProperties = {
+    borderColor: 'red'
+  }
+
 
 type Props<T extends FieldValues> = {
   name: keyof T
@@ -29,8 +33,14 @@ export function AppDropZone<T extends FieldValues> (props: Props<T>) {
   const { fieldState, field } = useController({...props});
 
   const onDrop = useCallback((acceptedFiles: File[]) => {
-    console.log(acceptedFiles);
-  }, []);
+    if (acceptedFiles.length > 0) {
+      const fileWithPreview = Object.assign(acceptedFiles[0], {
+        preview: URL.createObjectURL(acceptedFiles[0])
+      });
+
+      field.onChange(fileWithPreview);
+    }
+  }, [field]);
 
 
   const { acceptedFiles, getRootProps, getInputProps, isDragActive } = useDropzone({ onDrop: onDrop });
@@ -38,9 +48,14 @@ export function AppDropZone<T extends FieldValues> (props: Props<T>) {
   
 
   return (
-    <div {...getRootProps()}>
+    <div {...getRootProps()} style={{ flex: 1 }}>
       <FormControl 
-        style={ isDragActive ? {...dropZoneStyles, ...dropZoneActive} : dropZoneStyles }
+        style={ 
+          isDragActive 
+            ? {...dropZoneStyles, ...dropZoneActive} 
+            : fieldState.error
+            ? {...dropZoneStyles, ...dropZoneError}
+            : dropZoneStyles }
         error= {!!fieldState.error}
       >
         <input {...getInputProps()} />

@@ -2,7 +2,10 @@ import { z } from "zod";
 
 const fileSchema = z.instanceof(File).refine(file => file.size > 0, {
   error: "A file must be uoloaded"
-});
+}).transform(file => ({
+  ...file,
+  preview: URL.createObjectURL(file)
+}));
 
 export const createProductSchema = z.object({
   name: z.string({ 
