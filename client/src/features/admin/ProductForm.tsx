@@ -8,18 +8,35 @@ import { AppSelectInput } from "../../app/shared/components/AppSelectInput"
 import CircularProgressScreen from "../../app/shared/components/CircularProgressScreen"
 import { AppDropZone } from "../../app/shared/components/AppDropZone"
 import { useEffect, useState } from "react"
+import type { Product } from "../../app/models/product"
 
 interface Props {
   setEditMode: (editMode: boolean) => void
+  product: Product | null
 }
 
 export const ProductForm = ({
   setEditMode,
+  product,
 }: Props) => {
-  const { control, handleSubmit, watch } = useForm({
+  const { control, handleSubmit, watch, reset } = useForm({
     mode: 'onTouched',
     resolver: zodResolver(createProductSchema),
+    defaultValues: {
+      name: '',
+      description: '',
+      price: '',
+      type: '',
+      brand: '',
+      quantityInStock: '',
+      pictureUrl: '',
+      file: undefined
+    }
   })
+
+  useEffect(() => {
+    if (product) reset(product);
+  }, [product, reset])
 
   const watchFile = watch('file');
   const [preview, setPreview] = useState<string | null>(null);
@@ -106,8 +123,10 @@ export const ProductForm = ({
 
           <Grid size={12} display='flex' justifyContent='space-between' alignItems='center' gap={2}>
             <AppDropZone control={control} name="file" />
-            {preview && (
-              <img src={preview} alt='Preview of image' style={{ maxHeight: 200, flex: 1, maxWidth: '40%' }} />
+            {(preview || product?.pictureUrl) && (
+              <div style={{ flex: 1, display: 'flex' }}>
+                <img src={preview || product?.pictureUrl} alt='Preview of image' style={{ maxHeight: 200, margin: '0 auto' }} />
+              </div>
             )}
           </Grid>
         </Grid>

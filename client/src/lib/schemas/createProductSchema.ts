@@ -1,37 +1,39 @@
 import { z } from "zod";
 
 const fileSchema = z.instanceof(File).refine(file => file.size > 0, {
-  error: "A file must be uoloaded"
+  error: "A file must be uploaded"
 });
 
 export const createProductSchema = z.object({
   name: z.string({ 
-    error: (issue) => 
-      issue.input === undefined ? "Name of product is required" : undefined
-  }),
+    error: "Name of product is required"
+  }).min(1, "Name of product is required"), // Add this to catch empty strings
+  
   description: z.string({
-    error: (issue) => 
-      issue.input === undefined ? "Description is required" : undefined
-  }).min(10, {
-    error: "Description must be at least 10 characters"
-  }),
+    error: "Description is required"
+  }).min(10, "Description must be at least 10 characters"),
+  
   price: z.coerce.number({
-    error: (issue) => 
-      issue.input === undefined ? "Price is required" : undefined
+    error: "Price is required"
   }).min(100, 'Price must be at least $1.00'),
+  
   type: z.string({ 
-    error: (issue) => 
-      issue.input === undefined ? "Type is required" : undefined
-  }),
+    error: "Type is required"
+  }).min(1, "Type is required"), // Add this to catch empty strings
+  
   brand: z.string({ 
-    error: (issue) => 
-      issue.input === undefined ? "Brand is required" : undefined
-  }),
+    error: "Brand is required"
+  }).min(1, "Brand is required"), // Add this to catch empty strings
+  
   quantityInStock: z.coerce.number({
-    error: (issue) => 
-      issue.input === undefined ? "Quantity is required" : undefined
+    error: "Quantity is required"
   }).min(1, 'Quantity must be at least 1'),
-  file: fileSchema
+  
+  pictureUrl: z.string().optional(),
+  file: fileSchema.optional()
+}).refine((data) => data.pictureUrl || (data.file && data.file instanceof File) , {
+  error: 'Please provide an image',
+  path: ['file']
 });
 
-export type CreateProductSchema = z.infer<typeof createProductSchema >;
+export type CreateProductSchema = z.infer<typeof createProductSchema>;

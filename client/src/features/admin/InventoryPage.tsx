@@ -1,4 +1,4 @@
-import { Box, Button, Paper, Table, TableBody, TableCell, TableContainer, TableHead, TableRow, Typography } from "@mui/material";
+import { Box, Button, IconButton, Paper, Table, TableBody, TableCell, TableContainer, TableHead, TableRow, Typography } from "@mui/material";
 import { useAppDispatch, useAppSelector } from "../../app/store/store"
 import { useFetchProductsQuery } from "../catalog/catalogApi";
 import { currencyFormat } from "../../lib/util";
@@ -7,14 +7,21 @@ import AppPagination from "../../app/shared/components/AppPagination";
 import { setPageNumber } from "../catalog/catalogSlice";
 import { ProductForm } from "./ProductForm";
 import { useState } from "react";
+import type { Product } from "../../app/models/product";
 
 export const InventoryPage = () => {
   const productParams = useAppSelector(state => state.catalog);
   const { data } = useFetchProductsQuery(productParams);
   const dispatch = useAppDispatch();
   const [ editMode, setEditMode ] = useState(false);
+  const [selectedProduct, setSelectedProduct] = useState<Product | null>(null);
 
-  if (editMode) return <ProductForm setEditMode={setEditMode} />
+  const handleSelectProduct = (product: Product) => {
+    setSelectedProduct(product);
+    setEditMode(true);
+  }
+
+  if (editMode) return <ProductForm setEditMode={setEditMode} product={selectedProduct} />
 
   return (
     <div>
@@ -28,7 +35,14 @@ export const InventoryPage = () => {
           Inventory
         </Typography>
         
-        <Button sx={{ m: 2 }} size='large' variant='contained' onClick={() => setEditMode(true)}>
+        <Button 
+          sx={{ m: 2 }} 
+          size='large' 
+          variant='contained' 
+          onClick={() => {
+            setSelectedProduct(null);
+            setEditMode(true);
+          }}>
           Create
         </Button>
       </Box>
@@ -78,8 +92,8 @@ export const InventoryPage = () => {
                 <TableCell align="center">{product.quantityInStock}</TableCell>
 
                 <TableCell align="right">
-                  <Button startIcon={<Edit />} />
-                  <Button startIcon={<Delete />} color="error" />
+                  <IconButton size="small" color="primary" onClick={() => handleSelectProduct(product)}><Edit fontSize="small" /></IconButton>
+                  <IconButton size="small" color="error"><Delete fontSize="small" /></IconButton>
                 </TableCell>
               </TableRow>
             ))}
