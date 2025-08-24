@@ -1,6 +1,6 @@
 import { Divider, IconButton, ListItemIcon, ListItemText, Tooltip, type IconButtonProps, type IconProps } from "@mui/material";
 import { CompositeMenu, CompositeMenuItem, CompositeMenuList, CompositeMenuTrigger, useCompositeMenu } from "../shared/components/CompositeMenu";
-import { AccountCircleOutlined, History, Logout, Person } from "@mui/icons-material";
+import { AccountCircleOutlined, History, Inventory, Logout, Person } from "@mui/icons-material";
 import type { User } from "../models/user";
 import { useLogoutMutation } from "../../features/account/accountApi";
 import { useNavigate } from "react-router-dom";
@@ -66,6 +66,16 @@ const UserMenuContent = ({
             <History />
           </ListItemIcon>
           <ListItemText>My orders</ListItemText>
+        </CompositeMenuItem>
+
+        {/* Inventory */}
+        <CompositeMenuItem 
+          onClick={() => navigate("/inventory")}
+        >
+          <ListItemIcon>
+            <Inventory />
+          </ListItemIcon>
+          <ListItemText>Inventory</ListItemText>
         </CompositeMenuItem>
 
         <Divider />
