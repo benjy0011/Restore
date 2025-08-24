@@ -7,6 +7,7 @@ import { useFetchFiltersQuery } from "../catalog/catalogApi"
 import { AppSelectInput } from "../../app/shared/components/AppSelectInput"
 import CircularProgressScreen from "../../app/shared/components/CircularProgressScreen"
 import { AppDropZone } from "../../app/shared/components/AppDropZone"
+import { useEffect, useState } from "react"
 
 interface Props {
   setEditMode: (editMode: boolean) => void
@@ -21,6 +22,19 @@ export const ProductForm = ({
   })
 
   const watchFile = watch('file');
+  const [preview, setPreview] = useState<string | null>(null);
+  useEffect(() => {
+    if (!watchFile) {
+      setPreview(null);
+      return;
+    }
+    const url = URL.createObjectURL(watchFile);
+    setPreview(url);
+
+    return () => {
+      URL.revokeObjectURL(url);
+    };
+  }, [watchFile]);
 
   const { data, isLoading } = useFetchFiltersQuery();
 
@@ -92,8 +106,8 @@ export const ProductForm = ({
 
           <Grid size={12} display='flex' justifyContent='space-between' alignItems='center' gap={2}>
             <AppDropZone control={control} name="file" />
-            {watchFile && (
-              <img src={watchFile.preview} alt='Preview of image' style={{ maxHeight: 200, flex: 1, maxWidth: '40%' }} />
+            {preview && (
+              <img src={preview} alt='Preview of image' style={{ maxHeight: 200, flex: 1, maxWidth: '40%' }} />
             )}
           </Grid>
         </Grid>
