@@ -1,7 +1,8 @@
-import { Controller, useForm } from "react-hook-form"
+import { useForm } from "react-hook-form"
 import { createProductSchema, type CreateProductSchema } from "../../lib/schemas/createProductSchema"
 import { zodResolver } from "@hookform/resolvers/zod"
-import { Box, Button, Grid, Paper, TextField, Typography } from "@mui/material"
+import { Box, Button, Grid, Paper, Typography } from "@mui/material"
+import { AppTextInput } from "../../app/shared/components/AppTextInput"
 
 interface Props {
   setEditMode: (editMode: boolean) => void
@@ -11,11 +12,8 @@ export const ProductForm = ({
   setEditMode,
 }: Props) => {
   const { control, handleSubmit } = useForm({
-    mode: 'onTouched',
+    // mode: 'onTouched',
     resolver: zodResolver(createProductSchema),
-    defaultValues: {
-      name: ''
-    }
   })
 
   const onSubmit = (data: CreateProductSchema) => {
@@ -31,7 +29,7 @@ export const ProductForm = ({
       <form onSubmit={handleSubmit(onSubmit)}>
         <Grid container spacing={3}>
           <Grid size={12}>
-            <Controller
+            {/* <Controller
               render={({ field }) => 
                 <TextField 
                   {...field} 
@@ -41,7 +39,9 @@ export const ProductForm = ({
               }
               name='name'
               control={control}
-            />
+            /> */}
+
+            <AppTextInput control={control} name="name" label="Product Name" />
           </Grid>
         </Grid>
 
