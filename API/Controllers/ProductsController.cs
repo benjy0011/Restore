@@ -113,6 +113,21 @@ public class ProductsController(StoreContext _context, IMapper _mapper, ImageSer
 
     _mapper.Map(updateProductDto, product);
 
+    if (updateProductDto.File != null)
+    {
+      var imageResult = await imageService.AddImageAsync(updateProductDto.File);
+
+      if (imageResult.Error != null) return BadRequest(imageResult.Error.Message);
+
+      if (!string.IsNullOrEmpty(product.PublicId))
+      {
+        await imageService.DeleteImageAsync(product.PublicId);
+      }
+
+      product.PictureUrl = imageResult.SecureUrl.AbsoluteUri;
+      product.PublicId = imageResult.PublicId;
+    }
+
     var result = await _context.SaveChangesAsync() > 0;
 
     if (result) return NoContent();
@@ -127,6 +142,11 @@ public class ProductsController(StoreContext _context, IMapper _mapper, ImageSer
     var product = await _context.Products.FindAsync(id);
 
     if (product == null) return NotFound();
+
+    if (!string.IsNullOrEmpty(product.PublicId))
+    {
+      await imageService.DeleteImageAsync(product.PublicId);
+    }
 
     _context.Products.Remove(product);
 
