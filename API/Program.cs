@@ -4,10 +4,13 @@ using API.Entities;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Identity;
 using API.Services;
+using API.RequestHelpers;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container. (sequence doesnt matter for builder)
+
+builder.Services.Configure<CloudinarySettings>(builder.Configuration.GetSection("Cloudinary")); // "Cloudinary" from appsettings.json
 
 builder.Services.AddControllers();
 builder.Services.AddDbContext<StoreContext>(opt =>
