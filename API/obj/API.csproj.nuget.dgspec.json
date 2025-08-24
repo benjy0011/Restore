@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\API.csproj": {}
+    "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\API.csproj": {}
   },
   "projects": {
-    "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\API.csproj": {
+    "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\API.csproj",
+        "projectUniqueName": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\API.csproj",
         "projectName": "API",
-        "projectPath": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\API.csproj",
+        "projectPath": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\API.csproj",
         "packagesPath": "C:\\Users\\benjy\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\obj\\",
+        "outputPath": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -50,6 +50,14 @@
         "net9.0": {
           "targetAlias": "net9.0",
           "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[13.0.1, )"
+            },
+            "CloudinaryDotNet": {
+              "target": "Package",
+              "version": "[1.27.6, )"
+            },
             "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
               "target": "Package",
               "version": "[9.0.7, )"

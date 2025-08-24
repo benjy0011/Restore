@@ -325,3 +325,5 @@ C:\Users\benjy\Desktop\Learn Online Store\Restore\api\bin\Debug\net9.0\runtimes\
 C:\Users\benjy\Desktop\Learn Online Store\Restore\API\bin\Debug\net9.0\System.Formats.Asn1.dll
 C:\Users\benjy\Desktop\Learn Online Store\Restore\API\obj\Debug\net9.0\compressed\zhqxr2x2kr-gr6x897o5v.gz
 C:\Users\benjy\Desktop\Learn Online Store\Restore\API\obj\Debug\net9.0\compressed\1dpm1p8bmc-kpabrkmzxr.gz
+C:\Users\benjy\Desktop\Learn Online Store\Restore\api\bin\Debug\net9.0\AutoMapper.dll
+C:\Users\benjy\Desktop\Learn Online Store\Restore\api\bin\Debug\net9.0\CloudinaryDotNet.dll
