@@ -34,6 +34,9 @@ builder.Services.AddTransient<ExceptionMiddleware>();
 // Payment
 builder.Services.AddScoped<PaymentService>();
 
+// File upload
+builder.Services.AddScoped<ImageService>();
+
 
 // User Identity
 builder.Services
