@@ -5,11 +5,16 @@ import { currencyFormat } from "../../lib/util";
 import { Delete, Edit } from "@mui/icons-material";
 import AppPagination from "../../app/shared/components/AppPagination";
 import { setPageNumber } from "../catalog/catalogSlice";
+import { ProductForm } from "./ProductForm";
+import { useState } from "react";
 
 export const InventoryPage = () => {
   const productParams = useAppSelector(state => state.catalog);
   const { data } = useFetchProductsQuery(productParams);
   const dispatch = useAppDispatch();
+  const [ editMode, setEditMode ] = useState(false);
+
+  if (editMode) return <ProductForm setEditMode={setEditMode} />
 
   return (
     <div>
@@ -23,7 +28,7 @@ export const InventoryPage = () => {
           Inventory
         </Typography>
         
-        <Button sx={{ m: 2 }} size='large' variant='contained'>
+        <Button sx={{ m: 2 }} size='large' variant='contained' onClick={() => setEditMode(true)}>
           Create
         </Button>
       </Box>
