@@ -6,6 +6,7 @@ import { AppTextInput } from "../../app/shared/components/AppTextInput"
 import { useFetchFiltersQuery } from "../catalog/catalogApi"
 import { AppSelectInput } from "../../app/shared/components/AppSelectInput"
 import CircularProgressScreen from "../../app/shared/components/CircularProgressScreen"
+import { AppDropZone } from "../../app/shared/components/AppDropZone"
 
 interface Props {
   setEditMode: (editMode: boolean) => void
@@ -88,7 +89,7 @@ export const ProductForm = ({
           </Grid>
 
           <Grid size={12}>
-            <AppTextInput control={control} name="file" label="Image" />
+            <AppDropZone control={control} name="file" />
           </Grid>
         </Grid>
 
