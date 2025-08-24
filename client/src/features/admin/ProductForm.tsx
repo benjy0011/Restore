@@ -12,7 +12,7 @@ export const ProductForm = ({
   setEditMode,
 }: Props) => {
   const { control, handleSubmit } = useForm({
-    // mode: 'onTouched',
+    mode: 'onTouched',
     resolver: zodResolver(createProductSchema),
   })
 
@@ -42,6 +42,30 @@ export const ProductForm = ({
             /> */}
 
             <AppTextInput control={control} name="name" label="Product Name" />
+          </Grid>
+
+          <Grid size={6}>
+            <AppTextInput control={control} name="brand" label="Brand" />
+          </Grid>
+
+          <Grid size={6}>
+            <AppTextInput control={control} name="type" label="Type" />
+          </Grid>
+
+          <Grid size={6}>
+            <AppTextInput type="number" control={control} name="price" label="Price" />
+          </Grid>
+
+          <Grid size={6}>
+            <AppTextInput type="number" control={control} name="quantityInStock" label="Quantity in stock" />
+          </Grid>
+
+          <Grid size={12}>
+            <AppTextInput multiline rows={4} control={control} name="description" label="Description" />
+          </Grid>
+
+          <Grid size={12}>
+            <AppTextInput control={control} name="file" label="Image" />
           </Grid>
         </Grid>
 
