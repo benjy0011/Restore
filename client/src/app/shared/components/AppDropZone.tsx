@@ -42,7 +42,7 @@ export function AppDropZone<T extends FieldValues> (props: Props<T>) {
     }
   }, [field]);
 
-  const { acceptedFiles, getRootProps, getInputProps, isDragActive } = useDropzone({ onDrop: onDrop, accept: { "image/*": [] } });
+  const { getRootProps, getInputProps, isDragActive } = useDropzone({ onDrop: onDrop, accept: { "image/*": [] } });
 
   return (
     <div {...getRootProps()} style={{ flex: 1 }}>
