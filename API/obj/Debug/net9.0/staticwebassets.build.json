@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "KOXl0OpH0avUGieWJycb0EUW5jEsdhzPDsCWwJBLpMI=",
+  "Hash": "d8J4x4xGrK8izJNVlBG9+csDuTQp14xyQmvA1hQAz2M=",
   "Source": "API",
   "BasePath": "_content/API",
   "Mode": "Default",
@@ -10,17 +10,17 @@
     {
       "Name": "API\\wwwroot",
       "Source": "API",
-      "ContentRoot": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\",
       "BasePath": "_content/API",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\obj\\Debug\\net9.0\\compressed\\1dpm1p8bmc-kpabrkmzxr.gz",
+      "Identity": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\obj\\Debug\\net9.0\\compressed\\1dpm1p8bmc-kpabrkmzxr.gz",
       "SourceId": "API",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\obj\\Debug\\net9.0\\compressed\\",
+      "ContentRoot": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\obj\\Debug\\net9.0\\compressed\\",
       "BasePath": "_content/API",
       "RelativePath": "index#[.{fingerprint=kpabrkmzxr}]?.html.gz",
       "AssetKind": "All",
@@ -28,20 +28,20 @@
       "AssetRole": "Alternative",
       "AssetMergeBehavior": "",
       "AssetMergeSource": "",
-      "RelatedAsset": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\index.html",
+      "RelatedAsset": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\index.html",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
       "Fingerprint": "7ufyzlotzz",
       "Integrity": "r7vub0FFDB0JXWyPtj8rYxHwsjfJz9OZ1BPHTOsgxec=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\index.html"
+      "OriginalItemSpec": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\index.html"
     },
     {
-      "Identity": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\obj\\Debug\\net9.0\\compressed\\3gjg5i0tla-h60m3tmd6f.gz",
+      "Identity": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\obj\\Debug\\net9.0\\compressed\\3gjg5i0tla-h60m3tmd6f.gz",
       "SourceId": "API",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\obj\\Debug\\net9.0\\compressed\\",
+      "ContentRoot": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\obj\\Debug\\net9.0\\compressed\\",
       "BasePath": "_content/API",
       "RelativePath": "assets/index-Bp1RTIla#[.{fingerprint=h60m3tmd6f}]?.css.gz",
       "AssetKind": "All",
@@ -49,20 +49,20 @@
       "AssetRole": "Alternative",
       "AssetMergeBehavior": "",
       "AssetMergeSource": "",
-      "RelatedAsset": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\assets\\index-Bp1RTIla.css",
+      "RelatedAsset": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\assets\\index-Bp1RTIla.css",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
       "Fingerprint": "2lq7u1faq2",
       "Integrity": "qoscuWFvSjqpDw//j8oBhJ1GeqZ9gJn50NG1C5+fLco=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\assets\\index-Bp1RTIla.css"
+      "OriginalItemSpec": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\assets\\index-Bp1RTIla.css"
     },
     {
-      "Identity": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\obj\\Debug\\net9.0\\compressed\\4pit3vs01m-69kjnsiwqx.gz",
+      "Identity": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\obj\\Debug\\net9.0\\compressed\\4pit3vs01m-69kjnsiwqx.gz",
       "SourceId": "API",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\obj\\Debug\\net9.0\\compressed\\",
+      "ContentRoot": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\obj\\Debug\\net9.0\\compressed\\",
       "BasePath": "_content/API",
       "RelativePath": "vite#[.{fingerprint=69kjnsiwqx}]?.svg.gz",
       "AssetKind": "All",
@@ -70,20 +70,20 @@
       "AssetRole": "Alternative",
       "AssetMergeBehavior": "",
       "AssetMergeSource": "",
-      "RelatedAsset": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\vite.svg",
+      "RelatedAsset": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\vite.svg",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
       "Fingerprint": "zg8rzofdes",
       "Integrity": "XQkDcax/ToCYcNsBDmzd6VCkok+CNLm2INPe95PRPSM=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\vite.svg"
+      "OriginalItemSpec": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\vite.svg"
     },
     {
-      "Identity": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\obj\\Debug\\net9.0\\compressed\\zhqxr2x2kr-gr6x897o5v.gz",
+      "Identity": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\obj\\Debug\\net9.0\\compressed\\zhqxr2x2kr-gr6x897o5v.gz",
       "SourceId": "API",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\obj\\Debug\\net9.0\\compressed\\",
+      "ContentRoot": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\obj\\Debug\\net9.0\\compressed\\",
       "BasePath": "_content/API",
       "RelativePath": "assets/index-BKtai8gQ#[.{fingerprint=gr6x897o5v}]?.js.gz",
       "AssetKind": "All",
@@ -91,20 +91,20 @@
       "AssetRole": "Alternative",
       "AssetMergeBehavior": "",
       "AssetMergeSource": "",
-      "RelatedAsset": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\assets\\index-BKtai8gQ.js",
+      "RelatedAsset": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\assets\\index-BKtai8gQ.js",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
       "Fingerprint": "2ihmdsojyq",
       "Integrity": "5qAmHw8W9U+LNBhV8mEWlmmbuyvhfHRhke91yZrTxHA=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\assets\\index-BKtai8gQ.js"
+      "OriginalItemSpec": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\assets\\index-BKtai8gQ.js"
     },
     {
-      "Identity": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\assets\\index-BKtai8gQ.js",
+      "Identity": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\assets\\index-BKtai8gQ.js",
       "SourceId": "API",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\",
       "BasePath": "_content/API",
       "RelativePath": "assets/index-BKtai8gQ#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -122,10 +122,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\index-BKtai8gQ.js"
     },
     {
-      "Identity": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\assets\\index-Bp1RTIla.css",
+      "Identity": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\assets\\index-Bp1RTIla.css",
       "SourceId": "API",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\",
       "BasePath": "_content/API",
       "RelativePath": "assets/index-Bp1RTIla#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -143,10 +143,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\index-Bp1RTIla.css"
     },
     {
-      "Identity": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\assets\\roboto-cyrillic-300-normal-BoeCr7ev.woff2",
+      "Identity": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\assets\\roboto-cyrillic-300-normal-BoeCr7ev.woff2",
       "SourceId": "API",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\",
       "BasePath": "_content/API",
       "RelativePath": "assets/roboto-cyrillic-300-normal-BoeCr7ev#[.{fingerprint}]?.woff2",
       "AssetKind": "All",
@@ -164,10 +164,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\roboto-cyrillic-300-normal-BoeCr7ev.woff2"
     },
     {
-      "Identity": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\assets\\roboto-cyrillic-300-normal-brFHmz5Z.woff",
+      "Identity": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\assets\\roboto-cyrillic-300-normal-brFHmz5Z.woff",
       "SourceId": "API",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\",
       "BasePath": "_content/API",
       "RelativePath": "assets/roboto-cyrillic-300-normal-brFHmz5Z#[.{fingerprint}]?.woff",
       "AssetKind": "All",
@@ -185,10 +185,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\roboto-cyrillic-300-normal-brFHmz5Z.woff"
     },
     {
-      "Identity": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\assets\\roboto-cyrillic-400-normal-DAIM1_dR.woff2",
+      "Identity": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\assets\\roboto-cyrillic-400-normal-DAIM1_dR.woff2",
       "SourceId": "API",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\",
       "BasePath": "_content/API",
       "RelativePath": "assets/roboto-cyrillic-400-normal-DAIM1_dR#[.{fingerprint}]?.woff2",
       "AssetKind": "All",
@@ -206,10 +206,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\roboto-cyrillic-400-normal-DAIM1_dR.woff2"
     },
     {
-      "Identity": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\assets\\roboto-cyrillic-400-normal-Dry59Hjn.woff",
+      "Identity": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\assets\\roboto-cyrillic-400-normal-Dry59Hjn.woff",
       "SourceId": "API",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\",
       "BasePath": "_content/API",
       "RelativePath": "assets/roboto-cyrillic-400-normal-Dry59Hjn#[.{fingerprint}]?.woff",
       "AssetKind": "All",
@@ -227,10 +227,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\roboto-cyrillic-400-normal-Dry59Hjn.woff"
     },
     {
-      "Identity": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\assets\\roboto-cyrillic-500-normal-CsCirF4J.woff",
+      "Identity": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\assets\\roboto-cyrillic-500-normal-CsCirF4J.woff",
       "SourceId": "API",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\",
       "BasePath": "_content/API",
       "RelativePath": "assets/roboto-cyrillic-500-normal-CsCirF4J#[.{fingerprint}]?.woff",
       "AssetKind": "All",
@@ -248,10 +248,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\roboto-cyrillic-500-normal-CsCirF4J.woff"
     },
     {
-      "Identity": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\assets\\roboto-cyrillic-500-normal-hCeO1jFL.woff2",
+      "Identity": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\assets\\roboto-cyrillic-500-normal-hCeO1jFL.woff2",
       "SourceId": "API",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\",
       "BasePath": "_content/API",
       "RelativePath": "assets/roboto-cyrillic-500-normal-hCeO1jFL#[.{fingerprint}]?.woff2",
       "AssetKind": "All",
@@ -269,10 +269,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\roboto-cyrillic-500-normal-hCeO1jFL.woff2"
     },
     {
-      "Identity": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\assets\\roboto-cyrillic-700-normal-CB1Rmiii.woff",
+      "Identity": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\assets\\roboto-cyrillic-700-normal-CB1Rmiii.woff",
       "SourceId": "API",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\",
       "BasePath": "_content/API",
       "RelativePath": "assets/roboto-cyrillic-700-normal-CB1Rmiii#[.{fingerprint}]?.woff",
       "AssetKind": "All",
@@ -290,10 +290,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\roboto-cyrillic-700-normal-CB1Rmiii.woff"
     },
     {
-      "Identity": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\assets\\roboto-cyrillic-700-normal-CzEIZVQR.woff2",
+      "Identity": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\assets\\roboto-cyrillic-700-normal-CzEIZVQR.woff2",
       "SourceId": "API",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\",
       "BasePath": "_content/API",
       "RelativePath": "assets/roboto-cyrillic-700-normal-CzEIZVQR#[.{fingerprint}]?.woff2",
       "AssetKind": "All",
@@ -311,10 +311,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\roboto-cyrillic-700-normal-CzEIZVQR.woff2"
     },
     {
-      "Identity": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\assets\\roboto-cyrillic-ext-300-normal-CbEu6Uxw.woff",
+      "Identity": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\assets\\roboto-cyrillic-ext-300-normal-CbEu6Uxw.woff",
       "SourceId": "API",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\",
       "BasePath": "_content/API",
       "RelativePath": "assets/roboto-cyrillic-ext-300-normal-CbEu6Uxw#[.{fingerprint}]?.woff",
       "AssetKind": "All",
@@ -332,10 +332,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\roboto-cyrillic-ext-300-normal-CbEu6Uxw.woff"
     },
     {
-      "Identity": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\assets\\roboto-cyrillic-ext-300-normal-CUPJdUZp.woff2",
+      "Identity": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\assets\\roboto-cyrillic-ext-300-normal-CUPJdUZp.woff2",
       "SourceId": "API",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\",
       "BasePath": "_content/API",
       "RelativePath": "assets/roboto-cyrillic-ext-300-normal-CUPJdUZp#[.{fingerprint}]?.woff2",
       "AssetKind": "All",
@@ -353,10 +353,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\roboto-cyrillic-ext-300-normal-CUPJdUZp.woff2"
     },
     {
-      "Identity": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\assets\\roboto-cyrillic-ext-400-normal-BxX1-eA_.woff",
+      "Identity": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\assets\\roboto-cyrillic-ext-400-normal-BxX1-eA_.woff",
       "SourceId": "API",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\",
       "BasePath": "_content/API",
       "RelativePath": "assets/roboto-cyrillic-ext-400-normal-BxX1-eA_#[.{fingerprint}]?.woff",
       "AssetKind": "All",
@@ -374,10 +374,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\roboto-cyrillic-ext-400-normal-BxX1-eA_.woff"
     },
     {
-      "Identity": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\assets\\roboto-cyrillic-ext-400-normal-DzMWdK87.woff2",
+      "Identity": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\assets\\roboto-cyrillic-ext-400-normal-DzMWdK87.woff2",
       "SourceId": "API",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\",
       "BasePath": "_content/API",
       "RelativePath": "assets/roboto-cyrillic-ext-400-normal-DzMWdK87#[.{fingerprint}]?.woff2",
       "AssetKind": "All",
@@ -395,10 +395,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\roboto-cyrillic-ext-400-normal-DzMWdK87.woff2"
     },
     {
-      "Identity": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\assets\\roboto-cyrillic-ext-500-normal-B7rQpwPu.woff2",
+      "Identity": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\assets\\roboto-cyrillic-ext-500-normal-B7rQpwPu.woff2",
       "SourceId": "API",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\",
       "BasePath": "_content/API",
       "RelativePath": "assets/roboto-cyrillic-ext-500-normal-B7rQpwPu#[.{fingerprint}]?.woff2",
       "AssetKind": "All",
@@ -416,10 +416,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\roboto-cyrillic-ext-500-normal-B7rQpwPu.woff2"
     },
     {
-      "Identity": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\assets\\roboto-cyrillic-ext-500-normal-ElvJfk8V.woff",
+      "Identity": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\assets\\roboto-cyrillic-ext-500-normal-ElvJfk8V.woff",
       "SourceId": "API",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\",
       "BasePath": "_content/API",
       "RelativePath": "assets/roboto-cyrillic-ext-500-normal-ElvJfk8V#[.{fingerprint}]?.woff",
       "AssetKind": "All",
@@ -437,10 +437,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\roboto-cyrillic-ext-500-normal-ElvJfk8V.woff"
     },
     {
-      "Identity": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\assets\\roboto-cyrillic-ext-700-normal-CIu0AXX2.woff",
+      "Identity": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\assets\\roboto-cyrillic-ext-700-normal-CIu0AXX2.woff",
       "SourceId": "API",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\",
       "BasePath": "_content/API",
       "RelativePath": "assets/roboto-cyrillic-ext-700-normal-CIu0AXX2#[.{fingerprint}]?.woff",
       "AssetKind": "All",
@@ -458,10 +458,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\roboto-cyrillic-ext-700-normal-CIu0AXX2.woff"
     },
     {
-      "Identity": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\assets\\roboto-cyrillic-ext-700-normal-D_fA0fHY.woff2",
+      "Identity": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\assets\\roboto-cyrillic-ext-700-normal-D_fA0fHY.woff2",
       "SourceId": "API",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\",
       "BasePath": "_content/API",
       "RelativePath": "assets/roboto-cyrillic-ext-700-normal-D_fA0fHY#[.{fingerprint}]?.woff2",
       "AssetKind": "All",
@@ -479,10 +479,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\roboto-cyrillic-ext-700-normal-D_fA0fHY.woff2"
     },
     {
-      "Identity": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\assets\\roboto-greek-300-normal-C_kb6SiH.woff",
+      "Identity": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\assets\\roboto-greek-300-normal-C_kb6SiH.woff",
       "SourceId": "API",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\",
       "BasePath": "_content/API",
       "RelativePath": "assets/roboto-greek-300-normal-C_kb6SiH#[.{fingerprint}]?.woff",
       "AssetKind": "All",
@@ -500,10 +500,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\roboto-greek-300-normal-C_kb6SiH.woff"
     },
     {
-      "Identity": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\assets\\roboto-greek-300-normal-Cnub06j7.woff2",
+      "Identity": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\assets\\roboto-greek-300-normal-Cnub06j7.woff2",
       "SourceId": "API",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\",
       "BasePath": "_content/API",
       "RelativePath": "assets/roboto-greek-300-normal-Cnub06j7#[.{fingerprint}]?.woff2",
       "AssetKind": "All",
@@ -521,10 +521,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\roboto-greek-300-normal-Cnub06j7.woff2"
     },
     {
-      "Identity": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\assets\\roboto-greek-400-normal-CAI06USH.woff",
+      "Identity": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\assets\\roboto-greek-400-normal-CAI06USH.woff",
       "SourceId": "API",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\",
       "BasePath": "_content/API",
       "RelativePath": "assets/roboto-greek-400-normal-CAI06USH#[.{fingerprint}]?.woff",
       "AssetKind": "All",
@@ -542,10 +542,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\roboto-greek-400-normal-CAI06USH.woff"
     },
     {
-      "Identity": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\assets\\roboto-greek-400-normal-jFM2czAU.woff2",
+      "Identity": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\assets\\roboto-greek-400-normal-jFM2czAU.woff2",
       "SourceId": "API",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\",
       "BasePath": "_content/API",
       "RelativePath": "assets/roboto-greek-400-normal-jFM2czAU#[.{fingerprint}]?.woff2",
       "AssetKind": "All",
@@ -563,10 +563,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\roboto-greek-400-normal-jFM2czAU.woff2"
     },
     {
-      "Identity": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\assets\\roboto-greek-500-normal-BJMS0heP.woff2",
+      "Identity": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\assets\\roboto-greek-500-normal-BJMS0heP.woff2",
       "SourceId": "API",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\",
       "BasePath": "_content/API",
       "RelativePath": "assets/roboto-greek-500-normal-BJMS0heP#[.{fingerprint}]?.woff2",
       "AssetKind": "All",
@@ -584,10 +584,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\roboto-greek-500-normal-BJMS0heP.woff2"
     },
     {
-      "Identity": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\assets\\roboto-greek-500-normal-D8eQD5zT.woff",
+      "Identity": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\assets\\roboto-greek-500-normal-D8eQD5zT.woff",
       "SourceId": "API",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\",
       "BasePath": "_content/API",
       "RelativePath": "assets/roboto-greek-500-normal-D8eQD5zT#[.{fingerprint}]?.woff",
       "AssetKind": "All",
@@ -605,10 +605,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\roboto-greek-500-normal-D8eQD5zT.woff"
     },
     {
-      "Identity": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\assets\\roboto-greek-700-normal-DCrt6r9F.woff",
+      "Identity": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\assets\\roboto-greek-700-normal-DCrt6r9F.woff",
       "SourceId": "API",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\",
       "BasePath": "_content/API",
       "RelativePath": "assets/roboto-greek-700-normal-DCrt6r9F#[.{fingerprint}]?.woff",
       "AssetKind": "All",
@@ -626,10 +626,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\roboto-greek-700-normal-DCrt6r9F.woff"
     },
     {
-      "Identity": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\assets\\roboto-greek-700-normal-DpKAje7q.woff2",
+      "Identity": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\assets\\roboto-greek-700-normal-DpKAje7q.woff2",
       "SourceId": "API",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\",
       "BasePath": "_content/API",
       "RelativePath": "assets/roboto-greek-700-normal-DpKAje7q#[.{fingerprint}]?.woff2",
       "AssetKind": "All",
@@ -647,10 +647,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\roboto-greek-700-normal-DpKAje7q.woff2"
     },
     {
-      "Identity": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\assets\\roboto-latin-300-normal-CztWkFGs.woff2",
+      "Identity": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\assets\\roboto-latin-300-normal-CztWkFGs.woff2",
       "SourceId": "API",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\",
       "BasePath": "_content/API",
       "RelativePath": "assets/roboto-latin-300-normal-CztWkFGs#[.{fingerprint}]?.woff2",
       "AssetKind": "All",
@@ -668,10 +668,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\roboto-latin-300-normal-CztWkFGs.woff2"
     },
     {
-      "Identity": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\assets\\roboto-latin-300-normal-xb4kL3zn.woff",
+      "Identity": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\assets\\roboto-latin-300-normal-xb4kL3zn.woff",
       "SourceId": "API",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\",
       "BasePath": "_content/API",
       "RelativePath": "assets/roboto-latin-300-normal-xb4kL3zn#[.{fingerprint}]?.woff",
       "AssetKind": "All",
@@ -689,10 +689,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\roboto-latin-300-normal-xb4kL3zn.woff"
     },
     {
-      "Identity": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\assets\\roboto-latin-400-normal-551zQQ7R.woff",
+      "Identity": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\assets\\roboto-latin-400-normal-551zQQ7R.woff",
       "SourceId": "API",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\",
       "BasePath": "_content/API",
       "RelativePath": "assets/roboto-latin-400-normal-551zQQ7R#[.{fingerprint}]?.woff",
       "AssetKind": "All",
@@ -710,10 +710,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\roboto-latin-400-normal-551zQQ7R.woff"
     },
     {
-      "Identity": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\assets\\roboto-latin-400-normal-CNwBRw8h.woff2",
+      "Identity": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\assets\\roboto-latin-400-normal-CNwBRw8h.woff2",
       "SourceId": "API",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\",
       "BasePath": "_content/API",
       "RelativePath": "assets/roboto-latin-400-normal-CNwBRw8h#[.{fingerprint}]?.woff2",
       "AssetKind": "All",
@@ -731,10 +731,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\roboto-latin-400-normal-CNwBRw8h.woff2"
     },
     {
-      "Identity": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\assets\\roboto-latin-500-normal-_8jDuD7w.woff",
+      "Identity": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\assets\\roboto-latin-500-normal-_8jDuD7w.woff",
       "SourceId": "API",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\",
       "BasePath": "_content/API",
       "RelativePath": "assets/roboto-latin-500-normal-_8jDuD7w#[.{fingerprint}]?.woff",
       "AssetKind": "All",
@@ -752,10 +752,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\roboto-latin-500-normal-_8jDuD7w.woff"
     },
     {
-      "Identity": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\assets\\roboto-latin-500-normal-CkrA1NAy.woff2",
+      "Identity": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\assets\\roboto-latin-500-normal-CkrA1NAy.woff2",
       "SourceId": "API",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\",
       "BasePath": "_content/API",
       "RelativePath": "assets/roboto-latin-500-normal-CkrA1NAy#[.{fingerprint}]?.woff2",
       "AssetKind": "All",
@@ -773,10 +773,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\roboto-latin-500-normal-CkrA1NAy.woff2"
     },
     {
-      "Identity": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\assets\\roboto-latin-700-normal-CTLkNcF_.woff",
+      "Identity": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\assets\\roboto-latin-700-normal-CTLkNcF_.woff",
       "SourceId": "API",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\",
       "BasePath": "_content/API",
       "RelativePath": "assets/roboto-latin-700-normal-CTLkNcF_#[.{fingerprint}]?.woff",
       "AssetKind": "All",
@@ -794,10 +794,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\roboto-latin-700-normal-CTLkNcF_.woff"
     },
     {
-      "Identity": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\assets\\roboto-latin-700-normal-DZr4b_KL.woff2",
+      "Identity": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\assets\\roboto-latin-700-normal-DZr4b_KL.woff2",
       "SourceId": "API",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\",
       "BasePath": "_content/API",
       "RelativePath": "assets/roboto-latin-700-normal-DZr4b_KL#[.{fingerprint}]?.woff2",
       "AssetKind": "All",
@@ -815,10 +815,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\roboto-latin-700-normal-DZr4b_KL.woff2"
     },
     {
-      "Identity": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\assets\\roboto-latin-ext-300-normal-BOz0oSmX.woff2",
+      "Identity": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\assets\\roboto-latin-ext-300-normal-BOz0oSmX.woff2",
       "SourceId": "API",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\",
       "BasePath": "_content/API",
       "RelativePath": "assets/roboto-latin-ext-300-normal-BOz0oSmX#[.{fingerprint}]?.woff2",
       "AssetKind": "All",
@@ -836,10 +836,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\roboto-latin-ext-300-normal-BOz0oSmX.woff2"
     },
     {
-      "Identity": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\assets\\roboto-latin-ext-300-normal-ni96UL8R.woff",
+      "Identity": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\assets\\roboto-latin-ext-300-normal-ni96UL8R.woff",
       "SourceId": "API",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\",
       "BasePath": "_content/API",
       "RelativePath": "assets/roboto-latin-ext-300-normal-ni96UL8R#[.{fingerprint}]?.woff",
       "AssetKind": "All",
@@ -857,10 +857,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\roboto-latin-ext-300-normal-ni96UL8R.woff"
     },
     {
-      "Identity": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\assets\\roboto-latin-ext-400-normal-uRIBRJt5.woff",
+      "Identity": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\assets\\roboto-latin-ext-400-normal-uRIBRJt5.woff",
       "SourceId": "API",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\",
       "BasePath": "_content/API",
       "RelativePath": "assets/roboto-latin-ext-400-normal-uRIBRJt5#[.{fingerprint}]?.woff",
       "AssetKind": "All",
@@ -878,10 +878,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\roboto-latin-ext-400-normal-uRIBRJt5.woff"
     },
     {
-      "Identity": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\assets\\roboto-latin-ext-400-normal-ZYmyxeOy.woff2",
+      "Identity": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\assets\\roboto-latin-ext-400-normal-ZYmyxeOy.woff2",
       "SourceId": "API",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\",
       "BasePath": "_content/API",
       "RelativePath": "assets/roboto-latin-ext-400-normal-ZYmyxeOy#[.{fingerprint}]?.woff2",
       "AssetKind": "All",
@@ -899,10 +899,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\roboto-latin-ext-400-normal-ZYmyxeOy.woff2"
     },
     {
-      "Identity": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\assets\\roboto-latin-ext-500-normal-C_ARlJGk.woff2",
+      "Identity": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\assets\\roboto-latin-ext-500-normal-C_ARlJGk.woff2",
       "SourceId": "API",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\",
       "BasePath": "_content/API",
       "RelativePath": "assets/roboto-latin-ext-500-normal-C_ARlJGk#[.{fingerprint}]?.woff2",
       "AssetKind": "All",
@@ -920,10 +920,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\roboto-latin-ext-500-normal-C_ARlJGk.woff2"
     },
     {
-      "Identity": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\assets\\roboto-latin-ext-500-normal-eJ10kk0m.woff",
+      "Identity": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\assets\\roboto-latin-ext-500-normal-eJ10kk0m.woff",
       "SourceId": "API",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\",
       "BasePath": "_content/API",
       "RelativePath": "assets/roboto-latin-ext-500-normal-eJ10kk0m#[.{fingerprint}]?.woff",
       "AssetKind": "All",
@@ -941,10 +941,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\roboto-latin-ext-500-normal-eJ10kk0m.woff"
     },
     {
-      "Identity": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\assets\\roboto-latin-ext-700-normal-BNPgmEQS.woff2",
+      "Identity": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\assets\\roboto-latin-ext-700-normal-BNPgmEQS.woff2",
       "SourceId": "API",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\",
       "BasePath": "_content/API",
       "RelativePath": "assets/roboto-latin-ext-700-normal-BNPgmEQS#[.{fingerprint}]?.woff2",
       "AssetKind": "All",
@@ -962,10 +962,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\roboto-latin-ext-700-normal-BNPgmEQS.woff2"
     },
     {
-      "Identity": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\assets\\roboto-latin-ext-700-normal-Cnx4FGpK.woff",
+      "Identity": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\assets\\roboto-latin-ext-700-normal-Cnx4FGpK.woff",
       "SourceId": "API",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\",
       "BasePath": "_content/API",
       "RelativePath": "assets/roboto-latin-ext-700-normal-Cnx4FGpK#[.{fingerprint}]?.woff",
       "AssetKind": "All",
@@ -983,10 +983,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\roboto-latin-ext-700-normal-Cnx4FGpK.woff"
     },
     {
-      "Identity": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\assets\\roboto-math-300-normal-Bhb_hbXj.woff",
+      "Identity": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\assets\\roboto-math-300-normal-Bhb_hbXj.woff",
       "SourceId": "API",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\",
       "BasePath": "_content/API",
       "RelativePath": "assets/roboto-math-300-normal-Bhb_hbXj#[.{fingerprint}]?.woff",
       "AssetKind": "All",
@@ -1004,10 +1004,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\roboto-math-300-normal-Bhb_hbXj.woff"
     },
     {
-      "Identity": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\assets\\roboto-math-300-normal-BMxwzQmU.woff2",
+      "Identity": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\assets\\roboto-math-300-normal-BMxwzQmU.woff2",
       "SourceId": "API",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\",
       "BasePath": "_content/API",
       "RelativePath": "assets/roboto-math-300-normal-BMxwzQmU#[.{fingerprint}]?.woff2",
       "AssetKind": "All",
@@ -1025,10 +1025,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\roboto-math-300-normal-BMxwzQmU.woff2"
     },
     {
-      "Identity": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\assets\\roboto-math-400-normal-B3wgz80t.woff2",
+      "Identity": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\assets\\roboto-math-400-normal-B3wgz80t.woff2",
       "SourceId": "API",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\",
       "BasePath": "_content/API",
       "RelativePath": "assets/roboto-math-400-normal-B3wgz80t#[.{fingerprint}]?.woff2",
       "AssetKind": "All",
@@ -1046,10 +1046,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\roboto-math-400-normal-B3wgz80t.woff2"
     },
     {
-      "Identity": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\assets\\roboto-math-400-normal-DHrwdhE6.woff",
+      "Identity": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\assets\\roboto-math-400-normal-DHrwdhE6.woff",
       "SourceId": "API",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\",
       "BasePath": "_content/API",
       "RelativePath": "assets/roboto-math-400-normal-DHrwdhE6#[.{fingerprint}]?.woff",
       "AssetKind": "All",
@@ -1067,10 +1067,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\roboto-math-400-normal-DHrwdhE6.woff"
     },
     {
-      "Identity": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\assets\\roboto-math-500-normal-CetgDdIa.woff",
+      "Identity": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\assets\\roboto-math-500-normal-CetgDdIa.woff",
       "SourceId": "API",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\",
       "BasePath": "_content/API",
       "RelativePath": "assets/roboto-math-500-normal-CetgDdIa#[.{fingerprint}]?.woff",
       "AssetKind": "All",
@@ -1088,10 +1088,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\roboto-math-500-normal-CetgDdIa.woff"
     },
     {
-      "Identity": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\assets\\roboto-math-500-normal-CFNaIMFC.woff2",
+      "Identity": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\assets\\roboto-math-500-normal-CFNaIMFC.woff2",
       "SourceId": "API",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\",
       "BasePath": "_content/API",
       "RelativePath": "assets/roboto-math-500-normal-CFNaIMFC#[.{fingerprint}]?.woff2",
       "AssetKind": "All",
@@ -1109,10 +1109,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\roboto-math-500-normal-CFNaIMFC.woff2"
     },
     {
-      "Identity": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\assets\\roboto-math-700-normal-CpTCM92H.woff",
+      "Identity": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\assets\\roboto-math-700-normal-CpTCM92H.woff",
       "SourceId": "API",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\",
       "BasePath": "_content/API",
       "RelativePath": "assets/roboto-math-700-normal-CpTCM92H#[.{fingerprint}]?.woff",
       "AssetKind": "All",
@@ -1130,10 +1130,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\roboto-math-700-normal-CpTCM92H.woff"
     },
     {
-      "Identity": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\assets\\roboto-math-700-normal-xbpggnJp.woff2",
+      "Identity": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\assets\\roboto-math-700-normal-xbpggnJp.woff2",
       "SourceId": "API",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\",
       "BasePath": "_content/API",
       "RelativePath": "assets/roboto-math-700-normal-xbpggnJp#[.{fingerprint}]?.woff2",
       "AssetKind": "All",
@@ -1151,10 +1151,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\roboto-math-700-normal-xbpggnJp.woff2"
     },
     {
-      "Identity": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\assets\\roboto-symbols-300-normal-BtHl5mYl.woff2",
+      "Identity": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\assets\\roboto-symbols-300-normal-BtHl5mYl.woff2",
       "SourceId": "API",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\",
       "BasePath": "_content/API",
       "RelativePath": "assets/roboto-symbols-300-normal-BtHl5mYl#[.{fingerprint}]?.woff2",
       "AssetKind": "All",
@@ -1172,10 +1172,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\roboto-symbols-300-normal-BtHl5mYl.woff2"
     },
     {
-      "Identity": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\assets\\roboto-symbols-300-normal-VgGNgJlY.woff",
+      "Identity": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\assets\\roboto-symbols-300-normal-VgGNgJlY.woff",
       "SourceId": "API",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\",
       "BasePath": "_content/API",
       "RelativePath": "assets/roboto-symbols-300-normal-VgGNgJlY#[.{fingerprint}]?.woff",
       "AssetKind": "All",
@@ -1193,10 +1193,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\roboto-symbols-300-normal-VgGNgJlY.woff"
     },
     {
-      "Identity": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\assets\\roboto-symbols-400-normal-bG5rsNFs.woff",
+      "Identity": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\assets\\roboto-symbols-400-normal-bG5rsNFs.woff",
       "SourceId": "API",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\",
       "BasePath": "_content/API",
       "RelativePath": "assets/roboto-symbols-400-normal-bG5rsNFs#[.{fingerprint}]?.woff",
       "AssetKind": "All",
@@ -1214,10 +1214,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\roboto-symbols-400-normal-bG5rsNFs.woff"
     },
     {
-      "Identity": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\assets\\roboto-symbols-400-normal-fF1SLJBj.woff2",
+      "Identity": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\assets\\roboto-symbols-400-normal-fF1SLJBj.woff2",
       "SourceId": "API",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\",
       "BasePath": "_content/API",
       "RelativePath": "assets/roboto-symbols-400-normal-fF1SLJBj#[.{fingerprint}]?.woff2",
       "AssetKind": "All",
@@ -1235,10 +1235,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\roboto-symbols-400-normal-fF1SLJBj.woff2"
     },
     {
-      "Identity": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\assets\\roboto-symbols-500-normal-BXFTxrNR.woff2",
+      "Identity": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\assets\\roboto-symbols-500-normal-BXFTxrNR.woff2",
       "SourceId": "API",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\",
       "BasePath": "_content/API",
       "RelativePath": "assets/roboto-symbols-500-normal-BXFTxrNR#[.{fingerprint}]?.woff2",
       "AssetKind": "All",
@@ -1256,10 +1256,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\roboto-symbols-500-normal-BXFTxrNR.woff2"
     },
     {
-      "Identity": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\assets\\roboto-symbols-500-normal-toKUCDph.woff",
+      "Identity": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\assets\\roboto-symbols-500-normal-toKUCDph.woff",
       "SourceId": "API",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\",
       "BasePath": "_content/API",
       "RelativePath": "assets/roboto-symbols-500-normal-toKUCDph#[.{fingerprint}]?.woff",
       "AssetKind": "All",
@@ -1277,10 +1277,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\roboto-symbols-500-normal-toKUCDph.woff"
     },
     {
-      "Identity": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\assets\\roboto-symbols-700-normal-B2QKVW64.woff",
+      "Identity": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\assets\\roboto-symbols-700-normal-B2QKVW64.woff",
       "SourceId": "API",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\",
       "BasePath": "_content/API",
       "RelativePath": "assets/roboto-symbols-700-normal-B2QKVW64#[.{fingerprint}]?.woff",
       "AssetKind": "All",
@@ -1298,10 +1298,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\roboto-symbols-700-normal-B2QKVW64.woff"
     },
     {
-      "Identity": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\assets\\roboto-symbols-700-normal-DKkQdRpM.woff2",
+      "Identity": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\assets\\roboto-symbols-700-normal-DKkQdRpM.woff2",
       "SourceId": "API",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\",
       "BasePath": "_content/API",
       "RelativePath": "assets/roboto-symbols-700-normal-DKkQdRpM#[.{fingerprint}]?.woff2",
       "AssetKind": "All",
@@ -1319,10 +1319,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\roboto-symbols-700-normal-DKkQdRpM.woff2"
     },
     {
-      "Identity": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\assets\\roboto-vietnamese-300-normal-CNeuLW5X.woff2",
+      "Identity": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\assets\\roboto-vietnamese-300-normal-CNeuLW5X.woff2",
       "SourceId": "API",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\",
       "BasePath": "_content/API",
       "RelativePath": "assets/roboto-vietnamese-300-normal-CNeuLW5X#[.{fingerprint}]?.woff2",
       "AssetKind": "All",
@@ -1340,10 +1340,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\roboto-vietnamese-300-normal-CNeuLW5X.woff2"
     },
     {
-      "Identity": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\assets\\roboto-vietnamese-300-normal-D46JPfnP.woff",
+      "Identity": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\assets\\roboto-vietnamese-300-normal-D46JPfnP.woff",
       "SourceId": "API",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\",
       "BasePath": "_content/API",
       "RelativePath": "assets/roboto-vietnamese-300-normal-D46JPfnP#[.{fingerprint}]?.woff",
       "AssetKind": "All",
@@ -1361,10 +1361,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\roboto-vietnamese-300-normal-D46JPfnP.woff"
     },
     {
-      "Identity": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\assets\\roboto-vietnamese-400-normal-CDDxGrUb.woff2",
+      "Identity": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\assets\\roboto-vietnamese-400-normal-CDDxGrUb.woff2",
       "SourceId": "API",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\",
       "BasePath": "_content/API",
       "RelativePath": "assets/roboto-vietnamese-400-normal-CDDxGrUb#[.{fingerprint}]?.woff2",
       "AssetKind": "All",
@@ -1382,10 +1382,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\roboto-vietnamese-400-normal-CDDxGrUb.woff2"
     },
     {
-      "Identity": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\assets\\roboto-vietnamese-400-normal-DgufTq8s.woff",
+      "Identity": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\assets\\roboto-vietnamese-400-normal-DgufTq8s.woff",
       "SourceId": "API",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\",
       "BasePath": "_content/API",
       "RelativePath": "assets/roboto-vietnamese-400-normal-DgufTq8s#[.{fingerprint}]?.woff",
       "AssetKind": "All",
@@ -1403,10 +1403,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\roboto-vietnamese-400-normal-DgufTq8s.woff"
     },
     {
-      "Identity": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\assets\\roboto-vietnamese-500-normal-Dw5heWgq.woff",
+      "Identity": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\assets\\roboto-vietnamese-500-normal-Dw5heWgq.woff",
       "SourceId": "API",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\",
       "BasePath": "_content/API",
       "RelativePath": "assets/roboto-vietnamese-500-normal-Dw5heWgq#[.{fingerprint}]?.woff",
       "AssetKind": "All",
@@ -1424,10 +1424,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\roboto-vietnamese-500-normal-Dw5heWgq.woff"
     },
     {
-      "Identity": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\assets\\roboto-vietnamese-500-normal-HYpufUYk.woff2",
+      "Identity": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\assets\\roboto-vietnamese-500-normal-HYpufUYk.woff2",
       "SourceId": "API",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\",
       "BasePath": "_content/API",
       "RelativePath": "assets/roboto-vietnamese-500-normal-HYpufUYk#[.{fingerprint}]?.woff2",
       "AssetKind": "All",
@@ -1445,10 +1445,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\roboto-vietnamese-500-normal-HYpufUYk.woff2"
     },
     {
-      "Identity": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\assets\\roboto-vietnamese-700-normal-BFWtvCOj.woff2",
+      "Identity": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\assets\\roboto-vietnamese-700-normal-BFWtvCOj.woff2",
       "SourceId": "API",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\",
       "BasePath": "_content/API",
       "RelativePath": "assets/roboto-vietnamese-700-normal-BFWtvCOj#[.{fingerprint}]?.woff2",
       "AssetKind": "All",
@@ -1466,10 +1466,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\roboto-vietnamese-700-normal-BFWtvCOj.woff2"
     },
     {
-      "Identity": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\assets\\roboto-vietnamese-700-normal-ChAl_rRV.woff",
+      "Identity": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\assets\\roboto-vietnamese-700-normal-ChAl_rRV.woff",
       "SourceId": "API",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\",
       "BasePath": "_content/API",
       "RelativePath": "assets/roboto-vietnamese-700-normal-ChAl_rRV#[.{fingerprint}]?.woff",
       "AssetKind": "All",
@@ -1487,10 +1487,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\roboto-vietnamese-700-normal-ChAl_rRV.woff"
     },
     {
-      "Identity": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\images\\products\\boot-ang1.png",
+      "Identity": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\images\\products\\boot-ang1.png",
       "SourceId": "API",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\",
       "BasePath": "_content/API",
       "RelativePath": "images/products/boot-ang1#[.{fingerprint}]?.png",
       "AssetKind": "All",
@@ -1508,10 +1508,10 @@
       "OriginalItemSpec": "wwwroot\\images\\products\\boot-ang1.png"
     },
     {
-      "Identity": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\images\\products\\boot-ang2.png",
+      "Identity": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\images\\products\\boot-ang2.png",
       "SourceId": "API",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\",
       "BasePath": "_content/API",
       "RelativePath": "images/products/boot-ang2#[.{fingerprint}]?.png",
       "AssetKind": "All",
@@ -1529,10 +1529,10 @@
       "OriginalItemSpec": "wwwroot\\images\\products\\boot-ang2.png"
     },
     {
-      "Identity": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\images\\products\\boot-core1.png",
+      "Identity": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\images\\products\\boot-core1.png",
       "SourceId": "API",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\",
       "BasePath": "_content/API",
       "RelativePath": "images/products/boot-core1#[.{fingerprint}]?.png",
       "AssetKind": "All",
@@ -1550,10 +1550,10 @@
       "OriginalItemSpec": "wwwroot\\images\\products\\boot-core1.png"
     },
     {
-      "Identity": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\images\\products\\boot-core2.png",
+      "Identity": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\images\\products\\boot-core2.png",
       "SourceId": "API",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\",
       "BasePath": "_content/API",
       "RelativePath": "images/products/boot-core2#[.{fingerprint}]?.png",
       "AssetKind": "All",
@@ -1571,10 +1571,10 @@
       "OriginalItemSpec": "wwwroot\\images\\products\\boot-core2.png"
     },
     {
-      "Identity": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\images\\products\\boot-redis1.png",
+      "Identity": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\images\\products\\boot-redis1.png",
       "SourceId": "API",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\",
       "BasePath": "_content/API",
       "RelativePath": "images/products/boot-redis1#[.{fingerprint}]?.png",
       "AssetKind": "All",
@@ -1592,10 +1592,10 @@
       "OriginalItemSpec": "wwwroot\\images\\products\\boot-redis1.png"
     },
     {
-      "Identity": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\images\\products\\glove-code1.png",
+      "Identity": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\images\\products\\glove-code1.png",
       "SourceId": "API",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\",
       "BasePath": "_content/API",
       "RelativePath": "images/products/glove-code1#[.{fingerprint}]?.png",
       "AssetKind": "All",
@@ -1613,10 +1613,10 @@
       "OriginalItemSpec": "wwwroot\\images\\products\\glove-code1.png"
     },
     {
-      "Identity": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\images\\products\\glove-code2.png",
+      "Identity": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\images\\products\\glove-code2.png",
       "SourceId": "API",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\",
       "BasePath": "_content/API",
       "RelativePath": "images/products/glove-code2#[.{fingerprint}]?.png",
       "AssetKind": "All",
@@ -1634,10 +1634,10 @@
       "OriginalItemSpec": "wwwroot\\images\\products\\glove-code2.png"
     },
     {
-      "Identity": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\images\\products\\glove-react1.png",
+      "Identity": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\images\\products\\glove-react1.png",
       "SourceId": "API",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\",
       "BasePath": "_content/API",
       "RelativePath": "images/products/glove-react1#[.{fingerprint}]?.png",
       "AssetKind": "All",
@@ -1655,10 +1655,10 @@
       "OriginalItemSpec": "wwwroot\\images\\products\\glove-react1.png"
     },
     {
-      "Identity": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\images\\products\\glove-react2.png",
+      "Identity": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\images\\products\\glove-react2.png",
       "SourceId": "API",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\",
       "BasePath": "_content/API",
       "RelativePath": "images/products/glove-react2#[.{fingerprint}]?.png",
       "AssetKind": "All",
@@ -1676,10 +1676,10 @@
       "OriginalItemSpec": "wwwroot\\images\\products\\glove-react2.png"
     },
     {
-      "Identity": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\images\\products\\hat-core1.png",
+      "Identity": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\images\\products\\hat-core1.png",
       "SourceId": "API",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\",
       "BasePath": "_content/API",
       "RelativePath": "images/products/hat-core1#[.{fingerprint}]?.png",
       "AssetKind": "All",
@@ -1697,10 +1697,10 @@
       "OriginalItemSpec": "wwwroot\\images\\products\\hat-core1.png"
     },
     {
-      "Identity": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\images\\products\\hat-react1.png",
+      "Identity": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\images\\products\\hat-react1.png",
       "SourceId": "API",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\",
       "BasePath": "_content/API",
       "RelativePath": "images/products/hat-react1#[.{fingerprint}]?.png",
       "AssetKind": "All",
@@ -1718,10 +1718,10 @@
       "OriginalItemSpec": "wwwroot\\images\\products\\hat-react1.png"
     },
     {
-      "Identity": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\images\\products\\hat-react2.png",
+      "Identity": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\images\\products\\hat-react2.png",
       "SourceId": "API",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\",
       "BasePath": "_content/API",
       "RelativePath": "images/products/hat-react2#[.{fingerprint}]?.png",
       "AssetKind": "All",
@@ -1739,10 +1739,10 @@
       "OriginalItemSpec": "wwwroot\\images\\products\\hat-react2.png"
     },
     {
-      "Identity": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\images\\products\\sb-ang1.png",
+      "Identity": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\images\\products\\sb-ang1.png",
       "SourceId": "API",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\",
       "BasePath": "_content/API",
       "RelativePath": "images/products/sb-ang1#[.{fingerprint}]?.png",
       "AssetKind": "All",
@@ -1760,10 +1760,10 @@
       "OriginalItemSpec": "wwwroot\\images\\products\\sb-ang1.png"
     },
     {
-      "Identity": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\images\\products\\sb-ang2.png",
+      "Identity": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\images\\products\\sb-ang2.png",
       "SourceId": "API",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\",
       "BasePath": "_content/API",
       "RelativePath": "images/products/sb-ang2#[.{fingerprint}]?.png",
       "AssetKind": "All",
@@ -1781,10 +1781,10 @@
       "OriginalItemSpec": "wwwroot\\images\\products\\sb-ang2.png"
     },
     {
-      "Identity": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\images\\products\\sb-core1.png",
+      "Identity": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\images\\products\\sb-core1.png",
       "SourceId": "API",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\",
       "BasePath": "_content/API",
       "RelativePath": "images/products/sb-core1#[.{fingerprint}]?.png",
       "AssetKind": "All",
@@ -1802,10 +1802,10 @@
       "OriginalItemSpec": "wwwroot\\images\\products\\sb-core1.png"
     },
     {
-      "Identity": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\images\\products\\sb-core2.png",
+      "Identity": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\images\\products\\sb-core2.png",
       "SourceId": "API",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\",
       "BasePath": "_content/API",
       "RelativePath": "images/products/sb-core2#[.{fingerprint}]?.png",
       "AssetKind": "All",
@@ -1823,10 +1823,10 @@
       "OriginalItemSpec": "wwwroot\\images\\products\\sb-core2.png"
     },
     {
-      "Identity": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\images\\products\\sb-react1.png",
+      "Identity": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\images\\products\\sb-react1.png",
       "SourceId": "API",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\",
       "BasePath": "_content/API",
       "RelativePath": "images/products/sb-react1#[.{fingerprint}]?.png",
       "AssetKind": "All",
@@ -1844,10 +1844,10 @@
       "OriginalItemSpec": "wwwroot\\images\\products\\sb-react1.png"
     },
     {
-      "Identity": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\images\\products\\sb-ts1.png",
+      "Identity": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\images\\products\\sb-ts1.png",
       "SourceId": "API",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\",
       "BasePath": "_content/API",
       "RelativePath": "images/products/sb-ts1#[.{fingerprint}]?.png",
       "AssetKind": "All",
@@ -1865,10 +1865,10 @@
       "OriginalItemSpec": "wwwroot\\images\\products\\sb-ts1.png"
     },
     {
-      "Identity": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\index.html",
+      "Identity": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\index.html",
       "SourceId": "API",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\",
       "BasePath": "_content/API",
       "RelativePath": "index#[.{fingerprint}]?.html",
       "AssetKind": "All",
@@ -1886,10 +1886,10 @@
       "OriginalItemSpec": "wwwroot\\index.html"
     },
     {
-      "Identity": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\videos\\skiing_video.mp4",
+      "Identity": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\videos\\skiing_video.mp4",
       "SourceId": "API",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\",
       "BasePath": "_content/API",
       "RelativePath": "videos/skiing_video#[.{fingerprint}]?.mp4",
       "AssetKind": "All",
@@ -1907,10 +1907,10 @@
       "OriginalItemSpec": "wwwroot\\videos\\skiing_video.mp4"
     },
     {
-      "Identity": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\vite.svg",
+      "Identity": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\vite.svg",
       "SourceId": "API",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\",
       "BasePath": "_content/API",
       "RelativePath": "vite#[.{fingerprint}]?.svg",
       "AssetKind": "All",
@@ -1931,7 +1931,7 @@
   "Endpoints": [
     {
       "Route": "assets/index-BKtai8gQ.gr6x897o5v.js",
-      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\obj\\Debug\\net9.0\\compressed\\zhqxr2x2kr-gr6x897o5v.gz",
+      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\obj\\Debug\\net9.0\\compressed\\zhqxr2x2kr-gr6x897o5v.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
@@ -1994,7 +1994,7 @@
     },
     {
       "Route": "assets/index-BKtai8gQ.gr6x897o5v.js",
-      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\assets\\index-BKtai8gQ.js",
+      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\assets\\index-BKtai8gQ.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2039,7 +2039,7 @@
     },
     {
       "Route": "assets/index-BKtai8gQ.gr6x897o5v.js.gz",
-      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\obj\\Debug\\net9.0\\compressed\\zhqxr2x2kr-gr6x897o5v.gz",
+      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\obj\\Debug\\net9.0\\compressed\\zhqxr2x2kr-gr6x897o5v.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2092,7 +2092,7 @@
     },
     {
       "Route": "assets/index-BKtai8gQ.js",
-      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\obj\\Debug\\net9.0\\compressed\\zhqxr2x2kr-gr6x897o5v.gz",
+      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\obj\\Debug\\net9.0\\compressed\\zhqxr2x2kr-gr6x897o5v.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
@@ -2147,7 +2147,7 @@
     },
     {
       "Route": "assets/index-BKtai8gQ.js",
-      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\assets\\index-BKtai8gQ.js",
+      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\assets\\index-BKtai8gQ.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2184,7 +2184,7 @@
     },
     {
       "Route": "assets/index-BKtai8gQ.js.gz",
-      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\obj\\Debug\\net9.0\\compressed\\zhqxr2x2kr-gr6x897o5v.gz",
+      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\obj\\Debug\\net9.0\\compressed\\zhqxr2x2kr-gr6x897o5v.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2229,7 +2229,7 @@
     },
     {
       "Route": "assets/index-Bp1RTIla.css",
-      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\obj\\Debug\\net9.0\\compressed\\3gjg5i0tla-h60m3tmd6f.gz",
+      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\obj\\Debug\\net9.0\\compressed\\3gjg5i0tla-h60m3tmd6f.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
@@ -2284,7 +2284,7 @@
     },
     {
       "Route": "assets/index-Bp1RTIla.css",
-      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\assets\\index-Bp1RTIla.css",
+      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\assets\\index-Bp1RTIla.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2321,7 +2321,7 @@
     },
     {
       "Route": "assets/index-Bp1RTIla.css.gz",
-      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\obj\\Debug\\net9.0\\compressed\\3gjg5i0tla-h60m3tmd6f.gz",
+      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\obj\\Debug\\net9.0\\compressed\\3gjg5i0tla-h60m3tmd6f.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2366,7 +2366,7 @@
     },
     {
       "Route": "assets/index-Bp1RTIla.h60m3tmd6f.css",
-      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\obj\\Debug\\net9.0\\compressed\\3gjg5i0tla-h60m3tmd6f.gz",
+      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\obj\\Debug\\net9.0\\compressed\\3gjg5i0tla-h60m3tmd6f.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
@@ -2429,7 +2429,7 @@
     },
     {
       "Route": "assets/index-Bp1RTIla.h60m3tmd6f.css",
-      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\assets\\index-Bp1RTIla.css",
+      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\assets\\index-Bp1RTIla.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2474,7 +2474,7 @@
     },
     {
       "Route": "assets/index-Bp1RTIla.h60m3tmd6f.css.gz",
-      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\obj\\Debug\\net9.0\\compressed\\3gjg5i0tla-h60m3tmd6f.gz",
+      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\obj\\Debug\\net9.0\\compressed\\3gjg5i0tla-h60m3tmd6f.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2527,7 +2527,7 @@
     },
     {
       "Route": "assets/roboto-cyrillic-300-normal-BoeCr7ev.woff2",
-      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\assets\\roboto-cyrillic-300-normal-BoeCr7ev.woff2",
+      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\assets\\roboto-cyrillic-300-normal-BoeCr7ev.woff2",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2564,7 +2564,7 @@
     },
     {
       "Route": "assets/roboto-cyrillic-300-normal-BoeCr7ev.yk0t57rvsl.woff2",
-      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\assets\\roboto-cyrillic-300-normal-BoeCr7ev.woff2",
+      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\assets\\roboto-cyrillic-300-normal-BoeCr7ev.woff2",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2609,7 +2609,7 @@
     },
     {
       "Route": "assets/roboto-cyrillic-300-normal-brFHmz5Z.woff",
-      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\assets\\roboto-cyrillic-300-normal-brFHmz5Z.woff",
+      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\assets\\roboto-cyrillic-300-normal-brFHmz5Z.woff",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2646,7 +2646,7 @@
     },
     {
       "Route": "assets/roboto-cyrillic-300-normal-brFHmz5Z.zirjbmewt4.woff",
-      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\assets\\roboto-cyrillic-300-normal-brFHmz5Z.woff",
+      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\assets\\roboto-cyrillic-300-normal-brFHmz5Z.woff",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2691,7 +2691,7 @@
     },
     {
       "Route": "assets/roboto-cyrillic-400-normal-DAIM1_dR.el0sj9ou4r.woff2",
-      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\assets\\roboto-cyrillic-400-normal-DAIM1_dR.woff2",
+      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\assets\\roboto-cyrillic-400-normal-DAIM1_dR.woff2",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2736,7 +2736,7 @@
     },
     {
       "Route": "assets/roboto-cyrillic-400-normal-DAIM1_dR.woff2",
-      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\assets\\roboto-cyrillic-400-normal-DAIM1_dR.woff2",
+      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\assets\\roboto-cyrillic-400-normal-DAIM1_dR.woff2",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2773,7 +2773,7 @@
     },
     {
       "Route": "assets/roboto-cyrillic-400-normal-Dry59Hjn.67zyogfd7j.woff",
-      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\assets\\roboto-cyrillic-400-normal-Dry59Hjn.woff",
+      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\assets\\roboto-cyrillic-400-normal-Dry59Hjn.woff",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2818,7 +2818,7 @@
     },
     {
       "Route": "assets/roboto-cyrillic-400-normal-Dry59Hjn.woff",
-      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\assets\\roboto-cyrillic-400-normal-Dry59Hjn.woff",
+      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\assets\\roboto-cyrillic-400-normal-Dry59Hjn.woff",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2855,7 +2855,7 @@
     },
     {
       "Route": "assets/roboto-cyrillic-500-normal-CsCirF4J.ruqnnagmbr.woff",
-      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\assets\\roboto-cyrillic-500-normal-CsCirF4J.woff",
+      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\assets\\roboto-cyrillic-500-normal-CsCirF4J.woff",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2900,7 +2900,7 @@
     },
     {
       "Route": "assets/roboto-cyrillic-500-normal-CsCirF4J.woff",
-      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\assets\\roboto-cyrillic-500-normal-CsCirF4J.woff",
+      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\assets\\roboto-cyrillic-500-normal-CsCirF4J.woff",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2937,7 +2937,7 @@
     },
     {
       "Route": "assets/roboto-cyrillic-500-normal-hCeO1jFL.0hkeda5nlj.woff2",
-      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\assets\\roboto-cyrillic-500-normal-hCeO1jFL.woff2",
+      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\assets\\roboto-cyrillic-500-normal-hCeO1jFL.woff2",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2982,7 +2982,7 @@
     },
     {
       "Route": "assets/roboto-cyrillic-500-normal-hCeO1jFL.woff2",
-      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\assets\\roboto-cyrillic-500-normal-hCeO1jFL.woff2",
+      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\assets\\roboto-cyrillic-500-normal-hCeO1jFL.woff2",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3019,7 +3019,7 @@
     },
     {
       "Route": "assets/roboto-cyrillic-700-normal-CB1Rmiii.c2es0deug3.woff",
-      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\assets\\roboto-cyrillic-700-normal-CB1Rmiii.woff",
+      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\assets\\roboto-cyrillic-700-normal-CB1Rmiii.woff",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3064,7 +3064,7 @@
     },
     {
       "Route": "assets/roboto-cyrillic-700-normal-CB1Rmiii.woff",
-      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\assets\\roboto-cyrillic-700-normal-CB1Rmiii.woff",
+      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\assets\\roboto-cyrillic-700-normal-CB1Rmiii.woff",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3101,7 +3101,7 @@
     },
     {
       "Route": "assets/roboto-cyrillic-700-normal-CzEIZVQR.hd9o1jhq8f.woff2",
-      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\assets\\roboto-cyrillic-700-normal-CzEIZVQR.woff2",
+      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\assets\\roboto-cyrillic-700-normal-CzEIZVQR.woff2",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3146,7 +3146,7 @@
     },
     {
       "Route": "assets/roboto-cyrillic-700-normal-CzEIZVQR.woff2",
-      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\assets\\roboto-cyrillic-700-normal-CzEIZVQR.woff2",
+      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\assets\\roboto-cyrillic-700-normal-CzEIZVQR.woff2",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3183,7 +3183,7 @@
     },
     {
       "Route": "assets/roboto-cyrillic-ext-300-normal-CbEu6Uxw.3ik6zyhadt.woff",
-      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\assets\\roboto-cyrillic-ext-300-normal-CbEu6Uxw.woff",
+      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\assets\\roboto-cyrillic-ext-300-normal-CbEu6Uxw.woff",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3228,7 +3228,7 @@
     },
     {
       "Route": "assets/roboto-cyrillic-ext-300-normal-CbEu6Uxw.woff",
-      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\assets\\roboto-cyrillic-ext-300-normal-CbEu6Uxw.woff",
+      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\assets\\roboto-cyrillic-ext-300-normal-CbEu6Uxw.woff",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3265,7 +3265,7 @@
     },
     {
       "Route": "assets/roboto-cyrillic-ext-300-normal-CUPJdUZp.ncdzlcq0gp.woff2",
-      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\assets\\roboto-cyrillic-ext-300-normal-CUPJdUZp.woff2",
+      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\assets\\roboto-cyrillic-ext-300-normal-CUPJdUZp.woff2",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3310,7 +3310,7 @@
     },
     {
       "Route": "assets/roboto-cyrillic-ext-300-normal-CUPJdUZp.woff2",
-      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\assets\\roboto-cyrillic-ext-300-normal-CUPJdUZp.woff2",
+      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\assets\\roboto-cyrillic-ext-300-normal-CUPJdUZp.woff2",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3347,7 +3347,7 @@
     },
     {
       "Route": "assets/roboto-cyrillic-ext-400-normal-BxX1-eA_.3b6lw6y0nq.woff",
-      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\assets\\roboto-cyrillic-ext-400-normal-BxX1-eA_.woff",
+      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\assets\\roboto-cyrillic-ext-400-normal-BxX1-eA_.woff",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3392,7 +3392,7 @@
     },
     {
       "Route": "assets/roboto-cyrillic-ext-400-normal-BxX1-eA_.woff",
-      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\assets\\roboto-cyrillic-ext-400-normal-BxX1-eA_.woff",
+      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\assets\\roboto-cyrillic-ext-400-normal-BxX1-eA_.woff",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3429,7 +3429,7 @@
     },
     {
       "Route": "assets/roboto-cyrillic-ext-400-normal-DzMWdK87.2hvop30jn4.woff2",
-      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\assets\\roboto-cyrillic-ext-400-normal-DzMWdK87.woff2",
+      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\assets\\roboto-cyrillic-ext-400-normal-DzMWdK87.woff2",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3474,7 +3474,7 @@
     },
     {
       "Route": "assets/roboto-cyrillic-ext-400-normal-DzMWdK87.woff2",
-      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\assets\\roboto-cyrillic-ext-400-normal-DzMWdK87.woff2",
+      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\assets\\roboto-cyrillic-ext-400-normal-DzMWdK87.woff2",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3511,7 +3511,7 @@
     },
     {
       "Route": "assets/roboto-cyrillic-ext-500-normal-B7rQpwPu.iqak8lvctd.woff2",
-      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\assets\\roboto-cyrillic-ext-500-normal-B7rQpwPu.woff2",
+      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\assets\\roboto-cyrillic-ext-500-normal-B7rQpwPu.woff2",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3556,7 +3556,7 @@
     },
     {
       "Route": "assets/roboto-cyrillic-ext-500-normal-B7rQpwPu.woff2",
-      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\assets\\roboto-cyrillic-ext-500-normal-B7rQpwPu.woff2",
+      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\assets\\roboto-cyrillic-ext-500-normal-B7rQpwPu.woff2",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3593,7 +3593,7 @@
     },
     {
       "Route": "assets/roboto-cyrillic-ext-500-normal-ElvJfk8V.e6gzb9ltq0.woff",
-      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\assets\\roboto-cyrillic-ext-500-normal-ElvJfk8V.woff",
+      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\assets\\roboto-cyrillic-ext-500-normal-ElvJfk8V.woff",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3638,7 +3638,7 @@
     },
     {
       "Route": "assets/roboto-cyrillic-ext-500-normal-ElvJfk8V.woff",
-      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\assets\\roboto-cyrillic-ext-500-normal-ElvJfk8V.woff",
+      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\assets\\roboto-cyrillic-ext-500-normal-ElvJfk8V.woff",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3675,7 +3675,7 @@
     },
     {
       "Route": "assets/roboto-cyrillic-ext-700-normal-CIu0AXX2.o0j9py0t4v.woff",
-      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\assets\\roboto-cyrillic-ext-700-normal-CIu0AXX2.woff",
+      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\assets\\roboto-cyrillic-ext-700-normal-CIu0AXX2.woff",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3720,7 +3720,7 @@
     },
     {
       "Route": "assets/roboto-cyrillic-ext-700-normal-CIu0AXX2.woff",
-      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\assets\\roboto-cyrillic-ext-700-normal-CIu0AXX2.woff",
+      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\assets\\roboto-cyrillic-ext-700-normal-CIu0AXX2.woff",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3757,7 +3757,7 @@
     },
     {
       "Route": "assets/roboto-cyrillic-ext-700-normal-D_fA0fHY.woff2",
-      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\assets\\roboto-cyrillic-ext-700-normal-D_fA0fHY.woff2",
+      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\assets\\roboto-cyrillic-ext-700-normal-D_fA0fHY.woff2",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3794,7 +3794,7 @@
     },
     {
       "Route": "assets/roboto-cyrillic-ext-700-normal-D_fA0fHY.wzfhxfmyvy.woff2",
-      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\assets\\roboto-cyrillic-ext-700-normal-D_fA0fHY.woff2",
+      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\assets\\roboto-cyrillic-ext-700-normal-D_fA0fHY.woff2",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3839,7 +3839,7 @@
     },
     {
       "Route": "assets/roboto-greek-300-normal-C_kb6SiH.1zbbzszlgv.woff",
-      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\assets\\roboto-greek-300-normal-C_kb6SiH.woff",
+      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\assets\\roboto-greek-300-normal-C_kb6SiH.woff",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3884,7 +3884,7 @@
     },
     {
       "Route": "assets/roboto-greek-300-normal-C_kb6SiH.woff",
-      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\assets\\roboto-greek-300-normal-C_kb6SiH.woff",
+      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\assets\\roboto-greek-300-normal-C_kb6SiH.woff",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3921,7 +3921,7 @@
     },
     {
       "Route": "assets/roboto-greek-300-normal-Cnub06j7.bluto1ihf7.woff2",
-      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\assets\\roboto-greek-300-normal-Cnub06j7.woff2",
+      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\assets\\roboto-greek-300-normal-Cnub06j7.woff2",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3966,7 +3966,7 @@
     },
     {
       "Route": "assets/roboto-greek-300-normal-Cnub06j7.woff2",
-      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\assets\\roboto-greek-300-normal-Cnub06j7.woff2",
+      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\assets\\roboto-greek-300-normal-Cnub06j7.woff2",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4003,7 +4003,7 @@
     },
     {
       "Route": "assets/roboto-greek-400-normal-CAI06USH.r2ob14bbib.woff",
-      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\assets\\roboto-greek-400-normal-CAI06USH.woff",
+      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\assets\\roboto-greek-400-normal-CAI06USH.woff",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4048,7 +4048,7 @@
     },
     {
       "Route": "assets/roboto-greek-400-normal-CAI06USH.woff",
-      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\assets\\roboto-greek-400-normal-CAI06USH.woff",
+      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\assets\\roboto-greek-400-normal-CAI06USH.woff",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4085,7 +4085,7 @@
     },
     {
       "Route": "assets/roboto-greek-400-normal-jFM2czAU.4e1ast0e2x.woff2",
-      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\assets\\roboto-greek-400-normal-jFM2czAU.woff2",
+      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\assets\\roboto-greek-400-normal-jFM2czAU.woff2",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4130,7 +4130,7 @@
     },
     {
       "Route": "assets/roboto-greek-400-normal-jFM2czAU.woff2",
-      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\assets\\roboto-greek-400-normal-jFM2czAU.woff2",
+      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\assets\\roboto-greek-400-normal-jFM2czAU.woff2",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4167,7 +4167,7 @@
     },
     {
       "Route": "assets/roboto-greek-500-normal-BJMS0heP.2vr4s59uif.woff2",
-      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\assets\\roboto-greek-500-normal-BJMS0heP.woff2",
+      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\assets\\roboto-greek-500-normal-BJMS0heP.woff2",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4212,7 +4212,7 @@
     },
     {
       "Route": "assets/roboto-greek-500-normal-BJMS0heP.woff2",
-      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\assets\\roboto-greek-500-normal-BJMS0heP.woff2",
+      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\assets\\roboto-greek-500-normal-BJMS0heP.woff2",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4249,7 +4249,7 @@
     },
     {
       "Route": "assets/roboto-greek-500-normal-D8eQD5zT.woff",
-      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\assets\\roboto-greek-500-normal-D8eQD5zT.woff",
+      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\assets\\roboto-greek-500-normal-D8eQD5zT.woff",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4286,7 +4286,7 @@
     },
     {
       "Route": "assets/roboto-greek-500-normal-D8eQD5zT.zj0jxf6krs.woff",
-      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\assets\\roboto-greek-500-normal-D8eQD5zT.woff",
+      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\assets\\roboto-greek-500-normal-D8eQD5zT.woff",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4331,7 +4331,7 @@
     },
     {
       "Route": "assets/roboto-greek-700-normal-DCrt6r9F.3mtvvd0107.woff",
-      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\assets\\roboto-greek-700-normal-DCrt6r9F.woff",
+      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\assets\\roboto-greek-700-normal-DCrt6r9F.woff",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4376,7 +4376,7 @@
     },
     {
       "Route": "assets/roboto-greek-700-normal-DCrt6r9F.woff",
-      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\assets\\roboto-greek-700-normal-DCrt6r9F.woff",
+      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\assets\\roboto-greek-700-normal-DCrt6r9F.woff",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4413,7 +4413,7 @@
     },
     {
       "Route": "assets/roboto-greek-700-normal-DpKAje7q.fjyt51ef48.woff2",
-      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\assets\\roboto-greek-700-normal-DpKAje7q.woff2",
+      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\assets\\roboto-greek-700-normal-DpKAje7q.woff2",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4458,7 +4458,7 @@
     },
     {
       "Route": "assets/roboto-greek-700-normal-DpKAje7q.woff2",
-      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\assets\\roboto-greek-700-normal-DpKAje7q.woff2",
+      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\assets\\roboto-greek-700-normal-DpKAje7q.woff2",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4495,7 +4495,7 @@
     },
     {
       "Route": "assets/roboto-latin-300-normal-CztWkFGs.mfuzk9ec0i.woff2",
-      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\assets\\roboto-latin-300-normal-CztWkFGs.woff2",
+      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\assets\\roboto-latin-300-normal-CztWkFGs.woff2",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4540,7 +4540,7 @@
     },
     {
       "Route": "assets/roboto-latin-300-normal-CztWkFGs.woff2",
-      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\assets\\roboto-latin-300-normal-CztWkFGs.woff2",
+      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\assets\\roboto-latin-300-normal-CztWkFGs.woff2",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4577,7 +4577,7 @@
     },
     {
       "Route": "assets/roboto-latin-300-normal-xb4kL3zn.sugv3abvf5.woff",
-      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\assets\\roboto-latin-300-normal-xb4kL3zn.woff",
+      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\assets\\roboto-latin-300-normal-xb4kL3zn.woff",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4622,7 +4622,7 @@
     },
     {
       "Route": "assets/roboto-latin-300-normal-xb4kL3zn.woff",
-      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\assets\\roboto-latin-300-normal-xb4kL3zn.woff",
+      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\assets\\roboto-latin-300-normal-xb4kL3zn.woff",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4659,7 +4659,7 @@
     },
     {
       "Route": "assets/roboto-latin-400-normal-551zQQ7R.pzpoeh7wvn.woff",
-      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\assets\\roboto-latin-400-normal-551zQQ7R.woff",
+      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\assets\\roboto-latin-400-normal-551zQQ7R.woff",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4704,7 +4704,7 @@
     },
     {
       "Route": "assets/roboto-latin-400-normal-551zQQ7R.woff",
-      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\assets\\roboto-latin-400-normal-551zQQ7R.woff",
+      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\assets\\roboto-latin-400-normal-551zQQ7R.woff",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4741,7 +4741,7 @@
     },
     {
       "Route": "assets/roboto-latin-400-normal-CNwBRw8h.09q4fk3qha.woff2",
-      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\assets\\roboto-latin-400-normal-CNwBRw8h.woff2",
+      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\assets\\roboto-latin-400-normal-CNwBRw8h.woff2",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4786,7 +4786,7 @@
     },
     {
       "Route": "assets/roboto-latin-400-normal-CNwBRw8h.woff2",
-      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\assets\\roboto-latin-400-normal-CNwBRw8h.woff2",
+      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\assets\\roboto-latin-400-normal-CNwBRw8h.woff2",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4823,7 +4823,7 @@
     },
     {
       "Route": "assets/roboto-latin-500-normal-_8jDuD7w.vkbo24q8qi.woff",
-      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\assets\\roboto-latin-500-normal-_8jDuD7w.woff",
+      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\assets\\roboto-latin-500-normal-_8jDuD7w.woff",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4868,7 +4868,7 @@
     },
     {
       "Route": "assets/roboto-latin-500-normal-_8jDuD7w.woff",
-      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\assets\\roboto-latin-500-normal-_8jDuD7w.woff",
+      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\assets\\roboto-latin-500-normal-_8jDuD7w.woff",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4905,7 +4905,7 @@
     },
     {
       "Route": "assets/roboto-latin-500-normal-CkrA1NAy.fff8d8cpmz.woff2",
-      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\assets\\roboto-latin-500-normal-CkrA1NAy.woff2",
+      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\assets\\roboto-latin-500-normal-CkrA1NAy.woff2",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4950,7 +4950,7 @@
     },
     {
       "Route": "assets/roboto-latin-500-normal-CkrA1NAy.woff2",
-      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\assets\\roboto-latin-500-normal-CkrA1NAy.woff2",
+      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\assets\\roboto-latin-500-normal-CkrA1NAy.woff2",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4987,7 +4987,7 @@
     },
     {
       "Route": "assets/roboto-latin-700-normal-CTLkNcF_.4mgxlinilp.woff",
-      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\assets\\roboto-latin-700-normal-CTLkNcF_.woff",
+      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\assets\\roboto-latin-700-normal-CTLkNcF_.woff",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5032,7 +5032,7 @@
     },
     {
       "Route": "assets/roboto-latin-700-normal-CTLkNcF_.woff",
-      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\assets\\roboto-latin-700-normal-CTLkNcF_.woff",
+      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\assets\\roboto-latin-700-normal-CTLkNcF_.woff",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5069,7 +5069,7 @@
     },
     {
       "Route": "assets/roboto-latin-700-normal-DZr4b_KL.m6mm1exkjq.woff2",
-      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\assets\\roboto-latin-700-normal-DZr4b_KL.woff2",
+      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\assets\\roboto-latin-700-normal-DZr4b_KL.woff2",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5114,7 +5114,7 @@
     },
     {
       "Route": "assets/roboto-latin-700-normal-DZr4b_KL.woff2",
-      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\assets\\roboto-latin-700-normal-DZr4b_KL.woff2",
+      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\assets\\roboto-latin-700-normal-DZr4b_KL.woff2",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5151,7 +5151,7 @@
     },
     {
       "Route": "assets/roboto-latin-ext-300-normal-BOz0oSmX.heyqmow8zs.woff2",
-      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\assets\\roboto-latin-ext-300-normal-BOz0oSmX.woff2",
+      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\assets\\roboto-latin-ext-300-normal-BOz0oSmX.woff2",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5196,7 +5196,7 @@
     },
     {
       "Route": "assets/roboto-latin-ext-300-normal-BOz0oSmX.woff2",
-      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\assets\\roboto-latin-ext-300-normal-BOz0oSmX.woff2",
+      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\assets\\roboto-latin-ext-300-normal-BOz0oSmX.woff2",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5233,7 +5233,7 @@
     },
     {
       "Route": "assets/roboto-latin-ext-300-normal-ni96UL8R.s8ilxyhoag.woff",
-      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\assets\\roboto-latin-ext-300-normal-ni96UL8R.woff",
+      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\assets\\roboto-latin-ext-300-normal-ni96UL8R.woff",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5278,7 +5278,7 @@
     },
     {
       "Route": "assets/roboto-latin-ext-300-normal-ni96UL8R.woff",
-      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\assets\\roboto-latin-ext-300-normal-ni96UL8R.woff",
+      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\assets\\roboto-latin-ext-300-normal-ni96UL8R.woff",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5315,7 +5315,7 @@
     },
     {
       "Route": "assets/roboto-latin-ext-400-normal-uRIBRJt5.b1tfupa1zp.woff",
-      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\assets\\roboto-latin-ext-400-normal-uRIBRJt5.woff",
+      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\assets\\roboto-latin-ext-400-normal-uRIBRJt5.woff",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5360,7 +5360,7 @@
     },
     {
       "Route": "assets/roboto-latin-ext-400-normal-uRIBRJt5.woff",
-      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\assets\\roboto-latin-ext-400-normal-uRIBRJt5.woff",
+      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\assets\\roboto-latin-ext-400-normal-uRIBRJt5.woff",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5397,7 +5397,7 @@
     },
     {
       "Route": "assets/roboto-latin-ext-400-normal-ZYmyxeOy.hvhinqt3dm.woff2",
-      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\assets\\roboto-latin-ext-400-normal-ZYmyxeOy.woff2",
+      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\assets\\roboto-latin-ext-400-normal-ZYmyxeOy.woff2",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5442,7 +5442,7 @@
     },
     {
       "Route": "assets/roboto-latin-ext-400-normal-ZYmyxeOy.woff2",
-      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\assets\\roboto-latin-ext-400-normal-ZYmyxeOy.woff2",
+      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\assets\\roboto-latin-ext-400-normal-ZYmyxeOy.woff2",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5479,7 +5479,7 @@
     },
     {
       "Route": "assets/roboto-latin-ext-500-normal-C_ARlJGk.ry34v6u61a.woff2",
-      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\assets\\roboto-latin-ext-500-normal-C_ARlJGk.woff2",
+      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\assets\\roboto-latin-ext-500-normal-C_ARlJGk.woff2",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5524,7 +5524,7 @@
     },
     {
       "Route": "assets/roboto-latin-ext-500-normal-C_ARlJGk.woff2",
-      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\assets\\roboto-latin-ext-500-normal-C_ARlJGk.woff2",
+      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\assets\\roboto-latin-ext-500-normal-C_ARlJGk.woff2",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5561,7 +5561,7 @@
     },
     {
       "Route": "assets/roboto-latin-ext-500-normal-eJ10kk0m.153dzxug5x.woff",
-      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\assets\\roboto-latin-ext-500-normal-eJ10kk0m.woff",
+      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\assets\\roboto-latin-ext-500-normal-eJ10kk0m.woff",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5606,7 +5606,7 @@
     },
     {
       "Route": "assets/roboto-latin-ext-500-normal-eJ10kk0m.woff",
-      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\assets\\roboto-latin-ext-500-normal-eJ10kk0m.woff",
+      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\assets\\roboto-latin-ext-500-normal-eJ10kk0m.woff",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5643,7 +5643,7 @@
     },
     {
       "Route": "assets/roboto-latin-ext-700-normal-BNPgmEQS.hsmpm38mg2.woff2",
-      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\assets\\roboto-latin-ext-700-normal-BNPgmEQS.woff2",
+      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\assets\\roboto-latin-ext-700-normal-BNPgmEQS.woff2",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5688,7 +5688,7 @@
     },
     {
       "Route": "assets/roboto-latin-ext-700-normal-BNPgmEQS.woff2",
-      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\assets\\roboto-latin-ext-700-normal-BNPgmEQS.woff2",
+      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\assets\\roboto-latin-ext-700-normal-BNPgmEQS.woff2",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5725,7 +5725,7 @@
     },
     {
       "Route": "assets/roboto-latin-ext-700-normal-Cnx4FGpK.bd5hwgni5k.woff",
-      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\assets\\roboto-latin-ext-700-normal-Cnx4FGpK.woff",
+      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\assets\\roboto-latin-ext-700-normal-Cnx4FGpK.woff",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5770,7 +5770,7 @@
     },
     {
       "Route": "assets/roboto-latin-ext-700-normal-Cnx4FGpK.woff",
-      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\assets\\roboto-latin-ext-700-normal-Cnx4FGpK.woff",
+      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\assets\\roboto-latin-ext-700-normal-Cnx4FGpK.woff",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5807,7 +5807,7 @@
     },
     {
       "Route": "assets/roboto-math-300-normal-Bhb_hbXj.g4ey0p7sna.woff",
-      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\assets\\roboto-math-300-normal-Bhb_hbXj.woff",
+      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\assets\\roboto-math-300-normal-Bhb_hbXj.woff",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5852,7 +5852,7 @@
     },
     {
       "Route": "assets/roboto-math-300-normal-Bhb_hbXj.woff",
-      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\assets\\roboto-math-300-normal-Bhb_hbXj.woff",
+      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\assets\\roboto-math-300-normal-Bhb_hbXj.woff",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5889,7 +5889,7 @@
     },
     {
       "Route": "assets/roboto-math-300-normal-BMxwzQmU.583cyus83l.woff2",
-      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\assets\\roboto-math-300-normal-BMxwzQmU.woff2",
+      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\assets\\roboto-math-300-normal-BMxwzQmU.woff2",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5934,7 +5934,7 @@
     },
     {
       "Route": "assets/roboto-math-300-normal-BMxwzQmU.woff2",
-      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\assets\\roboto-math-300-normal-BMxwzQmU.woff2",
+      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\assets\\roboto-math-300-normal-BMxwzQmU.woff2",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5971,7 +5971,7 @@
     },
     {
       "Route": "assets/roboto-math-400-normal-B3wgz80t.s98izah8im.woff2",
-      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\assets\\roboto-math-400-normal-B3wgz80t.woff2",
+      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\assets\\roboto-math-400-normal-B3wgz80t.woff2",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6016,7 +6016,7 @@
     },
     {
       "Route": "assets/roboto-math-400-normal-B3wgz80t.woff2",
-      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\assets\\roboto-math-400-normal-B3wgz80t.woff2",
+      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\assets\\roboto-math-400-normal-B3wgz80t.woff2",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6053,7 +6053,7 @@
     },
     {
       "Route": "assets/roboto-math-400-normal-DHrwdhE6.h0uqtawfrm.woff",
-      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\assets\\roboto-math-400-normal-DHrwdhE6.woff",
+      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\assets\\roboto-math-400-normal-DHrwdhE6.woff",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6098,7 +6098,7 @@
     },
     {
       "Route": "assets/roboto-math-400-normal-DHrwdhE6.woff",
-      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\assets\\roboto-math-400-normal-DHrwdhE6.woff",
+      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\assets\\roboto-math-400-normal-DHrwdhE6.woff",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6135,7 +6135,7 @@
     },
     {
       "Route": "assets/roboto-math-500-normal-CetgDdIa.2ar61v4s0a.woff",
-      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\assets\\roboto-math-500-normal-CetgDdIa.woff",
+      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\assets\\roboto-math-500-normal-CetgDdIa.woff",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6180,7 +6180,7 @@
     },
     {
       "Route": "assets/roboto-math-500-normal-CetgDdIa.woff",
-      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\assets\\roboto-math-500-normal-CetgDdIa.woff",
+      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\assets\\roboto-math-500-normal-CetgDdIa.woff",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6217,7 +6217,7 @@
     },
     {
       "Route": "assets/roboto-math-500-normal-CFNaIMFC.bh3p50i17z.woff2",
-      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\assets\\roboto-math-500-normal-CFNaIMFC.woff2",
+      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\assets\\roboto-math-500-normal-CFNaIMFC.woff2",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6262,7 +6262,7 @@
     },
     {
       "Route": "assets/roboto-math-500-normal-CFNaIMFC.woff2",
-      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\assets\\roboto-math-500-normal-CFNaIMFC.woff2",
+      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\assets\\roboto-math-500-normal-CFNaIMFC.woff2",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6299,7 +6299,7 @@
     },
     {
       "Route": "assets/roboto-math-700-normal-CpTCM92H.ut9la5fww1.woff",
-      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\assets\\roboto-math-700-normal-CpTCM92H.woff",
+      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\assets\\roboto-math-700-normal-CpTCM92H.woff",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6344,7 +6344,7 @@
     },
     {
       "Route": "assets/roboto-math-700-normal-CpTCM92H.woff",
-      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\assets\\roboto-math-700-normal-CpTCM92H.woff",
+      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\assets\\roboto-math-700-normal-CpTCM92H.woff",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6381,7 +6381,7 @@
     },
     {
       "Route": "assets/roboto-math-700-normal-xbpggnJp.q8l5e0kor5.woff2",
-      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\assets\\roboto-math-700-normal-xbpggnJp.woff2",
+      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\assets\\roboto-math-700-normal-xbpggnJp.woff2",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6426,7 +6426,7 @@
     },
     {
       "Route": "assets/roboto-math-700-normal-xbpggnJp.woff2",
-      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\assets\\roboto-math-700-normal-xbpggnJp.woff2",
+      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\assets\\roboto-math-700-normal-xbpggnJp.woff2",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6463,7 +6463,7 @@
     },
     {
       "Route": "assets/roboto-symbols-300-normal-BtHl5mYl.5gwipbm0b4.woff2",
-      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\assets\\roboto-symbols-300-normal-BtHl5mYl.woff2",
+      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\assets\\roboto-symbols-300-normal-BtHl5mYl.woff2",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6508,7 +6508,7 @@
     },
     {
       "Route": "assets/roboto-symbols-300-normal-BtHl5mYl.woff2",
-      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\assets\\roboto-symbols-300-normal-BtHl5mYl.woff2",
+      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\assets\\roboto-symbols-300-normal-BtHl5mYl.woff2",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6545,7 +6545,7 @@
     },
     {
       "Route": "assets/roboto-symbols-300-normal-VgGNgJlY.f61u1cr6ex.woff",
-      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\assets\\roboto-symbols-300-normal-VgGNgJlY.woff",
+      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\assets\\roboto-symbols-300-normal-VgGNgJlY.woff",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6590,7 +6590,7 @@
     },
     {
       "Route": "assets/roboto-symbols-300-normal-VgGNgJlY.woff",
-      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\assets\\roboto-symbols-300-normal-VgGNgJlY.woff",
+      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\assets\\roboto-symbols-300-normal-VgGNgJlY.woff",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6627,7 +6627,7 @@
     },
     {
       "Route": "assets/roboto-symbols-400-normal-bG5rsNFs.o1c0zzq8vk.woff",
-      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\assets\\roboto-symbols-400-normal-bG5rsNFs.woff",
+      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\assets\\roboto-symbols-400-normal-bG5rsNFs.woff",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6672,7 +6672,7 @@
     },
     {
       "Route": "assets/roboto-symbols-400-normal-bG5rsNFs.woff",
-      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\assets\\roboto-symbols-400-normal-bG5rsNFs.woff",
+      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\assets\\roboto-symbols-400-normal-bG5rsNFs.woff",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6709,7 +6709,7 @@
     },
     {
       "Route": "assets/roboto-symbols-400-normal-fF1SLJBj.dk1jheique.woff2",
-      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\assets\\roboto-symbols-400-normal-fF1SLJBj.woff2",
+      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\assets\\roboto-symbols-400-normal-fF1SLJBj.woff2",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6754,7 +6754,7 @@
     },
     {
       "Route": "assets/roboto-symbols-400-normal-fF1SLJBj.woff2",
-      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\assets\\roboto-symbols-400-normal-fF1SLJBj.woff2",
+      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\assets\\roboto-symbols-400-normal-fF1SLJBj.woff2",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6791,7 +6791,7 @@
     },
     {
       "Route": "assets/roboto-symbols-500-normal-BXFTxrNR.pauvpsdyn0.woff2",
-      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\assets\\roboto-symbols-500-normal-BXFTxrNR.woff2",
+      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\assets\\roboto-symbols-500-normal-BXFTxrNR.woff2",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6836,7 +6836,7 @@
     },
     {
       "Route": "assets/roboto-symbols-500-normal-BXFTxrNR.woff2",
-      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\assets\\roboto-symbols-500-normal-BXFTxrNR.woff2",
+      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\assets\\roboto-symbols-500-normal-BXFTxrNR.woff2",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6873,7 +6873,7 @@
     },
     {
       "Route": "assets/roboto-symbols-500-normal-toKUCDph.2xnu8zmc3v.woff",
-      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\assets\\roboto-symbols-500-normal-toKUCDph.woff",
+      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\assets\\roboto-symbols-500-normal-toKUCDph.woff",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6918,7 +6918,7 @@
     },
     {
       "Route": "assets/roboto-symbols-500-normal-toKUCDph.woff",
-      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\assets\\roboto-symbols-500-normal-toKUCDph.woff",
+      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\assets\\roboto-symbols-500-normal-toKUCDph.woff",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6955,7 +6955,7 @@
     },
     {
       "Route": "assets/roboto-symbols-700-normal-B2QKVW64.02fggz84cw.woff",
-      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\assets\\roboto-symbols-700-normal-B2QKVW64.woff",
+      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\assets\\roboto-symbols-700-normal-B2QKVW64.woff",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7000,7 +7000,7 @@
     },
     {
       "Route": "assets/roboto-symbols-700-normal-B2QKVW64.woff",
-      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\assets\\roboto-symbols-700-normal-B2QKVW64.woff",
+      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\assets\\roboto-symbols-700-normal-B2QKVW64.woff",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7037,7 +7037,7 @@
     },
     {
       "Route": "assets/roboto-symbols-700-normal-DKkQdRpM.woff2",
-      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\assets\\roboto-symbols-700-normal-DKkQdRpM.woff2",
+      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\assets\\roboto-symbols-700-normal-DKkQdRpM.woff2",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7074,7 +7074,7 @@
     },
     {
       "Route": "assets/roboto-symbols-700-normal-DKkQdRpM.y62t21a9hr.woff2",
-      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\assets\\roboto-symbols-700-normal-DKkQdRpM.woff2",
+      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\assets\\roboto-symbols-700-normal-DKkQdRpM.woff2",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7119,7 +7119,7 @@
     },
     {
       "Route": "assets/roboto-vietnamese-300-normal-CNeuLW5X.lu083vz7hu.woff2",
-      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\assets\\roboto-vietnamese-300-normal-CNeuLW5X.woff2",
+      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\assets\\roboto-vietnamese-300-normal-CNeuLW5X.woff2",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7164,7 +7164,7 @@
     },
     {
       "Route": "assets/roboto-vietnamese-300-normal-CNeuLW5X.woff2",
-      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\assets\\roboto-vietnamese-300-normal-CNeuLW5X.woff2",
+      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\assets\\roboto-vietnamese-300-normal-CNeuLW5X.woff2",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7201,7 +7201,7 @@
     },
     {
       "Route": "assets/roboto-vietnamese-300-normal-D46JPfnP.wlszf2hppl.woff",
-      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\assets\\roboto-vietnamese-300-normal-D46JPfnP.woff",
+      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\assets\\roboto-vietnamese-300-normal-D46JPfnP.woff",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7246,7 +7246,7 @@
     },
     {
       "Route": "assets/roboto-vietnamese-300-normal-D46JPfnP.woff",
-      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\assets\\roboto-vietnamese-300-normal-D46JPfnP.woff",
+      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\assets\\roboto-vietnamese-300-normal-D46JPfnP.woff",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7283,7 +7283,7 @@
     },
     {
       "Route": "assets/roboto-vietnamese-400-normal-CDDxGrUb.mawhif8q61.woff2",
-      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\assets\\roboto-vietnamese-400-normal-CDDxGrUb.woff2",
+      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\assets\\roboto-vietnamese-400-normal-CDDxGrUb.woff2",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7328,7 +7328,7 @@
     },
     {
       "Route": "assets/roboto-vietnamese-400-normal-CDDxGrUb.woff2",
-      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\assets\\roboto-vietnamese-400-normal-CDDxGrUb.woff2",
+      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\assets\\roboto-vietnamese-400-normal-CDDxGrUb.woff2",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7365,7 +7365,7 @@
     },
     {
       "Route": "assets/roboto-vietnamese-400-normal-DgufTq8s.czbtv6ufwr.woff",
-      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\assets\\roboto-vietnamese-400-normal-DgufTq8s.woff",
+      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\assets\\roboto-vietnamese-400-normal-DgufTq8s.woff",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7410,7 +7410,7 @@
     },
     {
       "Route": "assets/roboto-vietnamese-400-normal-DgufTq8s.woff",
-      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\assets\\roboto-vietnamese-400-normal-DgufTq8s.woff",
+      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\assets\\roboto-vietnamese-400-normal-DgufTq8s.woff",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7447,7 +7447,7 @@
     },
     {
       "Route": "assets/roboto-vietnamese-500-normal-Dw5heWgq.374nczpnvo.woff",
-      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\assets\\roboto-vietnamese-500-normal-Dw5heWgq.woff",
+      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\assets\\roboto-vietnamese-500-normal-Dw5heWgq.woff",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7492,7 +7492,7 @@
     },
     {
       "Route": "assets/roboto-vietnamese-500-normal-Dw5heWgq.woff",
-      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\assets\\roboto-vietnamese-500-normal-Dw5heWgq.woff",
+      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\assets\\roboto-vietnamese-500-normal-Dw5heWgq.woff",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7529,7 +7529,7 @@
     },
     {
       "Route": "assets/roboto-vietnamese-500-normal-HYpufUYk.htpspvgzpa.woff2",
-      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\assets\\roboto-vietnamese-500-normal-HYpufUYk.woff2",
+      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\assets\\roboto-vietnamese-500-normal-HYpufUYk.woff2",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7574,7 +7574,7 @@
     },
     {
       "Route": "assets/roboto-vietnamese-500-normal-HYpufUYk.woff2",
-      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\assets\\roboto-vietnamese-500-normal-HYpufUYk.woff2",
+      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\assets\\roboto-vietnamese-500-normal-HYpufUYk.woff2",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7611,7 +7611,7 @@
     },
     {
       "Route": "assets/roboto-vietnamese-700-normal-BFWtvCOj.ucyj39v6m4.woff2",
-      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\assets\\roboto-vietnamese-700-normal-BFWtvCOj.woff2",
+      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\assets\\roboto-vietnamese-700-normal-BFWtvCOj.woff2",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7656,7 +7656,7 @@
     },
     {
       "Route": "assets/roboto-vietnamese-700-normal-BFWtvCOj.woff2",
-      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\assets\\roboto-vietnamese-700-normal-BFWtvCOj.woff2",
+      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\assets\\roboto-vietnamese-700-normal-BFWtvCOj.woff2",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7693,7 +7693,7 @@
     },
     {
       "Route": "assets/roboto-vietnamese-700-normal-ChAl_rRV.hog3fjmvq4.woff",
-      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\assets\\roboto-vietnamese-700-normal-ChAl_rRV.woff",
+      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\assets\\roboto-vietnamese-700-normal-ChAl_rRV.woff",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7738,7 +7738,7 @@
     },
     {
       "Route": "assets/roboto-vietnamese-700-normal-ChAl_rRV.woff",
-      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\assets\\roboto-vietnamese-700-normal-ChAl_rRV.woff",
+      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\assets\\roboto-vietnamese-700-normal-ChAl_rRV.woff",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7775,7 +7775,7 @@
     },
     {
       "Route": "images/products/boot-ang1.e7vhuam157.png",
-      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\images\\products\\boot-ang1.png",
+      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\images\\products\\boot-ang1.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7820,7 +7820,7 @@
     },
     {
       "Route": "images/products/boot-ang1.png",
-      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\images\\products\\boot-ang1.png",
+      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\images\\products\\boot-ang1.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7857,7 +7857,7 @@
     },
     {
       "Route": "images/products/boot-ang2.g3mx7ghjao.png",
-      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\images\\products\\boot-ang2.png",
+      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\images\\products\\boot-ang2.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7902,7 +7902,7 @@
     },
     {
       "Route": "images/products/boot-ang2.png",
-      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\images\\products\\boot-ang2.png",
+      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\images\\products\\boot-ang2.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7939,7 +7939,7 @@
     },
     {
       "Route": "images/products/boot-core1.png",
-      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\images\\products\\boot-core1.png",
+      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\images\\products\\boot-core1.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7976,7 +7976,7 @@
     },
     {
       "Route": "images/products/boot-core1.u5gzcfuhld.png",
-      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\images\\products\\boot-core1.png",
+      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\images\\products\\boot-core1.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -8021,7 +8021,7 @@
     },
     {
       "Route": "images/products/boot-core2.png",
-      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\images\\products\\boot-core2.png",
+      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\images\\products\\boot-core2.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -8058,7 +8058,7 @@
     },
     {
       "Route": "images/products/boot-core2.vl8j47b4zz.png",
-      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\images\\products\\boot-core2.png",
+      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\images\\products\\boot-core2.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -8103,7 +8103,7 @@
     },
     {
       "Route": "images/products/boot-redis1.png",
-      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\images\\products\\boot-redis1.png",
+      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\images\\products\\boot-redis1.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -8140,7 +8140,7 @@
     },
     {
       "Route": "images/products/boot-redis1.ujsmkc6cge.png",
-      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\images\\products\\boot-redis1.png",
+      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\images\\products\\boot-redis1.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -8185,7 +8185,7 @@
     },
     {
       "Route": "images/products/glove-code1.hjatec42kt.png",
-      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\images\\products\\glove-code1.png",
+      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\images\\products\\glove-code1.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -8230,7 +8230,7 @@
     },
     {
       "Route": "images/products/glove-code1.png",
-      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\images\\products\\glove-code1.png",
+      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\images\\products\\glove-code1.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -8267,7 +8267,7 @@
     },
     {
       "Route": "images/products/glove-code2.7rfyrcpgaq.png",
-      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\images\\products\\glove-code2.png",
+      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\images\\products\\glove-code2.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -8312,7 +8312,7 @@
     },
     {
       "Route": "images/products/glove-code2.png",
-      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\images\\products\\glove-code2.png",
+      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\images\\products\\glove-code2.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -8349,7 +8349,7 @@
     },
     {
       "Route": "images/products/glove-react1.png",
-      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\images\\products\\glove-react1.png",
+      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\images\\products\\glove-react1.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -8386,7 +8386,7 @@
     },
     {
       "Route": "images/products/glove-react1.qkf2kkbct5.png",
-      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\images\\products\\glove-react1.png",
+      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\images\\products\\glove-react1.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -8431,7 +8431,7 @@
     },
     {
       "Route": "images/products/glove-react2.hleln2xgnm.png",
-      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\images\\products\\glove-react2.png",
+      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\images\\products\\glove-react2.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -8476,7 +8476,7 @@
     },
     {
       "Route": "images/products/glove-react2.png",
-      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\images\\products\\glove-react2.png",
+      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\images\\products\\glove-react2.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -8513,7 +8513,7 @@
     },
     {
       "Route": "images/products/hat-core1.png",
-      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\images\\products\\hat-core1.png",
+      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\images\\products\\hat-core1.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -8550,7 +8550,7 @@
     },
     {
       "Route": "images/products/hat-core1.qjn20d7mmr.png",
-      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\images\\products\\hat-core1.png",
+      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\images\\products\\hat-core1.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -8595,7 +8595,7 @@
     },
     {
       "Route": "images/products/hat-react1.ogijun3cjh.png",
-      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\images\\products\\hat-react1.png",
+      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\images\\products\\hat-react1.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -8640,7 +8640,7 @@
     },
     {
       "Route": "images/products/hat-react1.png",
-      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\images\\products\\hat-react1.png",
+      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\images\\products\\hat-react1.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -8677,7 +8677,7 @@
     },
     {
       "Route": "images/products/hat-react2.png",
-      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\images\\products\\hat-react2.png",
+      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\images\\products\\hat-react2.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -8714,7 +8714,7 @@
     },
     {
       "Route": "images/products/hat-react2.wihax8artv.png",
-      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\images\\products\\hat-react2.png",
+      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\images\\products\\hat-react2.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -8759,7 +8759,7 @@
     },
     {
       "Route": "images/products/sb-ang1.lvxtg3kj4t.png",
-      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\images\\products\\sb-ang1.png",
+      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\images\\products\\sb-ang1.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -8804,7 +8804,7 @@
     },
     {
       "Route": "images/products/sb-ang1.png",
-      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\images\\products\\sb-ang1.png",
+      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\images\\products\\sb-ang1.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -8841,7 +8841,7 @@
     },
     {
       "Route": "images/products/sb-ang2.png",
-      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\images\\products\\sb-ang2.png",
+      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\images\\products\\sb-ang2.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -8878,7 +8878,7 @@
     },
     {
       "Route": "images/products/sb-ang2.sz22xe7sgv.png",
-      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\images\\products\\sb-ang2.png",
+      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\images\\products\\sb-ang2.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -8923,7 +8923,7 @@
     },
     {
       "Route": "images/products/sb-core1.1035sj0izl.png",
-      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\images\\products\\sb-core1.png",
+      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\images\\products\\sb-core1.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -8968,7 +8968,7 @@
     },
     {
       "Route": "images/products/sb-core1.png",
-      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\images\\products\\sb-core1.png",
+      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\images\\products\\sb-core1.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -9005,7 +9005,7 @@
     },
     {
       "Route": "images/products/sb-core2.drwp5gg2x0.png",
-      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\images\\products\\sb-core2.png",
+      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\images\\products\\sb-core2.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -9050,7 +9050,7 @@
     },
     {
       "Route": "images/products/sb-core2.png",
-      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\images\\products\\sb-core2.png",
+      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\images\\products\\sb-core2.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -9087,7 +9087,7 @@
     },
     {
       "Route": "images/products/sb-react1.6zxvxdfvuf.png",
-      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\images\\products\\sb-react1.png",
+      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\images\\products\\sb-react1.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -9132,7 +9132,7 @@
     },
     {
       "Route": "images/products/sb-react1.png",
-      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\images\\products\\sb-react1.png",
+      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\images\\products\\sb-react1.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -9169,7 +9169,7 @@
     },
     {
       "Route": "images/products/sb-ts1.oybcq84912.png",
-      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\images\\products\\sb-ts1.png",
+      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\images\\products\\sb-ts1.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -9214,7 +9214,7 @@
     },
     {
       "Route": "images/products/sb-ts1.png",
-      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\images\\products\\sb-ts1.png",
+      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\images\\products\\sb-ts1.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -9251,7 +9251,7 @@
     },
     {
       "Route": "index.html",
-      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\obj\\Debug\\net9.0\\compressed\\1dpm1p8bmc-kpabrkmzxr.gz",
+      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\obj\\Debug\\net9.0\\compressed\\1dpm1p8bmc-kpabrkmzxr.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
@@ -9306,7 +9306,7 @@
     },
     {
       "Route": "index.html",
-      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\index.html",
+      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\index.html",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -9343,7 +9343,7 @@
     },
     {
       "Route": "index.html.gz",
-      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\obj\\Debug\\net9.0\\compressed\\1dpm1p8bmc-kpabrkmzxr.gz",
+      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\obj\\Debug\\net9.0\\compressed\\1dpm1p8bmc-kpabrkmzxr.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -9388,7 +9388,7 @@
     },
     {
       "Route": "index.kpabrkmzxr.html",
-      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\obj\\Debug\\net9.0\\compressed\\1dpm1p8bmc-kpabrkmzxr.gz",
+      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\obj\\Debug\\net9.0\\compressed\\1dpm1p8bmc-kpabrkmzxr.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
@@ -9451,7 +9451,7 @@
     },
     {
       "Route": "index.kpabrkmzxr.html",
-      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\index.html",
+      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\index.html",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -9496,7 +9496,7 @@
     },
     {
       "Route": "index.kpabrkmzxr.html.gz",
-      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\obj\\Debug\\net9.0\\compressed\\1dpm1p8bmc-kpabrkmzxr.gz",
+      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\obj\\Debug\\net9.0\\compressed\\1dpm1p8bmc-kpabrkmzxr.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -9549,7 +9549,7 @@
     },
     {
       "Route": "videos/skiing_video.dqhw52pfe0.mp4",
-      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\videos\\skiing_video.mp4",
+      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\videos\\skiing_video.mp4",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -9594,7 +9594,7 @@
     },
     {
       "Route": "videos/skiing_video.mp4",
-      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\videos\\skiing_video.mp4",
+      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\videos\\skiing_video.mp4",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -9631,7 +9631,7 @@
     },
     {
       "Route": "vite.69kjnsiwqx.svg",
-      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\obj\\Debug\\net9.0\\compressed\\4pit3vs01m-69kjnsiwqx.gz",
+      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\obj\\Debug\\net9.0\\compressed\\4pit3vs01m-69kjnsiwqx.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
@@ -9694,7 +9694,7 @@
     },
     {
       "Route": "vite.69kjnsiwqx.svg",
-      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\vite.svg",
+      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\vite.svg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -9739,7 +9739,7 @@
     },
     {
       "Route": "vite.69kjnsiwqx.svg.gz",
-      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\obj\\Debug\\net9.0\\compressed\\4pit3vs01m-69kjnsiwqx.gz",
+      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\obj\\Debug\\net9.0\\compressed\\4pit3vs01m-69kjnsiwqx.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -9792,7 +9792,7 @@
     },
     {
       "Route": "vite.svg",
-      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\obj\\Debug\\net9.0\\compressed\\4pit3vs01m-69kjnsiwqx.gz",
+      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\obj\\Debug\\net9.0\\compressed\\4pit3vs01m-69kjnsiwqx.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
@@ -9847,7 +9847,7 @@
     },
     {
       "Route": "vite.svg",
-      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\wwwroot\\vite.svg",
+      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\wwwroot\\vite.svg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -9884,7 +9884,7 @@
     },
     {
       "Route": "vite.svg.gz",
-      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\obj\\Debug\\net9.0\\compressed\\4pit3vs01m-69kjnsiwqx.gz",
+      "AssetFile": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\obj\\Debug\\net9.0\\compressed\\4pit3vs01m-69kjnsiwqx.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {

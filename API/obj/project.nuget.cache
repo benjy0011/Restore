@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ufVjaM+Igb0=",
+  "dgSpecHash": "GZA9PNdkh+Y=",
   "success": true,
-  "projectFilePath": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\api\\API.csproj",
+  "projectFilePath": "C:\\Users\\benjy\\Desktop\\Learn Online Store\\Restore\\API\\API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\benjy\\.nuget\\packages\\automapper\\13.0.1\\automapper.13.0.1.nupkg.sha512",
     "C:\\Users\\benjy\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
