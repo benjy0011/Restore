@@ -69,14 +69,17 @@ const UserMenuContent = ({
         </CompositeMenuItem>
 
         {/* Inventory */}
-        <CompositeMenuItem 
-          onClick={() => navigate("/inventory")}
-        >
-          <ListItemIcon>
-            <Inventory />
-          </ListItemIcon>
-          <ListItemText>Inventory</ListItemText>
-        </CompositeMenuItem>
+        {user.roles.includes('Admin') &&
+          <CompositeMenuItem 
+            onClick={() => navigate("/inventory")}
+          >
+            <ListItemIcon>
+              <Inventory />
+            </ListItemIcon>
+            <ListItemText>Inventory</ListItemText>
+          </CompositeMenuItem>
+        }
+        
 
         <Divider />
 
