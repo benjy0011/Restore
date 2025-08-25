@@ -10,7 +10,7 @@ import { AppDropZone } from "../../app/shared/components/AppDropZone"
 import { useEffect, useState } from "react"
 import type { Product } from "../../app/models/product"
 import { useCreateProductMutation, useUpdateProductMutation } from "./adminApi"
-import { toast } from "react-toastify"
+import { handleApiError } from "../../lib/util"
 
 interface Props {
   setEditMode: (editMode: boolean) => void
@@ -23,7 +23,7 @@ export const ProductForm = ({
   product,
   refetch,
 }: Props) => {
-  const { control, handleSubmit, watch, reset, formState: {isSubmitting} } = useForm({
+  const { control, handleSubmit, watch, reset, setError, formState: {isSubmitting} } = useForm({
     mode: 'onTouched',
     resolver: zodResolver(createProductSchema),
     defaultValues: {
@@ -63,14 +63,18 @@ export const ProductForm = ({
 
   const onSubmit = async (data: CreateProductSchema) => {
     try {
-      if (product) await updateProduct({id: product.id, data: data});
-      else await createProduct(data);
+      if (product) await updateProduct({id: product.id, data: data}).unwrap();
+      else await createProduct(data).unwrap();
 
       setEditMode(false);
       refetch();
     } catch (error) {
       console.log(error);
-      toast(error as string, { type: "error" });
+      handleApiError<CreateProductSchema>(
+        error, 
+        setError, 
+        ["type", "name", "description", "price", "brand", "quantityInStock", "pictureUrl", "file"]
+      )
     }
   }
 
