@@ -1,7 +1,33 @@
-Full-Stack Learning Repo
+# Restore (Full-Stack Learning Repo)
+This repo is for self-learning full-stack development with C# (ASP.NET Core) and React (TypeScript). It is a full-stack e-commerce demo application with role-based access, image uploads, and Stripe-powered payments.
 
-This repo is for self-learning full-stack development with C# (ASP.NET Core) and React (TypeScript).
 
+- #### [🔗Link](https://restore-benjy-d7fgfahtdpf4cuhv.southeastasia-01.azurewebsites.net/) (temporarily stopped due to budget constraint)
+
+![restore-demo](https://github.com/user-attachments/assets/81b4b911-7e0b-4d26-9e7a-2d8b12a84077)
+
+
+## Tech Stack
+- **Frontend**: React (TypeScript), Redux, Material-UI  
+- **Backend**: ASP.NET Core, Cloudinary, Stripe  
+- **Database**: Microsoft SQL Server (Dockerized)
+
+
+## Features
+- 🔐 Role-based authentication & authorization (Admin / User)  
+- 📷 Image uploading via Cloudinary  
+- 💳 Stripe integration for secure payments  
+- 📦 Product management (CRUD)  
+
+## Prerequisites
+- Node.js >= 18  
+- .NET SDK >= 7.0  
+- Docker Desktop (for MSSQL)  
+- Stripe CLI (for webhook testing)  
+
+
+
+## Run in local
 API
 
 ```sh
@@ -26,9 +52,9 @@ Database
 
 ```sh
 docker compose up -d
-dotnet ef migrations add SqlServerInitial -o Data/Migrations
 ```
 
+## Deploy
 Build Client
 
 ```sh
@@ -43,4 +69,5 @@ cd ./API
 dotnet publish -c Release -o ./bin/Publish
 ```
 
-👉 Then, right-click the Publish folder and select Deploy to Azure.
+👉 After publishing, deploy the contents of the `./API/bin/Publish` folder to your Azure App Service.
+ (or right-click the Publish folder and select Deploy to Azure)
