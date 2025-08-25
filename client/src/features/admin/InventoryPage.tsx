@@ -80,6 +80,7 @@ export const InventoryPage = () => {
                       alt={product.name}
                       style={{ height: 50, marginRight: 20 }}
                     />
+                    <Typography>{product.name}</Typography>
                   </Box>
                 </TableCell>
 
