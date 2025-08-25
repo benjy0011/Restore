@@ -11,7 +11,7 @@ import type { Product } from "../../app/models/product";
 
 export const InventoryPage = () => {
   const productParams = useAppSelector(state => state.catalog);
-  const { data } = useFetchProductsQuery(productParams);
+  const { data, refetch } = useFetchProductsQuery(productParams);
   const dispatch = useAppDispatch();
   const [ editMode, setEditMode ] = useState(false);
   const [selectedProduct, setSelectedProduct] = useState<Product | null>(null);
@@ -21,7 +21,7 @@ export const InventoryPage = () => {
     setEditMode(true);
   }
 
-  if (editMode) return <ProductForm setEditMode={setEditMode} product={selectedProduct} />
+  if (editMode) return <ProductForm setEditMode={setEditMode} product={selectedProduct} refetch={refetch} />
 
   return (
     <div>

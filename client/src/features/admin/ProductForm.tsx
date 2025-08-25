@@ -9,17 +9,21 @@ import CircularProgressScreen from "../../app/shared/components/CircularProgress
 import { AppDropZone } from "../../app/shared/components/AppDropZone"
 import { useEffect, useState } from "react"
 import type { Product } from "../../app/models/product"
+import { useCreateProductMutation, useUpdateProductMutation } from "./adminApi"
+import { toast } from "react-toastify"
 
 interface Props {
   setEditMode: (editMode: boolean) => void
   product: Product | null
+  refetch: () => void
 }
 
 export const ProductForm = ({
   setEditMode,
   product,
+  refetch,
 }: Props) => {
-  const { control, handleSubmit, watch, reset } = useForm({
+  const { control, handleSubmit, watch, reset, formState: {isSubmitting} } = useForm({
     mode: 'onTouched',
     resolver: zodResolver(createProductSchema),
     defaultValues: {
@@ -54,9 +58,20 @@ export const ProductForm = ({
   }, [watchFile]);
 
   const { data, isLoading } = useFetchFiltersQuery();
+  const [ createProduct ] = useCreateProductMutation();
+  const [ updateProduct ] = useUpdateProductMutation();
 
-  const onSubmit = (data: CreateProductSchema) => {
-    console.log(data);
+  const onSubmit = async (data: CreateProductSchema) => {
+    try {
+      if (product) await updateProduct({id: product.id, data: data});
+      else await createProduct(data);
+
+      setEditMode(false);
+      refetch();
+    } catch (error) {
+      console.log(error);
+      toast(error as string, { type: "error" });
+    }
   }
 
   if (isLoading) return (<CircularProgressScreen />)
@@ -133,7 +148,7 @@ export const ProductForm = ({
 
         <Box display='flex' justifyContent='space-between' sx={{ mt: 3 }}>
           <Button variant="contained" color="inherit" onClick={() => setEditMode(false)}>Cancel</Button>
-          <Button variant="contained" color="primary" type="submit">Submit</Button>
+          <Button variant="contained" color="primary" type="submit" loading={isSubmitting}>Submit</Button>
         </Box>
       </form>
     </Box>
