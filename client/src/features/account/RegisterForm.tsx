@@ -6,6 +6,7 @@ import { Box, Button, Container, IconButton, Paper, TextField, Typography } from
 import { VisibilityOutlined, VisibilityOffOutlined, PermIdentity } from "@mui/icons-material";
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import { handleApiError } from "../../lib/util";
 
 export const RegisterForm = () => {
   const [ registerUser, { isLoading } ] = useRegisterMutation();
@@ -18,19 +19,26 @@ export const RegisterForm = () => {
     try {
       await registerUser(data).unwrap();
     } catch (error) {
-      const apiError = error as { message: string };
-      if (apiError.message && typeof apiError.message === 'string') {
-        const errorArray = apiError.message.split(',');
+      // const apiError = error as { message: string };
+      // if (apiError.message && typeof apiError.message === 'string') {
+      //   const errorArray = apiError.message.split(',');
 
-        // can only set one error each time
-        errorArray.forEach(e => {
-          if (e.toLowerCase().includes('password')) {
-            setError('password', {message: e})
-          } else if (e.toLowerCase().includes('email')) {
-            setError('email', {message: e})
-          }
-        })
-      }
+      //   // can only set one error each time
+      //   errorArray.forEach(e => {
+      //     if (e.toLowerCase().includes('password')) {
+      //       setError('password', {message: e})
+      //     } else if (e.toLowerCase().includes('email')) {
+      //       setError('email', {message: e})
+      //     }
+      //   })
+      // }
+      console.log(error);
+
+      handleApiError<RegisterSchema>(
+        error,
+        setError,
+        ["email", "password"]
+      )
     }
   }
 
