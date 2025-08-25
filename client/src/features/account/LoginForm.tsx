@@ -19,7 +19,8 @@ const LoginForm = () => {
   const navigate = useNavigate();
 
   const onSubmit = async (data: LoginSchema) => {
-    await login(data);
+    const result = await login(data);
+    if ('error' in result) return;
     await fetchUserInfo();
     navigate(location.state?.from || '/catalog');
   }
