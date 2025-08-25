@@ -1,4 +1,4 @@
-import { useForm } from "react-hook-form"
+import { useForm, type FieldValues } from "react-hook-form"
 import { createProductSchema, type CreateProductSchema } from "../../lib/schemas/createProductSchema"
 import { zodResolver } from "@hookform/resolvers/zod"
 import { Box, Button, Grid, Paper, Typography } from "@mui/material"
@@ -61,10 +61,24 @@ export const ProductForm = ({
   const [ createProduct ] = useCreateProductMutation();
   const [ updateProduct ] = useUpdateProductMutation();
 
+  const createFormData = (items: FieldValues): FormData => {
+    const formData = new FormData();
+
+    if (watchFile) formData.append('file', watchFile);
+
+    for (const key in items) {
+      formData.append(key, items[key])
+    }
+
+    return formData;
+  }
+
   const onSubmit = async (data: CreateProductSchema) => {
     try {
-      if (product) await updateProduct({id: product.id, data: data}).unwrap();
-      else await createProduct(data).unwrap();
+      const formData = createFormData(data);
+
+      if (product) await updateProduct({id: product.id, data: formData}).unwrap();
+      else await createProduct(formData).unwrap();
 
       setEditMode(false);
       refetch();

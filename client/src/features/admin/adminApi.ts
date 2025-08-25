@@ -1,14 +1,13 @@
 import { createApi } from "@reduxjs/toolkit/query/react";
 import { baseQueryWithErrorHandling } from "../../app/api/baseApi";
 import type { Product } from "../../app/models/product";
-import type { CreateProductSchema } from "../../lib/schemas/createProductSchema";
 
 export const adminApi = createApi({
   reducerPath: 'adminApi',
   baseQuery: baseQueryWithErrorHandling,
   endpoints: (builder) => ({
-    createProduct: builder.mutation<Product, CreateProductSchema>({
-      query: (data: CreateProductSchema) => {
+    createProduct: builder.mutation<Product, FormData>({
+      query: (data: FormData) => {
         return {
           url: 'products',
           method: 'POST',
@@ -16,12 +15,14 @@ export const adminApi = createApi({
         }
       }
     }),
-    updateProduct: builder.mutation<void, {id: number, data: CreateProductSchema}>({
+    updateProduct: builder.mutation<void, {id: number, data: FormData}>({
       query: ({id, data}) => {
+        data.append('id', id.toString());
+
         return {
           url: 'products',
           method: 'PUT',
-          body: {...data, id},
+          body: data,
         }
       }
     }),
