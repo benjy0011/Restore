@@ -9,6 +9,7 @@ import { catalogSlice } from "../../features/catalog/catalogSlice"
 import { accountApi } from "../../features/account/accountApi"
 import { checkoutApi } from "../../features/checkout/checkoutApi"
 import { orderApi } from "../../features/orders/orderApi"
+import { adminApi } from "../../features/admin/adminApi"
 
 // RTK
 export const store = configureStore({
@@ -19,6 +20,7 @@ export const store = configureStore({
     [accountApi.reducerPath]: accountApi.reducer,
     [checkoutApi.reducerPath]: checkoutApi.reducer,
     [orderApi.reducerPath]: orderApi.reducer,
+    [adminApi.reducerPath]: adminApi.reducer,
     counter: counterSlice.reducer,
     ui: uiSlice.reducer,
     catalog: catalogSlice.reducer,
@@ -32,6 +34,7 @@ export const store = configureStore({
         accountApi.middleware,
         checkoutApi.middleware,
         orderApi.middleware,
+        adminApi.middleware,
       )
 })
 
