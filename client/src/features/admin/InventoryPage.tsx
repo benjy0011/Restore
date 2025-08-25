@@ -8,6 +8,7 @@ import { setPageNumber } from "../catalog/catalogSlice";
 import { ProductForm } from "./ProductForm";
 import { useState } from "react";
 import type { Product } from "../../app/models/product";
+import { useDeleteProductMutation } from "./adminApi";
 
 export const InventoryPage = () => {
   const productParams = useAppSelector(state => state.catalog);
@@ -15,10 +16,20 @@ export const InventoryPage = () => {
   const dispatch = useAppDispatch();
   const [ editMode, setEditMode ] = useState(false);
   const [selectedProduct, setSelectedProduct] = useState<Product | null>(null);
+  const [deleteProduct] = useDeleteProductMutation();
 
   const handleSelectProduct = (product: Product) => {
     setSelectedProduct(product);
     setEditMode(true);
+  }
+
+  const handleDeleteProduct = async (id: number) => {
+    try {
+      await deleteProduct(id);
+      refetch();
+    } catch (error) {
+      console.log(error);
+    }
   }
 
   if (editMode) return <ProductForm setEditMode={setEditMode} product={selectedProduct} refetch={refetch} />
@@ -94,7 +105,7 @@ export const InventoryPage = () => {
 
                 <TableCell align="right">
                   <IconButton size="small" color="primary" onClick={() => handleSelectProduct(product)}><Edit fontSize="small" /></IconButton>
-                  <IconButton size="small" color="error"><Delete fontSize="small" /></IconButton>
+                  <IconButton size="small" color="error" onClick={() => handleDeleteProduct(product.id)}><Delete fontSize="small" /></IconButton>
                 </TableCell>
               </TableRow>
             ))}
@@ -110,7 +121,6 @@ export const InventoryPage = () => {
           )}
         </Box>
       </TableContainer>
-
     </div>
   )
 }
